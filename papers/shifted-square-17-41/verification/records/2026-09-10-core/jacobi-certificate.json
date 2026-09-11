@@ -1,0 +1,14 @@
+{
+  "command": "jacobi-certificate",
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "-B",
+    "experiments/sm2_four_translate/interpolation/outer41_jacobi_certificate.py",
+    "--self-test"
+  ],
+  "source_sha256": "2da1610850ba3e5c1e96118ba753908075c4fd80eade68728e2f849833e45880",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "OUTER41_JACOBI_CERTIFICATE_OK source_rows=41 coefficient_rows=39 stop=terminal-3-11-support\n",
+  "stderr": ""
+}

@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "cp",
+    "-cR",
+    "<PUBLIC_LAKE_PACKAGES>/mathlib",
+    "<EXTRACTION_ROOT>/evidence/.lake/packages/mathlib"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,55 @@
+{
+  "source_hashes": {
+    "papers/shifted-square-17-41/verification/run_core.py": "d48ef46b22e350a9f33748304065a687d50ac32147642d4d16141ce6737ad541",
+    "papers/shifted-square-17-41/verification/test_run_core.py": "f0304d1f24803d5dd8c948c3ea4a1b3423b8884bfca05bdd5f08ac4c75488c53",
+    "pyproject.toml": "aa4a4b24244142ae86595531e489e7fd2ffc8a07c2261559f5717fd23e0554ad"
+  },
+  "commands": [
+    {
+      "name": "coordinator-tests",
+      "argv": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "papers/shifted-square-17-41/verification",
+        "-p",
+        "test_run_core.py",
+        "-v"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_axioms_allow_subsets (test_run_core.CoreChecks.test_axioms_allow_subsets) ... ok\ntest_extra_axiom_rejected (test_run_core.CoreChecks.test_extra_axiom_rejected) ... ok\ntest_imported_source_corruption_rejected (test_run_core.CoreChecks.test_imported_source_corruption_rejected) ... ok\ntest_missing_or_duplicate_declaration_rejected (test_run_core.CoreChecks.test_missing_or_duplicate_declaration_rejected) ... ok\ntest_private_search_paths_removed (test_run_core.CoreChecks.test_private_search_paths_removed) ... ok\ntest_source_symlink_and_escape_rejected (test_run_core.CoreChecks.test_source_symlink_and_escape_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.003s\n\nOK\n"
+    },
+    {
+      "name": "ruff-lint",
+      "argv": [
+        "ruff",
+        "check",
+        "papers/shifted-square-17-41/verification/run_core.py",
+        "papers/shifted-square-17-41/verification/test_run_core.py"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "name": "ruff-format",
+      "argv": [
+        "ruff",
+        "format",
+        "--check",
+        "papers/shifted-square-17-41/verification/run_core.py",
+        "papers/shifted-square-17-41/verification/test_run_core.py"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "2 files already formatted\n",
+      "stderr": ""
+    }
+  ]
+}

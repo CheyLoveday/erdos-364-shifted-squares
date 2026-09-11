@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "pdftotext",
+    "<RECORD_ROOT>/article/main.pdf",
+    "<RECORD_ROOT>/built-pdf.txt"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

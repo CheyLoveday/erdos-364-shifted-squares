@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "operations": {
+    "check": {
+      "operation": "check",
+      "source_sha256": "62affe13a91b0c88b4f45b715599a6e6ef86f0a01f611530298111706459a223",
+      "status": "PASS"
+    },
+    "verify": {
+      "operation": "verify",
+      "source_sha256": "62affe13a91b0c88b4f45b715599a6e6ef86f0a01f611530298111706459a223",
+      "status": "PASS"
+    },
+    "build": {
+      "operation": "build",
+      "source_sha256": "62affe13a91b0c88b4f45b715599a6e6ef86f0a01f611530298111706459a223",
+      "status": "PASS"
+    },
+    "stage": {
+      "operation": "stage",
+      "source_sha256": "62affe13a91b0c88b4f45b715599a6e6ef86f0a01f611530298111706459a223",
+      "status": "PASS"
+    },
+    "check-export": {
+      "operation": "check-export",
+      "source_sha256": "62affe13a91b0c88b4f45b715599a6e6ef86f0a01f611530298111706459a223",
+      "status": "PASS"
+    }
+  },
+  "packages": {
+    "paper1-arxiv-source.zip": "04bd88064b99569332afdc8e3e6678d38bf1e99146c34d2509197922140c8491",
+    "paper1-evidence-source.tar.gz": "b5fd90819a14ae38c3842d3e13bef5b584ed76c67e001c12a95b6c5a12d80a3f"
+  },
+  "source_commit": "f7e55b1ec65f1223d4520d4ed2eecbd17c4f5367",
+  "source_tree": "7423a9668e3538fc9c1de2d7141ea930c6782868",
+  "release": "v1.0.0",
+  "record_role": "External execution record; not a member of the archive it identifies."
+}

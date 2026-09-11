@@ -1,0 +1,29 @@
+{
+  "tectonic": {
+    "argv": [
+      "tectonic",
+      "--version"
+    ],
+    "stdout": "Tectonic 0.16.9\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  "pandoc": {
+    "argv": [
+      "pandoc",
+      "--version"
+    ],
+    "stdout": "pandoc 3.9.0.2\nFeatures: +server +lua\nScripting engine: Lua 5.4\nUser data directory: <HOME>/.local/share/pandoc\nCopyright (C) 2006-2025 John MacFarlane. Web:  https://pandoc.org\nThis is free software; see the source for copying conditions. There is no\nwarranty, not even for merchantability or fitness for a particular purpose.\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  "poppler": {
+    "argv": [
+      "pdftotext",
+      "-v"
+    ],
+    "stdout": "",
+    "stderr": "pdftotext version 25.06.0\nCopyright 2005-2025 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n",
+    "exit_code": 0
+  }
+}

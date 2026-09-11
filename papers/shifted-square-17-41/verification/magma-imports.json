@@ -1,0 +1,26 @@
+{
+  "scope": "secondary finite-data corroboration; not part of the fresh core execution",
+  "sources": [
+    {
+      "path": "experiments/paper1_validation_20260909/magma-17-41-comparison.md",
+      "source_revision": "eafdabd971073febf8fd3c71541a917aefaeed65",
+      "source_path": "experiments/paper1_validation_20260909/magma-17-41-comparison.md",
+      "sha256": "4decffa933cd174492243eb1b1f3c9dfbae98fa56338e303533b8b23fde960c5",
+      "role": "historical Magma corroboration; three original scripts unresolved"
+    },
+    {
+      "path": "experiments/paper1_validation_20260909/magma-17-41-inputs.m",
+      "source_revision": "eafdabd971073febf8fd3c71541a917aefaeed65",
+      "source_path": "experiments/paper1_validation_20260909/magma-17-41-inputs.m",
+      "sha256": "9548559c09c121a06730ecd7b2f330e5b7edba39d249a374e90dd8174fdee62c",
+      "role": "historical Magma corroboration; three original scripts unresolved"
+    },
+    {
+      "path": "experiments/paper1_validation_20260909/magma-17-41-output.txt",
+      "source_revision": "eafdabd971073febf8fd3c71541a917aefaeed65",
+      "source_path": "experiments/paper1_validation_20260909/magma-17-41-output.txt",
+      "sha256": "f55f3741cea656f0e515072979cf1c3315bee92da368bc80645b08edb5f66910",
+      "role": "historical Magma corroboration; three original scripts unresolved"
+    }
+  ]
+}

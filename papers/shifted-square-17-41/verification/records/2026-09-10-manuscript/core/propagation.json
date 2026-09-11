@@ -1,0 +1,13 @@
+{
+  "command": "propagation",
+  "argv": [
+    "<PYTHON_ENV>/bin/python",
+    "-B",
+    "experiments/shifted_square_propagation/replay.py"
+  ],
+  "source_sha256": "2849aa1a475d64a1381aa429af4c7f85e43fdb494962c9746ba63f913171f204",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "{\"composition_cases\":1224,\"even_valuation_cases\":24,\"local_two_cases\":8,\"mod_eight_cases\":16,\"mod_four_cases\":336,\"result_sha256\":\"98b88b9fdfba259c32cbeac61ca2a53c565f1708b8ab14832cd2140187d793a8\",\"schema\":\"SHIFTED-SQUARE-PROPAGATION-REPLAY-V2\"}\nSHIFTED_SQUARE_PROPAGATION_OK\n",
+  "stderr": ""
+}

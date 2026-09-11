@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "cp",
+    "-cR",
+    "<PUBLIC_LAKE_PACKAGES>/aesop",
+    "<EXTRACTION_ROOT>/evidence/.lake/packages/aesop"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

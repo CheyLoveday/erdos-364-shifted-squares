@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en-GB"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Chey G. A. Loveday" name="author"/><meta content="Preprint manuscript: full proofs, exact arithmetic certificates and an embedded mathematical source." name="description"/><title>Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences</title><style>
+:root{color-scheme:light;--ink:#202420;--muted:#5e685f;--rule:#ccd1c9;--accent:#304c43;--faint:#f6f7f4}
+*{box-sizing:border-box}html{font-size:18px;background:#fff;color:var(--ink);-webkit-text-size-adjust:100%;scroll-behavior:auto}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;line-height:1.68;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+.paper{width:min(100%,900px);margin:0 auto;padding:58px 46px 78px}.title-block{text-align:center;border-bottom:1px solid var(--rule);padding:0 8px 27px;margin-bottom:18px}
+h1{font-size:2rem;line-height:1.25;letter-spacing:-.022em;font-weight:500;margin:0 auto 21px;max-width:770px}
+.eyebrow{font:.62rem/1.4 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 0 20px}.author{font-size:1rem;margin:0 0 8px}.affiliation{font-size:.88rem;color:var(--muted);margin:0 0 8px}.revision{font:.65rem/1.5 system-ui,sans-serif;color:var(--muted);margin:0}
+p{margin:.85rem 0}h2{font-size:1.38rem;line-height:1.33;letter-spacing:-.015em;margin:2.65rem 0 1rem;font-weight:600}h3{font-size:1.025rem;line-height:1.4;margin:1.85rem 0 .65rem;font-weight:600}
+h2,h3,.theorem,.equation{scroll-margin-top:24px}h2#abstract{font:.73rem/1.4 system-ui,sans-serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-align:center;margin:1.65rem 0 .9rem}.abstract-text{font-size:.925rem;line-height:1.68;margin:0 18px 1.8rem}
+a{color:var(--accent);text-decoration-thickness:.05em;text-underline-offset:.16em}a:hover{text-decoration:underline}.xref,.cite{white-space:nowrap;text-decoration:none}
+.theorem{margin:1.35rem 0;padding:.45rem 0 .5rem 1.05rem;border-left:2px solid var(--rule)}.theorem p:first-child{margin-top:0}.theorem p:last-child{margin-bottom:0}.theorem ol{padding-left:1.3rem;margin:.75rem 0}.theorem li{padding-left:.1rem;margin:.45rem 0}
+.reading-tools{font:.67rem/1.5 system-ui,sans-serif;color:var(--muted);display:flex;gap:8px 22px;flex-wrap:wrap;align-items:flex-start;padding:0 0 12px;border-bottom:1px solid #edf0ea}.reading-tools summary{cursor:pointer}.reading-tools details[open]{flex-basis:100%}.reading-tools button{font:inherit;color:var(--accent);background:transparent;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:.16em}.reading-tools .js-only{display:none}html.js .reading-tools .js-only{display:initial}.contents ol{list-style:none;padding-left:0;columns:2;column-gap:1.4rem;margin:.7rem 0}.contents li{margin:.28rem 0;break-inside:avoid}.contents a{text-decoration:none}.reading-status{font-size:.63rem;min-height:.9rem;margin:.45rem 0 0;color:var(--muted)}
+.math-unit.math-inline{white-space:nowrap}.math-display{display:block;max-width:100%}.math-display .math-visual{display:block;max-width:100%}.math-display .math-visual>mjx-container{max-width:100%}.math-display .math-visual>mjx-container>svg{max-width:100%;height:auto}.math-visual>mjx-container{display:inline-block!important;margin:0!important;position:relative}.math-visual svg{max-width:none;overflow:visible}.math-visual mjx-assistive-mml{position:absolute!important;top:0!important;left:0!important;clip:rect(1px,1px,1px,1px);width:1px;height:1px;overflow:hidden;padding:1px 0 0;border:0;white-space:nowrap;user-select:none}.math-latex{display:none;font: .82em/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;color:#183e35}
+.equation{display:grid;grid-template-columns:minmax(0,1fr) 2.8rem;gap:.5rem;align-items:center;margin:1.05rem 0;break-inside:avoid;clear:both}.equation.unnumbered{grid-template-columns:minmax(0,1fr)}.equation-main{min-width:0;max-width:100%;text-align:center;overflow-x:auto;overflow-y:hidden;padding:.55rem 0 .65rem;line-height:1.15;scrollbar-width:thin}.equation-number{color:var(--muted);font-size:.8rem;text-align:right;text-decoration:none;align-self:center;white-space:nowrap}.equation-main:focus-visible,.table-wrap:focus-visible{outline:1px solid var(--accent);outline-offset:3px}
+html.tex-view .math-visual{display:none}html.tex-view .math-latex{display:inline;white-space:pre-wrap;overflow-wrap:anywhere}html.tex-view .math-inline{white-space:normal}html.tex-view .math-display .math-latex{display:block;text-align:left;white-space:pre-wrap;padding:.7rem;background:var(--faint)}html.tex-view .equation-number{display:none}html.tex-view .equation{grid-template-columns:minmax(0,1fr)}
+.table-caption{font-size:.8rem;line-height:1.5;margin:1.4rem 0 .5rem;color:#445047}.table-wrap{overflow-x:auto;max-width:100%;margin:.5rem 0 1.2rem;scrollbar-width:thin}table{width:100%;border-collapse:collapse;font-size:.8rem;line-height:1.5;font-variant-numeric:lining-nums tabular-nums}thead{border-top:1.3px solid #7a867c;border-bottom:1px solid var(--rule)}th{padding:.62rem .65rem;font-weight:600;vertical-align:middle}td{padding:.62rem .65rem;border-bottom:1px solid #e7ebe4;vertical-align:middle}th:first-child,td:first-child{padding-left:.2rem}th:last-child,td:last-child{padding-right:.2rem}tr:last-child td{border-bottom:1px solid var(--rule)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace;overflow-wrap:anywhere}code{font-size:.77em}pre{font-size:.73rem;white-space:pre-wrap;line-height:1.55;background:var(--faint);padding:.85rem .9rem;margin:1rem 0;border-top:1px solid #e2e8e0;border-bottom:1px solid #e2e8e0}pre code{font-size:inherit}.reference{font-size:.82rem;line-height:1.6;margin:1.1rem 0;padding-left:2rem;text-indent:-2rem;overflow-wrap:anywhere}.reference p{margin:0}.reference code{font-size:.78em}.source-panel{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--rule);font:.68rem/1.5 system-ui,sans-serif}.source-panel summary{cursor:pointer}.source-panel pre{font-size:.67rem;max-height:65vh;overflow:auto;text-indent:0}.source-panel .copy-source{margin:.7rem 0}.skip-link{position:absolute;left:-10000px;top:12px;background:white;padding:8px}.skip-link:focus{left:12px}
+@media(max-width:640px){html{font-size:17px}.paper{padding:30px 19px 50px}.title-block{padding:0 0 23px}h1{font-size:1.56rem;line-height:1.27;letter-spacing:-.015em}.eyebrow{font-size:.57rem;letter-spacing:.12em}.author{font-size:.95rem}.revision{font-size:.61rem}.abstract-text{margin-left:0;margin-right:0}.reading-tools{font-size:.65rem;gap:8px 16px}.contents ol{columns:1}h2{font-size:1.25rem;line-height:1.33;margin-top:2.3rem}h3{font-size:1rem}.theorem{padding-left:.72rem}.equation{grid-template-columns:minmax(0,1fr);gap:0;margin:.85rem 0}.equation-number{justify-self:end;font-size:.72rem;margin-top:-.12rem}.equation-main{padding:.4rem 0 .5rem}.table-wrap table{font-size:.76rem}td,th{padding:.55rem .5rem}.reference{font-size:.79rem;padding-left:1.5rem;text-indent:-1.5rem}}
+@media(max-width:350px){.paper{padding-left:15px;padding-right:15px}h1{font-size:1.46rem}.math-display{font-size:.91em}.table-wrap table{font-size:.71rem}}
+@media print{html{font-size:11pt}.paper{max-width:none;width:auto;padding:0}.title-block{padding-bottom:14pt}h1{font-size:19pt}.reading-tools,.reading-status,.source-panel,.skip-link{display:none!important}.abstract-text{font-size:10.5pt}h2{font-size:14pt;break-after:avoid}h3{font-size:11pt;break-after:avoid}.math-latex{display:none!important}.math-visual{display:initial!important}.equation{grid-template-columns:minmax(0,1fr) 2.8rem!important;break-inside:avoid}.equation-number{display:initial!important}.equation.unnumbered{grid-template-columns:minmax(0,1fr)!important}.equation-main{overflow:visible}.table-wrap{overflow:visible}table{font-size:9pt}.theorem{break-inside:avoid}a{color:inherit;text-decoration:none}.reference{font-size:9pt}p{orphans:3;widows:3}@page{size:A4;margin:22mm 20mm}}
+
+#standalone-verifier~pre{font-size:.65rem;line-height:1.55}.theorem strong{font-weight:700}pre{tab-size:4}.reference{hyphens:auto}.equation-number:visited{color:var(--muted)}
+</style></head><body>
+<a class="skip-link" href="#article">Skip to manuscript</a>
+<main class="paper"><header class="title-block"><p class="eyebrow">Number theory · preprint manuscript</p><h1>Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences</h1><p class="author">Chey G. A. Loveday</p><p class="affiliation">Overdog.ai Ltd, Colchester, England</p><p class="revision">10 September 2026</p></header>
+<nav aria-label="Reading controls" class="reading-tools"><details class="contents"><summary>Contents</summary><ol><li><a href="#introduction">1. Introduction and main results</a></li><li><a href="#recurrence">2. Recurrence identities and the local analysis at
+2</a></li><li><a href="#criterion">3. A common Hilbert-reciprocity criterion</a></li><li><a href="#fixed-fields">4. The two fixed-field certificates</a></li><li><a href="#propagation">5. Phase strengthening and assembly</a></li><li><a href="#pell">6. Pell coordinates and the powerful-number
+application</a></li><li><a href="#jacobi-formal">7. The integer-Jacobi certificate and formal
+realisation</a></li><li><a href="#conclusion">8. Mathematical scope</a></li><li><a href="#reference-arithmetic">Appendix A. Reference arithmetic for the
+finite certificates</a></li><li><a href="#verification-concordance">Appendix B. Compact proof and
+verification concordance</a></li><li><a href="#standalone-verifier">Appendix C. A compact exact-arithmetic
+verifier</a></li><li><a href="#acknowledgements">Acknowledgements</a></li><li><a href="#references">References</a></li></ol></details><button aria-pressed="false" class="js-only" id="toggle-tex">TeX view</button><button class="js-only" id="copy-manuscript">Copy manuscript</button><a href="#source-panel">Embedded source</a></nav><p aria-live="polite" class="reading-status" role="status"></p>
+<article id="article"></article>
+<details class="source-panel" id="source-panel"><summary>Complete Markdown and TeX source</summary><p>This is the source of the article above. Equations use TeX delimiters. It is included in this file so that the manuscript remains copyable without a network connection or scripts.</p><pre id="markdown-source"></pre></details>
+</main><script>
+(()=>{
+ document.documentElement.classList.add('js');
+ const status=document.querySelector('.reading-status');
+ const source=document.getElementById('markdown-source').textContent;
+ const setStatus=t=>{status.textContent=t;};
+ document.getElementById('toggle-tex').addEventListener('click',e=>{
+   const show=document.documentElement.classList.toggle('tex-view');
+   e.currentTarget.setAttribute('aria-pressed',String(show));
+   e.currentTarget.textContent=show?'Typeset view':'TeX view';
+   document.querySelectorAll('.math-latex').forEach(n=>n.setAttribute('aria-hidden',String(!show)));
+   document.querySelectorAll('.math-visual').forEach(n=>n.setAttribute('aria-hidden',String(show)));
+   setStatus(show?'Formula source is visible.':'Typeset equations are visible.');
+ });
+ async function copySource(){
+   try{
+     if(!navigator.clipboard)throw Error('Clipboard API unavailable');
+     await navigator.clipboard.writeText(source);
+     setStatus('Manuscript copied as Markdown with TeX equations.');
+   }catch(e){
+     const p=document.getElementById('source-panel');p.open=true;
+     const range=document.createRange();range.selectNodeContents(document.getElementById('markdown-source'));
+     const selection=getSelection();selection.removeAllRanges();selection.addRange(range);
+     setStatus('Source selected below. Use your browser’s Copy command.');
+     p.scrollIntoView({block:'start'});
+   }
+ }
+ document.getElementById('copy-manuscript').addEventListener('click',copySource);
+ const mathAncestor=node=>{
+   const e=node.nodeType===Node.ELEMENT_NODE?node:node.parentElement;
+   return e?.closest?.('.math-unit');
+ };
+ function selectionAsText(selection){
+   const holder=document.createElement('div');
+   for(let i=0;i<selection.rangeCount;i++){
+     const r=selection.getRangeAt(i).cloneRange();
+     const sm=mathAncestor(r.startContainer),em=mathAncestor(r.endContainer);
+     if(sm)r.setStartBefore(sm);if(em)r.setEndAfter(em);
+     holder.appendChild(r.cloneContents());
+   }
+   holder.querySelectorAll('.math-unit').forEach(m=>{
+     const display=m.dataset.display==='true';
+     const text=(display?'\\[\n':'\\(')+m.dataset.tex+(display?'\n\\]':'\\)');
+     m.replaceWith(document.createTextNode(text));
+   });
+   holder.querySelectorAll('.equation-number,.math-latex,mjx-assistive-mml,script,style,button').forEach(n=>n.remove());
+   const blocks=new Set(['P','DIV','LI','H1','H2','H3','TR','PRE']);
+   function plain(n){
+     if(n.nodeType===Node.TEXT_NODE)return n.textContent;
+     if(n.nodeType!==Node.ELEMENT_NODE)return '';
+     if(n.tagName==='BR')return '\n';
+     const text=[...n.childNodes].map(plain).join('');
+     return text+(n.tagName==='TD'||n.tagName==='TH'?'\t':blocks.has(n.tagName)?'\n\n':'');
+   }
+   return plain(holder).replace(/[ \t]+\n/g,'\n').replace(/\n{3,}/g,'\n\n').trim();
+ }
+ window.paperSelectionAsText=selectionAsText;
+ document.addEventListener('copy',e=>{
+   const s=getSelection();if(!s||s.isCollapsed)return;
+   const anchor=s.anchorNode?.nodeType===Node.ELEMENT_NODE?s.anchorNode:s.anchorNode?.parentElement;
+   if(anchor?.closest('#source-panel'))return;
+   if(!anchor?.closest('#article'))return;
+   e.clipboardData.setData('text/plain',selectionAsText(s));
+   e.preventDefault();
+ });
+})();
+</script></body></html>

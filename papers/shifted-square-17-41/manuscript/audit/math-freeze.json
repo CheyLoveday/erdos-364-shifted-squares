@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-10",
+  "repository": "CheyLoveday/erdos-364-lab",
+  "branch": "paper1/public-source-scaffold",
+  "evidence_head": "4767b4d6fc274f65ab59564e36899a6b49dd7395",
+  "evidence_tree": "ddc76ae68fd3e81188dabbc7e0ad791245d1d387",
+  "baseline_markdown_sha256": "777a553cf727cdbad26a0842d75044c0068e2ba26bbee238b17df485fb99d3f5",
+  "candidate_markdown_sha256": "1570a324a4aa51c44b5981fc6578b335547345076d94e6f12d52332a68b0f694",
+  "title_unchanged": true,
+  "section_headings_unchanged": true,
+  "math_expressions_unchanged": 696,
+  "numbered_result_blocks_unchanged": 12,
+  "verifier_sha256": "82e223275f0df061a8a34e6aa8b16be5bbbf8f352245510933d06b01556c80a1",
+  "verifier_bytes_unchanged": true,
+  "changes": "12 prose paragraphs and two bibliographical entries; no theorem, equation, coefficient, code, domain, numbering or proof-strategy change",
+  "repository_writes_performed": false,
+  "release_tag_created": false,
+  "ordered_math_ast_sha256": "9edcb1af0d4db8115e246129a07073145285207acc1bc47e878f2899759641d9",
+  "numbered_result_blocks_sha256": "db25410f691f07a066fb63b544616d45c692318129d2ebbdb656aff2d08d3cb5"
+}

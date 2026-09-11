@@ -1,0 +1,16 @@
+{
+  "handoff_sha256": "3d4e80f8fa64c35ce11fda02b0bcf01123e18bfcaa88c86399313eaa14ff732f",
+  "metadata_update": "papers/shifted-square-17-41/manuscript/METADATA_UPDATE.md",
+  "sources": {
+    "papers/shifted-square-17-41/manuscript/audit/math-freeze.json": "366aa88453fbbc93802684cc2507b5139611cccab97e5eeeeea5daa142f27479",
+    "papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.html": "05bac0be394138fe7bb29c088eb53ed4381bbb1a85a1f604bd57985b22ea82c5",
+    "papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.md": "d27fffb9a760272d44f45d67919d41bd9596fc77e6fdca95ac86ee8266873dd2",
+    "papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.pdf": "39352be32b135fc7c79aa648ae989618bc84b787ee1919aadcf8dd3dc307d37e",
+    "papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate_source.zip": "04bd88064b99569332afdc8e3e6678d38bf1e99146c34d2509197922140c8491",
+    "papers/shifted-square-17-41/manuscript/candidate/rendering/README.md": "2227098c50c8f4c1c65d3ff270ec4e684680071b4a608cff18d79472b45d7dc7",
+    "papers/shifted-square-17-41/manuscript/candidate/rendering/math-cache.json": "6458b07458cdd6df0a72e819799303e749ced4b9bd2242dd9f89fe00cc83c608",
+    "papers/shifted-square-17-41/manuscript/candidate/rendering/render_html.py": "3d9fb5a1c11701abe2c529aadfa76b6bfc1ce25e5ec38bf8d835d7741664baf4",
+    "papers/shifted-square-17-41/manuscript/candidate/rendering/requirements.txt": "13ebb0c89faeeff302efffd1eea99ce58f54e3f59bd48196ede18068f4fc8df6",
+    "papers/shifted-square-17-41/manuscript/candidate/rendering/template.html": "1835ed0ecdc41d58c5ad99686428a38d1b35a9d6d95882e5e7501331f5922d17"
+  }
+}

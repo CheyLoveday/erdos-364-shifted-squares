@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "cp",
+    "-cR",
+    "<PUBLIC_LAKE_PACKAGES>/Qq",
+    "<EXTRACTION_ROOT>/evidence/.lake/packages/Qq"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

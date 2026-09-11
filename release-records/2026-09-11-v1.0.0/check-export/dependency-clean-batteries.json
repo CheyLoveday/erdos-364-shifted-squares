@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "status",
+    "--porcelain",
+    "--untracked-files=no"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "pdftotext",
+    "<EXTRACTION_ROOT>/arxiv/main.pdf",
+    "<RECORD_ROOT>/built-pdf.txt"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

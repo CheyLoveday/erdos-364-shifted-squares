@@ -1,0 +1,14 @@
+{
+  "command": "gp17",
+  "argv": [
+    "gp",
+    "-q",
+    "-f",
+    "experiments/sm2_outer_seventeen/outer17_verify.gp"
+  ],
+  "source_sha256": "7152c08b58fe316b2b148c1a44ba64c5fa37606c38073950a864818ff17eb8d0",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "OUTER17_CERTIFICATE_OK pari=2.17.3 target=no_sm2LucasReal_seventeen_square_of_mod_eight_two\n",
+  "stderr": ""
+}

@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "<PYTHON_ENV>/bin/python",
+    "-B",
+    "anc/verify_fixed_fields.py"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "SymPy 1.14.0\np=17: polynomial, index and reference checks passed\np=41: polynomial, index and reference checks passed\nFIXED_FIELDS_OK\n",
+  "stderr": ""
+}

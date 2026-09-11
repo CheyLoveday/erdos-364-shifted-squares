@@ -1,0 +1,14 @@
+{
+  "command": "jacobi-telescope",
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "-B",
+    "experiments/sm2_four_translate/interpolation/outer41_jacobi_telescope.py",
+    "--self-test"
+  ],
+  "source_sha256": "7152c08b58fe316b2b148c1a44ba64c5fa37606c38073950a864818ff17eb8d0",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "OUTER41_JACOBI_LOCAL_OK links=18 modular_gcds=41 branches=95 spans=171 claim=local-certificate-not-SS41\n",
+  "stderr": ""
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp_utc": "2026-09-10T17:28:08.758401+00:00",
+  "source_sha256": "2849aa1a475d64a1381aa429af4c7f85e43fdb494962c9746ba63f913171f204",
+  "python": "Python 3.13.1",
+  "gp": "2.17.3",
+  "lean": "Lean (version 4.31.0, arm64-apple-darwin24.6.0, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+  "lake": "Lake version 5.0.0-src+68218e8 (Lean version 4.31.0)"
+}

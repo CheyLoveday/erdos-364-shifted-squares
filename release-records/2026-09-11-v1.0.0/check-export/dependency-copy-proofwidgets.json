@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "cp",
+    "-cR",
+    "<PUBLIC_LAKE_PACKAGES>/proofwidgets",
+    "<EXTRACTION_ROOT>/evidence/.lake/packages/proofwidgets"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

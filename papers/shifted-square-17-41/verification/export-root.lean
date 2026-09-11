@@ -1,0 +1,1 @@
+import Erdos364.DicksonLucas.ShiftedSquarePropagation

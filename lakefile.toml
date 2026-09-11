@@ -1,0 +1,16 @@
+name = "erdos364"
+version = "0.0.0"
+defaultTargets = ["Erdos364"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+
+[[lean_lib]]
+name = "Erdos364"

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "pandoc",
+    "-f",
+    "markdown+fenced_divs+tex_math_dollars",
+    "-t",
+    "json",
+    "<SOURCE_ROOT>/papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.md"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "<AST bound by hash; its complete Markdown input is exported>",
+  "stderr": "",
+  "stdout_sha256": "b04e08fd2575510ba2b759a9eea411c03ccf29f0da89b11bae7dd31cc0008dfd",
+  "stdout_bytes": 290986
+}

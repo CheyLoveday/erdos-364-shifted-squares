@@ -1,0 +1,14 @@
+{
+  "command": "gp41",
+  "argv": [
+    "gp",
+    "-q",
+    "-f",
+    "experiments/sm2_four_translate/interpolation/outer41_verify.gp"
+  ],
+  "source_sha256": "2da1610850ba3e5c1e96118ba753908075c4fd80eade68728e2f849833e45880",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "OUTER41_CERTIFICATE_OK pari=2.17.3 target=no_sm2LucasReal_forty_one_square_of_mod_eight_two\n",
+  "stderr": ""
+}

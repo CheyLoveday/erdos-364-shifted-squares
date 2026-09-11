@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "fa08db58b30eb033edcdab331bba000827f9f785\n",
+  "stderr": ""
+}

@@ -1,0 +1,586 @@
+{
+  "integration_base": "efede28be421c934ecd9684544c425c3c3069a23",
+  "sources": [
+    {
+      "path": "Erdos364/CubeMiddle/PowerfulFactorTransport.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/CubeMiddle/PowerfulFactorTransport.lean",
+      "sha256": "211ceac35790341aa4ec11773b07371ad206686241fcac8c2a74056e2e42d64e",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/DicksonLucas/ShiftedSquarePropagation.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/DicksonLucas/ShiftedSquarePropagation.lean",
+      "sha256": "af4b58e21788cdda136e4f2cac158b6e305f10493c0e7db13c93fb1db7314b0b",
+      "role": "current mathematics and propagation replay"
+    },
+    {
+      "path": "Erdos364/Foundations/ConsecutiveConstraints.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/ConsecutiveConstraints.lean",
+      "sha256": "bc121339bb441f7f89d7853fb9d2d7779a77083474d0a444d709ca5cbe23c2b3",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/ConsecutiveKernelConstraints.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/ConsecutiveKernelConstraints.lean",
+      "sha256": "4cc86f1ecd9b6d87403da8bfdba66b055eeab5471771d6a968fc325dc57e6243",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/PowerfulFactorTransport.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/PowerfulFactorTransport.lean",
+      "sha256": "5e08886db593481593122480ec4ae38e5e63b18460a6f8d7dc1e2d03baac20b8",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/PowerfulNormalForm.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/PowerfulNormalForm.lean",
+      "sha256": "53bdeeaec2e6f2f307b1750668b7a2fd7532ce85131d11d658693c68007643f4",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/PowerfulPos.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/PowerfulPos.lean",
+      "sha256": "eb8025c06b63d8d983920df6afb70f4cb6afaa907678a7eb75fcdcfbd20d6b36",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/PowerfulTriple.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/PowerfulTriple.lean",
+      "sha256": "967394899f54cabe12da7484fc6804a67f60625638e3225a6d32ecec1c3b5105",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/PowerfulTripleCandidate.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/PowerfulTripleCandidate.lean",
+      "sha256": "3aff0727049bcfaccb49e741a8f1189a18ccca13806bd4708bbd44ccecc9a1b8",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/PowerfulValuation.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/PowerfulValuation.lean",
+      "sha256": "969616d46d8ca0b12b0981313fa9b68e5b0723ceeccaa59a5a30e9febcf56daf",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/SquarefreeKernel.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/SquarefreeKernel.lean",
+      "sha256": "cc663b3489e1f09e19f53bdc3b0f9e4ca5e14331abbee4b8bf872fa0f3481e1c",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/TraceDepth.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/TraceDepth.lean",
+      "sha256": "1750c2ded404ca400c7fafaf7636e2d9ab1a41de6d9730ae6f3b63acb9e42bd4",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/TraceDepthGCD.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/TraceDepthGCD.lean",
+      "sha256": "bb185d5f230e0c55f84f21ee96827ca0da23301693dc9c44f075e3e20027587f",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Foundations/TripleNormalForm.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Foundations/TripleNormalForm.lean",
+      "sha256": "c4e51f560661474b30f320afe321e88a546d8783db6cd869f7cda4619884bf14",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/Global/RootSplit.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/Global/RootSplit.lean",
+      "sha256": "1a90b2a8fc8007444c7e6e47610752b605875bc04f9f344385830ba41829edf6",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/FixedPellFlankAllocation.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/FixedPellFlankAllocation.lean",
+      "sha256": "a1aba3e14d3a5bc1f7f78b0b26f45a2350061f75ed6fbf29dd0e69b4c4c51375",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/FlankKernelAllocation.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/FlankKernelAllocation.lean",
+      "sha256": "4fb23583c99a2a3a710407a5cd2caaa700655bc42756f2fb044b9a6532e042f9",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/LeafCompiler.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/LeafCompiler.lean",
+      "sha256": "2ebfbf705839cbda70be6592c16c0a805e0d5db35e2b390f753b97ac182fb624",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/NormalForm.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/NormalForm.lean",
+      "sha256": "dedb40e3348a83874de914a654d0ca65524cd4b9361ffbbb111ac328629cfff7",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Normalization.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Normalization.lean",
+      "sha256": "058b586bd3c9758130b7b89a83d2e2e0481744594f56a27fb26a87f8f350608b",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PairPellComplete.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PairPellComplete.lean",
+      "sha256": "4f56fe53c3ff0db74f366e87461d1a6bbb77480ddf0e1b3f2eb3875cd3592682",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PellCanonical.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PellCanonical.lean",
+      "sha256": "91600b8af76e6c8faec2f77c61fb048c4a953a1a781065abd9a68c2c82298aa7",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PellConversion.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PellConversion.lean",
+      "sha256": "0f50d7cd5b521363998c54bb31cf6d95f3c5ba367236593553020086b0456a43",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PellCoordinates.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PellCoordinates.lean",
+      "sha256": "fc0473fa1a966df09a1943e062e34f08594e16efcfb68f46af80d8495915b343",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PellDivisibilityPrime.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PellDivisibilityPrime.lean",
+      "sha256": "5a3f31386957fa95fb753fd50252924aee16158a422fc0e0525bfd8b0d1a13e3",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PellDivisibilityRank.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PellDivisibilityRank.lean",
+      "sha256": "a6556a62e7ae2a23cce10f8f38db7fbf0b27abe6a8db9e8aca53f84afbca35d1",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PellIndex.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PellIndex.lean",
+      "sha256": "9ac40dc518b6b808a745743e809bcc5e736546d011a812ecfca0a0d628a874fa",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/PellParity.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/PellParity.lean",
+      "sha256": "813f970628ea5c9bc00d9b61f7d170c21b6b809c297faffa0bf51963b10cf600",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/QuarticPellCohn.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/QuarticPellCohn.lean",
+      "sha256": "5e411db87d18b5d75c85bfcb8ecf9b51cc62221a1e78384bbd3aba81f7ee4893",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/QuarticPellCounterexample.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/QuarticPellCounterexample.lean",
+      "sha256": "a3d1593694b823ce6bc95c744dadcd9a926e3d5e44cdc46c112f7d8337f1b1a3",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankConsequences.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankConsequences.lean",
+      "sha256": "61fdcdfe7f0c77115c10b7d31cbba696cd324cfb67f858a897c78be26337b999",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankCounterexample.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankCounterexample.lean",
+      "sha256": "c6961536da9ae3792bc8a38c6972f48a9fd240edc596f553bc51d32c71d5bf08",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankNegativePell.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankNegativePell.lean",
+      "sha256": "f7afd2e9c01fa210d7005a3cdef4fd01be6bd98232f445e1007cd258a9161142",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankNegativePellSign.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankNegativePellSign.lean",
+      "sha256": "bc59c78bf0511666fde0a7230ee1bdeb6f0c6c58e88f54841a6b3cfd814722ae",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankNormOneControl.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankNormOneControl.lean",
+      "sha256": "9b89b3cce7cce42858aecb50c19b4bd6a3c6b1fa51c1b37d3bd3b26965d00fbd",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankNormOneMod1089.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankNormOneMod1089.lean",
+      "sha256": "b5c13c30e8ec6560eba0b02fdd2cd5d1b0cd26936c4d7d4f6dc6a0b4b8169873",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankNormOneModNine.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankNormOneModNine.lean",
+      "sha256": "975436d964ae04f0bde14e9e34cca7892099e54f4071c4ec39e2e399cfd71c98",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankNormOneModOneFortySeven.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankNormOneModOneFortySeven.lean",
+      "sha256": "8c5555c9a03f107957676602790d8a9f6a48803617c30c945a948f041e9ba1f0",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankNormOneModSeventyFive.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankNormOneModSeventyFive.lean",
+      "sha256": "255cb0a2374dd4d6c83395adc66fd4f42c10ca784b5f37405da324cefbf17750",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankQuadratic.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankQuadratic.lean",
+      "sha256": "64debcee2fe206d775fdadaf4d7eed98911346adb3ef0b47718ee32b42fbf047",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankResidues.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankResidues.lean",
+      "sha256": "98d99a2bb851690c14eb8cef288294dea26b35611f60d6d4cfe8649875861dbe",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankSupport.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankSupport.lean",
+      "sha256": "bf91187fdaa4b93268b2cddd75145c1edf1163c34da3d953c51f831511aa767a",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/RightFlankUpperKernelSquarePlusOne.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/RightFlankUpperKernelSquarePlusOne.lean",
+      "sha256": "1a6a7b4841827f91a9ebe2f71f5881b6706b705e55559530a186ed3c7dcb30a0",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareAllocation.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareAllocation.lean",
+      "sha256": "38abd9f21b0fd3c25ed2f7b3b262da0317db5a0c7fa5644c72deb5d541bd43b2",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareGeneratorRank.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareGeneratorRank.lean",
+      "sha256": "dc0ccf9d4db51178367a94352d5381011d0a8db79153b2485f25828bf8a46d64",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareLowerFundamental.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareLowerFundamental.lean",
+      "sha256": "13e9711fe6c5294d640f5efb28aaf90d7f4be5ac9f9d1fa0196a605ba9cd45e7",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareLowerNormTwoOrbit.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareLowerNormTwoOrbit.lean",
+      "sha256": "2742e0cfa7661bf246f89dc913df0712ef09968ec1cbc36822185987cedce7bf",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareNormOnePrimeObstruction.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareNormOnePrimeObstruction.lean",
+      "sha256": "5d305da67fa679f5377e969ac4b663def6eb4a664495dab2c5a20c4b36b958ec",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean",
+      "sha256": "d0411d0dad4261d43074a4003a97565299e3c521a39ae417b6231adcfe358813",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareOuterSeventeen.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareOuterSeventeen.lean",
+      "sha256": "51bb7046da75483126c98f6d5825481823f17503781f2a76e37dba0d943db50a",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquarePolynomial.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquarePolynomial.lean",
+      "sha256": "30368e6963f98ec2d3683f3dc0542c615e9c45fa7b6c3b637dd504e3a7a69b19",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareResidual.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareResidual.lean",
+      "sha256": "ac0a1d49950af93323e74559c197a1231f408ae3c8c3ebe93cb8537e137726da",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareUpperKernelOneHundredOne.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareUpperKernelOneHundredOne.lean",
+      "sha256": "df201620590ef0176a993e9b84d4fb8b2bcc7fca5a89b077ca1c9a36b8eb4d33",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareUpperNormOneOrbit.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareUpperNormOneOrbit.lean",
+      "sha256": "1279d09164af86222a73fce9e956017b8118285a568afd9959fc1bd935a19716",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Sm2LowerSquareUpperSourceGenerator.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Sm2LowerSquareUpperSourceGenerator.lean",
+      "sha256": "9ea36bdb6ca1149232bd9122bda5a13e54d0a715fe9f4f8b7a03c7c9d127d2c1",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/Source.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/Source.lean",
+      "sha256": "453d38a7558e3db910467d60643d16bc3a9fcff74c984889868a81a5a77b1685",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/SourceArithmetic.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/SourceArithmetic.lean",
+      "sha256": "12657eef8edb6cc6e7e533afb4685ae11ba4eb2f82721eb2decf20790ff6d9cb",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/SourceLeafCompiler.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/SourceLeafCompiler.lean",
+      "sha256": "e1eced92df31e725ea7c000cbe5ccd4b6ea6e881e42f9c8cfd376d7e5bb503ef",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/SourceNormalizer.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/SourceNormalizer.lean",
+      "sha256": "defc7d8f52b5fdb014286d49c9f22bcbcd2b46b35ea1b5d4ffb675712a53206b",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "Erdos364/SquareMiddle/TopBranchCompiler.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "Erdos364/SquareMiddle/TopBranchCompiler.lean",
+      "sha256": "ba21eb70a702758979cae189450246f06704bad80e67ca6555f65ccfed6d45ee",
+      "role": "unchanged transitive local Lean dependency"
+    },
+    {
+      "path": "experiments/shifted_square_propagation/expected.json",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "experiments/shifted_square_propagation/expected.json",
+      "sha256": "d529a737a25e1013469831b14c89bea88e1ec35993b4fd19676bc3fd83198c0b",
+      "role": "current mathematics and propagation replay"
+    },
+    {
+      "path": "experiments/shifted_square_propagation/replay.py",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "experiments/shifted_square_propagation/replay.py",
+      "sha256": "48302f4aa53791af338ad4bf6cec63989419c6c80ea862ad1b63231b89d664e0",
+      "role": "current mathematics and propagation replay"
+    },
+    {
+      "path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_block.json",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_block.json",
+      "sha256": "90c324b8b7c18ebb11c8221965259647d089bba7f664452d2d1fa545c44b8027",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_block.py",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_block.py",
+      "sha256": "cf5c4b911401e7382716a1d150036b961a047eb9233042d91c3364105ee48c34",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_certificate.json",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_certificate.json",
+      "sha256": "f553775da22409ad0351c6b4cc6ffa0dd02a86651a01fc5242a70f4438b0cef8",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_certificate.py",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_certificate.py",
+      "sha256": "41853cf8d0296e6b4ebc0caab5d3a938246ade4944475d6d47b8282e78a68a1c",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_telescope.json",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_telescope.json",
+      "sha256": "f1ecff99a5722b502a61626d8481a7883f302740b9bd406fcc91709431057525",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_telescope.py",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_four_translate/interpolation/outer41_jacobi_telescope.py",
+      "sha256": "2c12098d3271c02313982dae0d20052cd5ed09044d846c2210eb9fcbbbb8f87d",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "experiments/sm2_four_translate/interpolation/outer41_verify.gp",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_four_translate/interpolation/outer41_verify.gp",
+      "sha256": "59ac1ef75d1d5e953aec81943a28bdb6b0656721de7947506704ac498c7bb560",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "experiments/sm2_outer_seventeen/outer17_verify.gp",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "experiments/sm2_outer_seventeen/outer17_verify.gp",
+      "sha256": "81fa43697098dca78c18d9839938e6ac0d2c01e727eb9c543ab4ccec02b127bb",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "lake-manifest.json",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "lake-manifest.json",
+      "sha256": "2cc0f3c6ef069b75a2d0f4b6094c47d127c75f694a98c69c50831846f4654095",
+      "role": "unchanged Lean dependency/build lock"
+    },
+    {
+      "path": "lakefile.toml",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "lakefile.toml",
+      "sha256": "36d7b3c07a27a9eec556fd7b1632433d90e1e7318ea5e3096eb6593617d315b7",
+      "role": "unchanged Lean dependency/build lock"
+    },
+    {
+      "path": "lean-toolchain",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "lean-toolchain",
+      "sha256": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+      "role": "unchanged Lean dependency/build lock"
+    },
+    {
+      "path": "papers/shifted-square-17-41/evidence/reproduce.py",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "papers/shifted-square-17-41/evidence/reproduce.py",
+      "sha256": "33b2bb5571d9cb5cdf802fa64d4131b0bb55034e4e9b640bfd88926d36178881",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "papers/shifted-square-17-41/fixed-field-obligation-table.md",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "papers/shifted-square-17-41/fixed-field-obligation-table.md",
+      "sha256": "28eb0c1bb63352fdcbee5700808a5fafb302d9df2d688c4256d95990b26db00f",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "papers/shifted-square-17-41/hilbert-jacobi-crosswalk.md",
+      "source_revision": "ec48bc1f3b79dda3c4147c8b6c4c0eca39d1484b",
+      "source_path": "papers/shifted-square-17-41/hilbert-jacobi-crosswalk.md",
+      "sha256": "28f995f24f6437508827cb0b32fb9c5e1d34ce0c4382b3343479e7f8a93e1703",
+      "role": "existing Hilbert/Jacobi proof with exported normalization source link"
+    },
+    {
+      "path": "papers/shifted-square-17-41/hilbert-obstruction-lamport.md",
+      "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
+      "source_path": "papers/shifted-square-17-41/hilbert-obstruction-lamport.md",
+      "sha256": "166999aa65bfcff85581b7daefac09b2a5885a82e20e4ae7e7c7c05ac4a606b6",
+      "role": "existing fixed-17/41 proof or replay dependency"
+    },
+    {
+      "path": "papers/shifted-square-17-41/source-theorem.md",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "papers/shifted-square-17-41/source-theorem.md",
+      "sha256": "7cc91c0bf5e0937d261a658eb39ccd2ab467d61bd78a6d4fac5a1639b170d025",
+      "role": "current mathematics and propagation replay"
+    },
+    {
+      "path": "papers/shifted-square-17-41/theorem-formal-crosswalk.md",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "papers/shifted-square-17-41/theorem-formal-crosswalk.md",
+      "sha256": "706d2fb65aa6e1d775603f32d8ed993cc5ce26ca2f08af19d3ef1a253c302e1a",
+      "role": "current mathematics and propagation replay"
+    },
+    {
+      "path": "papers/shifted-square-17-41/verification/PaperTheoremAxiomAudit.lean",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "papers/shifted-square-17-41/evidence/lean/PaperTheoremAxiomAudit.lean",
+      "sha256": "65b7a49b2a872920ebe5af2d64b1a0158c616ef82acdcf7099490bdb199aacb6",
+      "role": "current formal audit"
+    },
+    {
+      "path": "papers/shifted-square-17-41/verification/replay/independent_finite.py",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "papers/shifted-square-17-41/evidence/replay/independent_finite.py",
+      "sha256": "0be57281f887fb518ebf4b3248212b47d0505480afd32cc0ce48855b88550862",
+      "role": "implementation-distinct replay; historical original preserved"
+    },
+    {
+      "path": "papers/shifted-square-17-41/verification/replay/independent_fixed_fields.gp",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "papers/shifted-square-17-41/evidence/replay/independent_fixed_fields.gp",
+      "sha256": "ee1f5939c2683f0a76e738ce4510edb52f0fecdff99f42b36e427a894f337c52",
+      "role": "implementation-distinct replay; historical original preserved"
+    },
+    {
+      "path": "problems/square-middle/sm2-lower-square/shifted-square-propagation-lamport.md",
+      "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+      "source_path": "problems/square-middle/sm2-lower-square/shifted-square-propagation-lamport.md",
+      "sha256": "b9caecc17e474627e34b5154c464805fa4bd60652b1f7f7870adabb5ac3e51d1",
+      "role": "current mathematics and propagation replay"
+    }
+  ]
+}

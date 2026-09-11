@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "<PYTHON_ENV>/bin/python",
+    "-B",
+    "papers/shifted-square-17-41/verification/run_core.py",
+    "--output",
+    "<RECORD_ROOT>/core"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "gp17 PASS\ngp41 PASS\nindependent-gp PASS\njacobi-block PASS\njacobi-certificate PASS\njacobi-telescope PASS\nindependent-finite PASS\npropagation PASS\nlean-build PASS\naxioms PASS\n",
+  "stderr": ""
+}

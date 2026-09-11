@@ -1,0 +1,13 @@
+{
+  "command": "independent-finite",
+  "argv": [
+    "<PYTHON_ENV>/bin/python",
+    "-B",
+    "papers/shifted-square-17-41/verification/replay/independent_finite.py"
+  ],
+  "source_sha256": "933c15c648588950461c72abbf63e52597f3ea8b3c5fd6898cb85bb0e2769a96",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "PAPER1_INDEPENDENT_FINITE_OK composition_cases=1224 mod4_cases=336 mod8_cases=16 fixed17_exceptions=7 source_rows=41 coefficient_rows=39 telescope_links=18 modular_gcd_checks=41 telescope_controls=10000 a2_mod23_residues=23\n",
+  "stderr": ""
+}

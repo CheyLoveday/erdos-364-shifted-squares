@@ -1,0 +1,155 @@
+Erdos 364: returned Magma web-calculator transcripts, 2026-09-09
+Source: Chey's manually returned responses, preserved in issue #234.
+This file archives the exact START-through-PASS text of all four responses.
+Archive metadata and delimiter lines are not calculator output.
+Version: Magma V2.29-10, as printed in each response.
+The E364_*_v1 identifiers below are script job IDs, not server receipt IDs.
+No separate server-assigned run ID or signed execution receipt was supplied.
+Input SHA-256 values are reported by issuecomment-5603073740.
+Original input-byte recovery and verification status: see the comparison.
+No Magma calculation was executed during repository integration.
+Full odd reference ideal support and quantified proofs are outside these runs.
+
+===== BEGIN ARCHIVED RESPONSE E364_17A_v1 =====
+Source: https://github.com/CheyLoveday/erdos-364-lab/issues/234#issuecomment-5603073740
+Reported input file: 01_17A.m
+Reported input SHA-256: 63679e7724e2bd72359b8cb76283af3fd5fa2e29a2efa38b322cbe0e252b0fe1
+----- BEGIN VERBATIM CALCULATOR RESPONSE -----
+START E364_17A_v1 magma=V2.29-10
+G_COEFFICIENTS_CONSTANT_FIRST [ -2, 17, 0, 204, 0, 714, 0, 1122, 0, 935, 0, 442, 0, 119, 0, 17, 0, 1 ]
+U_COEFFICIENTS_CONSTANT_FIRST [ -3, -2, -20, -4, -13, -1, 70, 0, 102, 0, 53, 0, 12, 0, 1 ]
+LUCAS_BRIDGE_OK
+IRREDUCIBLE_MOD_67_OK
+START_DISCRIMINANT cpu=0.000 wall=0.000
+POLYNOMIAL_DISCRIMINANT 13878788557563639341338591232
+POLYNOMIAL_DISCRIMINANT_AND_RESULTANT_OK
+START_FIELD cpu=0.000 wall=0.010
+FIELD_OK signature=(1,8) cpu=0.000 wall=0.010
+START_UNIT cpu=0.000 wall=0.010
+UNIT_OK norms=[2,-1,-2] cpu=0.000 wall=0.010
+U_INVERSE_COEFFICIENTS_CONSTANT_FIRST [ -3, 18, 44, 275, 416, 884, 1269, 1188, 1704, 782, 1153, 266, 408, 45, 72, 3, 5 ]
+IDEAL_RELATION_DERIVED: b=theta*u with u and u^(-1) integral
+REFERENCE_VALUES [g4,U4,b4,H] [ 45537549122, 532303029, 2129212116, 22768774561 ]
+REFERENCE_PRIMES [ 13, 1751444197 ]
+REFERENCE_LEGENDRE_SIGNS [ -1, 1 ]
+REFERENCE_JACOBI -1
+UNIQUE_REAL_ROOT_IN_(0,4)_OK
+NOT_CHECKED_IN_A: maximal order, ideal decomposition, local field Hilbert symbols
+PASS E364_17A_v1 cpu=0.000 wall=0.010
+----- END VERBATIM CALCULATOR RESPONSE -----
+===== END ARCHIVED RESPONSE E364_17A_v1 =====
+
+===== BEGIN ARCHIVED RESPONSE E364_17B_v1 =====
+Source: https://github.com/CheyLoveday/erdos-364-lab/issues/234#issuecomment-5603073740
+Reported input file: 02_17B.m
+Reported input SHA-256: 6b474f53d5e319bbab24e9e9fb4e51e3afac281373aef7062d1a8ac854b496ea
+----- BEGIN VERBATIM CALCULATOR RESPONSE -----
+START E364_17B_v1 magma=V2.29-10
+START_DISCRIMINANT cpu=0.010 wall=0.000
+POLYNOMIAL_DISCRIMINANT_OK
+START_FIELD cpu=0.010 wall=0.000
+FIELD_OK signature=(1,8) cpu=0.010 wall=0.000
+START_UNIT cpu=0.010 wall=0.000
+UNIT_OK norms=[2,-1,-2] cpu=0.010 wall=0.000
+START_MAXIMAL_ORDER cpu=0.010 wall=0.000
+ORDER_INDEX 1
+FIELD_DISCRIMINANT 13878788557563639341338591232
+MAXIMAL_ORDER_AND_IDEAL_EQUALITY_OK cpu=0.010 wall=0.010
+START_PRIME_ABOVE_P cpu=0.010 wall=0.010
+START_P_HILBERT cpu=0.020 wall=0.010
+P_PRIME_ID: (p,theta-2)
+P_PRIME_ROW [e,f,vtheta,v4theta,vb,Hilbert] [ 17, 1, 0, 0, 0, 1 ]
+P_PRIME_OK cpu=0.030 wall=0.020
+MOD_TWO_FACTORIZATION_OK
+START_DYADIC_DECOMPOSITION cpu=0.030 wall=0.020
+DYADIC_DECOMPOSITION_OK cpu=0.040 wall=0.020
+DYADIC_ID 1 h_coefficients_constant_first=[ 0, 1 ]
+START_HILBERT id=1 cpu=0.040 wall=0.020
+DYADIC_ROW id=1 [e,f,vtheta,v4theta,vb,Hilbert]=[ 1, 1, 1, 1, 1, 1 ] Hensel_margin=1
+HILBERT_DONE id=1 cpu=0.040 wall=0.030
+DYADIC_ID 2 h_coefficients_constant_first=[ 1, 1, 0, 0, 1 ]
+START_HILBERT id=2 cpu=0.040 wall=0.030
+DYADIC_ROW id=2 [e,f,vtheta,v4theta,vb,Hilbert]=[ 2, 4, 0, 0, 0, -1 ] Hensel_margin=4
+HILBERT_DONE id=2 cpu=0.050 wall=0.040
+DYADIC_ID 3 h_coefficients_constant_first=[ 1, 1, 1, 1, 1 ]
+START_HILBERT id=3 cpu=0.050 wall=0.040
+DYADIC_ROW id=3 [e,f,vtheta,v4theta,vb,Hilbert]=[ 2, 4, 0, 0, 0, 1 ] Hensel_margin=4
+HILBERT_DONE id=3 cpu=0.050 wall=0.040
+DYADIC_PRODUCT -1
+ALL_DYADIC_PRIMES_MATCHED_AND_HENSEL_INEQUALITIES_OK
+NOT_CHECKED_IN_B: full odd reference ideal support; universal Hilbert reciprocity proof
+PASS E364_17B_v1 cpu=0.050 wall=0.040
+----- END VERBATIM CALCULATOR RESPONSE -----
+===== END ARCHIVED RESPONSE E364_17B_v1 =====
+
+===== BEGIN ARCHIVED RESPONSE E364_41A_v1 =====
+Source: https://github.com/CheyLoveday/erdos-364-lab/issues/234#issuecomment-5602995918
+Reported input file: 03_41A.m
+Reported input SHA-256: 628dc86cbb4ab653f192129e4825b279974168b1c7ce47a57cb2a3cb9c1ebb74
+----- BEGIN VERBATIM CALCULATOR RESPONSE -----
+START E364_41A_v1 magma=V2.29-10
+G_COEFFICIENTS_CONSTANT_FIRST [ -2, 41, 0, 2870, 0, 59983, 0, 591261, 0, 3350479, 0, 12183560, 0, 30458900, 0, 54826020, 0, 73370115, 0, 74657310, 0, 58659315, 0, 35937525, 0, 17250012, 0, 6487184, 0, 1901416, 0, 429352, 0, 73185, 0, 9102, 0, 779, 0, 41, 0, 1 ]
+U_COEFFICIENTS_CONSTANT_FIRST [ -11, 346, -2698, 12577, -69074, 174858, -766740, 1335786, -4836110, 6418797, -19594855, 20820596, -54644602, 47678871, -109543756, 79552142, -162588534, 98966777, -182445152, 93346034, -157076035, 67516238, -104766955, 37690824, -54409541, 16265341, -22011279, 5405640, -6903602, 1369328, -1660118, 259354, -300047, 35536, -39413, 3325, -3550, 190, -196, 5, -5 ]
+LUCAS_BRIDGE_OK
+IRREDUCIBLE_MOD_163_OK
+START_DISCRIMINANT cpu=0.010 wall=0.000
+POLYNOMIAL_DISCRIMINANT 1534397440356661854731004560942061794383322531593482066179697011592867124013869039616
+POLYNOMIAL_DISCRIMINANT_AND_RESULTANT_OK
+START_FIELD cpu=0.010 wall=0.000
+FIELD_OK signature=(1,20) cpu=0.010 wall=0.000
+START_UNIT cpu=0.010 wall=0.000
+UNIT_OK norms=[2,-1,-2] cpu=0.020 wall=0.010
+U_INVERSE_COEFFICIENTS_CONSTANT_FIRST [ -13, 179, 536, 13872, 31832, 213708, 412533, 1558163, 2623208, 6779156, 10079182, 19602289, 25832223, 40055728, 46774518, 60123392, 62068219, 68004420, 61828959, 58952269, 46955388, 39585435, 27425632, 20699608, 12355492, 8432545, 4280360, 2663269, 1129089, 644831, 222517, 117316, 31704, 15507, 3083, 1405, 183, 78, 5, 2, 0 ]
+IDEAL_RELATION_DERIVED: b=theta*u with u and u^(-1) integral
+REFERENCE_VALUES [g4,U4,b4,H] [ 50755107359004694554823202, -43956715453803235217163523, -175826861815212940868654092, 25377553679502347277411601 ]
+REFERENCE_PRIMES [ 79, 1373, 115471, 1506563, 1344905911 ]
+REFERENCE_LEGENDRE_SIGNS [ 1, -1, -1, -1, 1 ]
+REFERENCE_JACOBI -1
+UNIQUE_REAL_ROOT_IN_(0,4)_OK
+NOT_CHECKED_IN_A: maximal order, ideal decomposition, local field Hilbert symbols
+PASS E364_41A_v1 cpu=0.020 wall=0.010
+----- END VERBATIM CALCULATOR RESPONSE -----
+===== END ARCHIVED RESPONSE E364_41A_v1 =====
+
+===== BEGIN ARCHIVED RESPONSE E364_41B_v1 =====
+Source: https://github.com/CheyLoveday/erdos-364-lab/issues/234#issuecomment-5602995918
+Reported input file: 04_41B.m
+Reported input SHA-256: 7fa6724f0b174bac45a45bfdd932275418073c8e9afacc1c1e386377a581e0e1
+----- BEGIN VERBATIM CALCULATOR RESPONSE -----
+START E364_41B_v1 magma=V2.29-10
+START_DISCRIMINANT cpu=0.000 wall=0.000
+POLYNOMIAL_DISCRIMINANT_OK
+START_FIELD cpu=0.000 wall=0.000
+FIELD_OK signature=(1,20) cpu=0.010 wall=0.010
+START_UNIT cpu=0.010 wall=0.010
+UNIT_OK norms=[2,-1,-2] cpu=0.010 wall=0.010
+START_MAXIMAL_ORDER cpu=0.010 wall=0.010
+ORDER_INDEX 1
+FIELD_DISCRIMINANT 1534397440356661854731004560942061794383322531593482066179697011592867124013869039616
+MAXIMAL_ORDER_AND_IDEAL_EQUALITY_OK cpu=0.100 wall=0.100
+START_PRIME_ABOVE_P cpu=0.100 wall=0.100
+START_P_HILBERT cpu=0.110 wall=0.110
+P_PRIME_ID: (p,theta-2)
+P_PRIME_ROW [e,f,vtheta,v4theta,vb,Hilbert] [ 41, 1, 0, 0, 0, 1 ]
+P_PRIME_OK cpu=0.120 wall=0.120
+MOD_TWO_FACTORIZATION_OK
+START_DYADIC_DECOMPOSITION cpu=0.120 wall=0.120
+DYADIC_DECOMPOSITION_OK cpu=0.150 wall=0.150
+DYADIC_ID 1 h_coefficients_constant_first=[ 0, 1 ]
+START_HILBERT id=1 cpu=0.160 wall=0.150
+DYADIC_ROW id=1 [e,f,vtheta,v4theta,vb,Hilbert]=[ 1, 1, 1, 1, 1, 1 ] Hensel_margin=1
+HILBERT_DONE id=1 cpu=0.170 wall=0.170
+DYADIC_ID 2 h_coefficients_constant_first=[ 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1 ]
+START_HILBERT id=2 cpu=0.170 wall=0.170
+DYADIC_ROW id=2 [e,f,vtheta,v4theta,vb,Hilbert]=[ 2, 10, 0, 0, 0, -1 ] Hensel_margin=4
+HILBERT_DONE id=2 cpu=0.350 wall=0.350
+DYADIC_ID 3 h_coefficients_constant_first=[ 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1 ]
+START_HILBERT id=3 cpu=0.350 wall=0.350
+DYADIC_ROW id=3 [e,f,vtheta,v4theta,vb,Hilbert]=[ 2, 10, 0, 0, 0, 1 ] Hensel_margin=4
+HILBERT_DONE id=3 cpu=0.600 wall=0.600
+DYADIC_PRODUCT -1
+ALL_DYADIC_PRIMES_MATCHED_AND_HENSEL_INEQUALITIES_OK
+NOT_CHECKED_IN_B: full odd reference ideal support; universal Hilbert reciprocity proof
+PASS E364_41B_v1 cpu=0.600 wall=0.600
+----- END VERBATIM CALCULATOR RESPONSE -----
+===== END ARCHIVED RESPONSE E364_41B_v1 =====

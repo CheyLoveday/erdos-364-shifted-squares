@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "tectonic",
+    "--untrusted",
+    "--only-cached",
+    "--keep-logs",
+    "--reruns",
+    "2",
+    "main.tex"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "note: using only cached resource files\nnote: Running TeX ...\nnote: Rerunning TeX because I was told to ...\nnote: Rerunning TeX because I was told to ...\nnote: Running xdvipdfmx ...\nnote: Writing `main.log` (21.35546875 KiB)\nnote: Writing `main.pdf` (157.583984375 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n",
+  "stderr": "warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.\nwarning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.\nwarning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.\nwarning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.\n"
+}

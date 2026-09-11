@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "<PYTHON_ENV>/bin/python",
+    "-B",
+    "papers/shifted-square-17-41/verification/release.py",
+    "build",
+    "--output",
+    "<EXTRACTION_ROOT>/checks"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "PAPER1_BUILD_OK\n",
+  "stderr": ""
+}

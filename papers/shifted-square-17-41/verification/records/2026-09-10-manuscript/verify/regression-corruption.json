@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "<PYTHON_ENV>/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "papers/shifted-square-17-41/verification",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_actual_ancillary_rejects_changed_detector (test_release.ReleaseChecks.test_actual_ancillary_rejects_changed_detector) ... ok\ntest_archive_escape_and_private_build_rejected (test_release.ReleaseChecks.test_archive_escape_and_private_build_rejected) ... ok\ntest_checksum_corruption_and_omission_rejected (test_release.ReleaseChecks.test_checksum_corruption_and_omission_rejected) ... ok\ntest_copied_dependency_links_stay_within_public_tree (test_release.ReleaseChecks.test_copied_dependency_links_stay_within_public_tree) ... ok\ntest_duplicate_zip_member_rejected (test_release.ReleaseChecks.test_duplicate_zip_member_rejected) ... <HOME>/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/zipfile/__init__.py:1638: UserWarning: Duplicate name: 'x'\n  return self._open_to_write(zinfo, force_zip64=force_zip64)\nok\ntest_missing_export_document_link_rejected (test_release.ReleaseChecks.test_missing_export_document_link_rejected) ... ok\ntest_axioms_allow_subsets (test_run_core.CoreChecks.test_axioms_allow_subsets) ... ok\ntest_extra_axiom_rejected (test_run_core.CoreChecks.test_extra_axiom_rejected) ... ok\ntest_imported_source_corruption_rejected (test_run_core.CoreChecks.test_imported_source_corruption_rejected) ... ok\ntest_missing_or_duplicate_declaration_rejected (test_run_core.CoreChecks.test_missing_or_duplicate_declaration_rejected) ... ok\ntest_private_search_paths_removed (test_run_core.CoreChecks.test_private_search_paths_removed) ... ok\ntest_source_symlink_and_escape_rejected (test_run_core.CoreChecks.test_source_symlink_and_escape_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 1.679s\n\nOK\n"
+}

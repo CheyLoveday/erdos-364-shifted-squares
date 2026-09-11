@@ -1,0 +1,14 @@
+{
+  "command": "independent-gp",
+  "argv": [
+    "gp",
+    "-q",
+    "-f",
+    "papers/shifted-square-17-41/verification/replay/independent_fixed_fields.gp"
+  ],
+  "source_sha256": "2849aa1a475d64a1381aa429af4c7f85e43fdb494962c9746ba63f913171f204",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "PAPER1_FIXED_FIELD_REPLAY_OK pari=2.17.3 fields=17,41 prs=outer17 provenance=independent-dickson-basis-reconstruction brauer_normalisation=ell-norm-ideal-and-local-x4\n",
+  "stderr": ""
+}

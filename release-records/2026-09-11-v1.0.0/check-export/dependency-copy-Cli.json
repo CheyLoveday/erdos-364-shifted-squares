@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "cp",
+    "-cR",
+    "<PUBLIC_LAKE_PACKAGES>/Cli",
+    "<EXTRACTION_ROOT>/evidence/.lake/packages/Cli"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

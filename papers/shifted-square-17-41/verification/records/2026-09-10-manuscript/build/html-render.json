@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "<PYTHON_ENV>/bin/python",
+    "-B",
+    "papers/shifted-square-17-41/manuscript/candidate/rendering/render_html.py",
+    "papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.md",
+    "<SOURCE_ROOT>/.paper1-build/ec75fa8/build/paper_1_release_candidate.html"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "{\"expressions\": 696, \"html_sha256\": \"09284120d093d81570bbe3a4e16c0b980775f674f2dbcff6c22c59de7acd8d99\", \"numbered_equations\": 63}\n",
+  "stderr": ""
+}
