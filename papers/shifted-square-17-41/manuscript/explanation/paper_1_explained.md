@@ -8,7 +8,7 @@ lang: en-GB
 
 A possible solution has to be the **same integer in every description**. In the family studied here, one description says that an integer $X$ is one more than a square. Another says that it is a particular coefficient in a power of a quadratic unit. That coefficient is a term of a recurrence. Elementary arithmetic excludes some recurrence indices immediately. For two other sets of indices, an explicit algebraic construction forces a sign incompatible with the square requirement. The proof comes from making these descriptions meet, not from checking larger and larger integers. The human–AI workflow has a separate role: proposing arguments, recording their assumptions and making their checks reproducible.
 
-This guide explains the frozen release-candidate article, *Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences*, dated 10 September 2026. Article references below use that version's theorem numbers. It does not extend the mathematical scope or use the earlier infographic as a proof source. Worked examples illustrate the article; the final section describes the engineering strategy separately from the mathematics.
+This guide explains the published version 1.0.0 article, *Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences*, released 11 September 2026, with mathematical content frozen 10 September 2026. Article references below use that version's theorem numbers. It does not extend the mathematical scope or use the earlier infographic as a proof source. Worked examples illustrate the article; the final section describes the engineering strategy separately from the mathematics.
 
 ## 1. Start with three consecutive integers {#powerful}
 

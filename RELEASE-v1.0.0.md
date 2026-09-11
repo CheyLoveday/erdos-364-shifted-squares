@@ -7,9 +7,11 @@ tag `v1.0.0`:
 <https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.0>.
 
 This file is an external execution record. It is not a member of the evidence
-archive it identifies, so the archive does not contain its own hash. In the
-public repository the commit carrying this file is the one the tag `v1.0.0`
-points to.
+archive it identifies, so the archive does not contain its own hash. All
+package and manuscript identities and gate results below describe the immutable
+`v1.0.0` tag. The `main` branch may carry later documentation corrections;
+its root `SHA256SUMS` describes the current branch's payload files. Use the
+tag or release downloads to reproduce version 1.0.0.
 
 ## Source identity
 
@@ -18,7 +20,7 @@ points to.
 | LAB source commit (private integration record) | `f7e55b1ec65f1223d4520d4ed2eecbd17c4f5367` |
 | LAB source tree | `7423a9668e3538fc9c1de2d7141ea930c6782868` |
 | Exported source inventory SHA-256 (`source_sha256` in every gate record) | `62affe13a91b0c88b4f45b715599a6e6ef86f0a01f611530298111706459a223` |
-| Evidence archive members | 188 files: 181 allowlisted sources plus `README.md`, `LICENSE.md`, `CITATION.cff`, `LICENSES/Apache-2.0.txt`, `LICENSES/CC-BY-4.0.txt`, `Makefile`, `Erdos364.lean`, and the archive's `SHA256SUMS` |
+| Evidence archive members | 188 payload files: 181 allowlisted sources plus `README.md`, `LICENSE.md`, `CITATION.cff`, `LICENSES/Apache-2.0.txt`, `LICENSES/CC-BY-4.0.txt`, `Makefile`, and `Erdos364.lean`; plus `SHA256SUMS`, giving 189 archive members |
 
 ## Package identities
 
@@ -57,17 +59,17 @@ and the rebuilt HTML; the printed verifier equals the standalone
 
 All five operations were executed against source inventory `62affe13…` on
 11 September 2026 (10:55–11:09 UTC). Records are under
-`records/2026-09-11-v1.0.0/` (JSON only; built artifacts are not committed;
+`release-records/2026-09-11-v1.0.0/` (JSON only; built artifacts are not committed;
 the local temporary-extraction and virtual-environment paths are normalised
 to `<EXTRACTION_ROOT>` and `<PYTHON_ENV>`).
 
 | Gate | Result | Record |
 | --- | --- | --- |
-| `make paper1-check` | PASS | `records/2026-09-11-v1.0.0/check/result.json` |
-| `make paper1-verify` | PASS | `records/2026-09-11-v1.0.0/verify/result.json` |
-| `make paper1-build` | PASS | `records/2026-09-11-v1.0.0/build/result.json` |
-| `make paper1-stage` | PASS | `records/2026-09-11-v1.0.0/stage/result.json` |
-| `make paper1-check-export` | PASS | `records/2026-09-11-v1.0.0/check-export/result.json` |
+| `make paper1-check` | PASS | `release-records/2026-09-11-v1.0.0/check/result.json` |
+| `make paper1-verify` | PASS | `release-records/2026-09-11-v1.0.0/verify/result.json` |
+| `make paper1-build` | PASS | `release-records/2026-09-11-v1.0.0/build/result.json` |
+| `make paper1-stage` | PASS | `release-records/2026-09-11-v1.0.0/stage/result.json` |
+| `make paper1-check-export` | PASS | `release-records/2026-09-11-v1.0.0/check-export/result.json` |
 
 What passed, concretely:
 
