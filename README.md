@@ -31,6 +31,16 @@ mathematical content and verifier agree with the article. The
 author, acknowledgement and reference [8] changes between the frozen
 10 September manuscript and these release views, with both sets of hashes.
 
+## Unreleased attribution revision
+
+The [30 September editable revision](papers/shifted-square-17-41/manuscript/revision/paper_1.md)
+credits the classical Pell, Lucas-valuation and Dickson ingredients, updates
+She's journal reference, and clarifies Corollary 1.5. Its
+[correspondence and focused checks](papers/shifted-square-17-41/manuscript/revision/README.md)
+are separate from the historical release records. The v1.0.0 views and
+packages linked above remain the released version; no new release or
+submission is asserted.
+
 ## Licence, citation and AI use
 
 The article, explanatory guide, its five figures, the proof record and the
