@@ -2,7 +2,7 @@
 title: "Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences"
 author: "Chey G. A. Loveday"
 affiliation: "Overdog.ai Ltd, Colchester, England"
-date: "30 September 2026 (unreleased attribution revision)"
+date: "30 September 2026 (version 1.0.1)"
 lang: en-GB
 ---
 

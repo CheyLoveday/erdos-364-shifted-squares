@@ -1,0 +1,41 @@
+% Standalone preprint source. Compile with pdflatex twice.
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,top=26mm,bottom=27mm,left=27mm,right=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage{array,booktabs,longtable,calc}
+\usepackage{fvextra}
+\usepackage{needspace}
+\usepackage{upquote}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={Chey G. A. Loveday},
+ pdftitle={Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences},
+ bookmarksopen=true,bookmarksnumbered=false}
+\urlstyle{same}
+\setlength{\parskip}{3pt plus 1pt}
+\setlength{\parindent}{1.2em}
+\setlength{\emergencystretch}{2em}
+\setcounter{secnumdepth}{0}
+\setlist{itemsep=3pt,topsep=4pt}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\footnotesize,breaklines=true,breakanywhere=true,breaksymbolleft={}}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+  {\LARGE\bfseries\@title\par}\vspace{12pt}
+  {\large\@author\par}\vspace{7pt}
+  {\normalsize\@date\par}
+  \end{center}\vspace{7pt}}
+\makeatother
+\newcounter{none}
+\title{$title$}
+\author{$for(author)$$author$$sep$\and $endfor$\\[3pt]{\normalsize $affiliation$}}
+\date{$date$}
+\begin{document}
+\maketitle
+$body$
+\end{document}

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "This release is reference [8] of the article. Cite the article (preferred-citation) for the mathematics and this release for the certificates, verifier and Lean sources."
+message: "The software and evidence release v1.0.0 is reference [8] of the article. Cite the corrected article v1.0.1 (preferred-citation) for the mathematics and the v1.0.0 release for the certificates, verifier and Lean sources."
 type: software
 title: "Fixed-field certificates and integer-Jacobi formal proofs for the 17/41 shifted-square obstruction"
 authors:
@@ -40,5 +40,5 @@ preferred-citation:
       affiliation: "Overdog.ai Ltd, Colchester, England"
   year: 2026
   month: 9
-  url: "https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.0"
-  notes: "Article, version 1.0.0 views, 11 September 2026; mathematical content frozen 10 September 2026. Published with its explanatory guide, exact-arithmetic verifier, PARI/GP replay and Lean 4 sources as the release named above."
+  url: "https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.1"
+  notes: "Article, version 1.0.1, 30 September 2026: attribution and presentation correction. The selected mathematical results are unchanged. The supporting certificates, verifier, replay checks and Lean sources remain the separately identified v1.0.0 evidence release."

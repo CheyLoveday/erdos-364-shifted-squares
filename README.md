@@ -1,45 +1,38 @@
 # Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences
 
 Chey G. A. Loveday, Overdog.ai Ltd, Colchester, England.
-Version 1.0.0, released 11 September 2026; mathematical content frozen
-10 September 2026.
+Current article: **version 1.0.1, 30 September 2026**, an editorial correction.
+Formal and arithmetic support: **version 1.0.0, 11 September 2026**.
 
-This is the public source and evidence release for the article; as a
-software and data release it is named *Fixed-field certificates and
-integer-Jacobi formal proofs for the 17/41 shifted-square obstruction* and
-is reference [8] of the article. It contains
-the article in four views, an explanatory guide, the human proof record, the
-exact-arithmetic verifier, PARI/GP and Python replay checks, the Lean 4
-sources with their axiom audit, and the tooling that rebuilds and re-checks
-all of it from a fresh extraction.
+Read the corrected [PDF](papers/shifted-square-17-41/manuscript/revision/paper1.pdf),
+[standalone MathML HTML](papers/shifted-square-17-41/manuscript/revision/paper1.html),
+[editable Markdown](papers/shifted-square-17-41/manuscript/revision/paper_1.md),
+and [corrections, proof correspondence and reproduction instructions](papers/shifted-square-17-41/manuscript/revision/README.md).
+The [complete article source ZIP](papers/shifted-square-17-41/manuscript/revision/paper1-source.zip)
+and [download checksums](papers/shifted-square-17-41/manuscript/revision/SHA256SUMS)
+are also available from the [v1.0.1 release](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.1).
+Download the HTML and open it locally; it needs no network access.
 
-Read the [article](papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.md),
-[portable Markdown](papers/shifted-square-17-41/manuscript/paper_1_final_frozen_portable.md),
+This correction credits Walker's Pell property-Q exponent, Sanna's Lucas valuation
+theorem and classical Dickson composition, updates She's journal reference, and
+clarifies Corollary 1.5. The original 696 mathematical expressions and all twelve
+numbered results are retained; the explanatory adapters add expressions. No new
+17/41 theorem or new formal proof is claimed.
+
+The unchanged [v1.0.0 evidence release](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.0)
+is reference [8] of the article. It contains the exact-arithmetic verifier, PARI/GP
+and Python replays, 60 local Lean modules, their audit and the original reproduction
+tools. The [frozen proof record](papers/shifted-square-17-41/PROOF_RECORD.md)
+and [v1.0.0 execution record](RELEASE-v1.0.0.md) retain their exact source identities.
+The v1.0.1 correction note adds correspondence without relabelling those receipts.
+
+Preserved earlier views: [v1.0.0 manuscript](papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.md),
 [PDF](papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.pdf),
-[HTML](papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.html), the
-[proof/source correspondence](papers/shifted-square-17-41/PROOF_RECORD.md), and the
-[illustrated explanation](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html)
-([Markdown prose](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained.md)). In the
-extracted archive those files are under `papers/shifted-square-17-41/`.
-GitHub shows the HTML views as source; download them, or clone the
-repository, and open them in a browser. They need no network access.
-
-The portable Markdown is a presentation derivative for Markdown readers, not
-a replacement input for the supplied frozen HTML rendering recipe. Its
-mathematical content and verifier agree with the article. The
-[metadata update record](papers/shifted-square-17-41/manuscript/METADATA_UPDATE.md) lists the exact
-author, acknowledgement and reference [8] changes between the frozen
-10 September manuscript and these release views, with both sets of hashes.
-
-## Unreleased attribution revision
-
-The [30 September editable revision](papers/shifted-square-17-41/manuscript/revision/paper_1.md)
-credits the classical Pell, Lucas-valuation and Dickson ingredients, updates
-She's journal reference, and clarifies Corollary 1.5. Its
-[correspondence and focused checks](papers/shifted-square-17-41/manuscript/revision/README.md)
-are separate from the historical release records. The v1.0.0 views and
-packages linked above remain the released version; no new release or
-submission is asserted.
+[HTML](papers/shifted-square-17-41/manuscript/candidate/paper_1_release_candidate.html),
+and [portable Markdown](papers/shifted-square-17-41/manuscript/paper_1_final_frozen_portable.md).
+The separate [illustrated explanation](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html)
+([Markdown prose](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained.md))
+also remains unchanged.
 
 ## Licence, citation and AI use
 
@@ -57,7 +50,8 @@ were reviewed by the author, who takes sole responsibility for them.
 
 ## Status and scope
 
-Version 1.0.0 is a self-published source release. No DOI, arXiv identifier,
+Version 1.0.1 is a self-published editorial correction of the article. Its
+formal and arithmetic evidence remains the version 1.0.0 source release. No DOI, arXiv identifier,
 journal submission or peer review is asserted. The human Hilbert-reciprocity,
 maximality and Pell arguments are not Lean-formalised; the Lean development
 covers the integer-Jacobi and recurrence exclusions and their propagation, as
@@ -67,7 +61,13 @@ artifact: its five figures are embedded in its HTML and its Markdown contains
 the prose and equations; no complete illustrated-guide renderer is supplied.
 Continuation research is outside this release.
 
-## Prepare public tools and dependencies
+## Reproduce the preserved v1.0.0 evidence
+
+The following dependencies and five operations reproduce the preserved v1.0.0
+article/evidence payload. They do not build or validate the v1.0.1 reading files.
+For those, use the [current article reproduction instructions](papers/shifted-square-17-41/manuscript/revision/README.md#reproduction).
+
+### Prepare public tools and dependencies
 
 Use Python 3.11 or later and install the exact Python dependencies into a
 separate virtual environment with:
@@ -91,7 +91,7 @@ usual matching public Mathlib build cache. This is a setup operation, separate
 from verification. Do not copy private build outputs into the extracted source
 root. The exported Lean root imports only the 60 local modules in the source map.
 
-## Run the five operations
+### Run the five v1.0.0 operations
 
 From the source root:
 
