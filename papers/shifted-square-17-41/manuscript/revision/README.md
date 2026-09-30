@@ -87,7 +87,7 @@ pandoc -f markdown+fenced_divs+tex_math_dollars --standalone -t latex \
   --syntax-highlighting=none --shift-heading-level-by=-1 --fail-if-warnings \
   paper_1.md -o main.tex
 pandoc -f markdown+fenced_divs+tex_math_dollars --standalone --mathml \
-  --embed-resources --css=reading.css --fail-if-warnings \
+  --embed-resources --css=reading.css --syntax-highlighting=none --fail-if-warnings \
   paper_1.md -o paper1.html
 ```
 

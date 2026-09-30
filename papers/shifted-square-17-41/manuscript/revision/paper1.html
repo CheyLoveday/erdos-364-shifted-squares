@@ -20,71 +20,6 @@ width: 0.8em;
 margin: 0 0.8em 0.2em -1.6em;
 vertical-align: middle;
 }
-
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-color: #aaaaaa;
-}
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } 
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
-code span.at { color: #7d9029; } 
-code span.bn { color: #40a070; } 
-code span.bu { color: #008000; } 
-code span.cf { color: #007020; font-weight: bold; } 
-code span.ch { color: #4070a0; } 
-code span.cn { color: #880000; } 
-code span.co { color: #60a0b0; font-style: italic; } 
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
-code span.do { color: #ba2121; font-style: italic; } 
-code span.dt { color: #902000; } 
-code span.dv { color: #40a070; } 
-code span.er { color: #ff0000; font-weight: bold; } 
-code span.ex { } 
-code span.fl { color: #40a070; } 
-code span.fu { color: #06287e; } 
-code span.im { color: #008000; font-weight: bold; } 
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
-code span.kw { color: #007020; font-weight: bold; } 
-code span.op { color: #666666; } 
-code span.ot { color: #007020; } 
-code span.pp { color: #bc7a00; } 
-code span.sc { color: #4070a0; } 
-code span.ss { color: #bb6688; } 
-code span.st { color: #4070a0; } 
-code span.va { color: #19177c; } 
-code span.vs { color: #4070a0; } 
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
   <style type="text/css">body {max-width: 76ch; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; font-family: Georgia, serif;} .math.display {display:block; overflow-x:auto; padding: .6rem 0;} table {display:block; overflow-x:auto; border-collapse:collapse; font-size: .9em;} th,td {padding:.3rem .5rem; border-bottom:1px solid #ccc;} pre {overflow-x:auto; padding:.8rem; background:#f4f4f4;} .theorem {border-left:3px solid #ccc; padding-left:1rem;}</style>
 </head>
@@ -2493,102 +2428,102 @@ proof-critical finite inputs reproducible independently of the
 separately released Lean archive [8]. The arithmetic software remains a
 computational dependency; the implications from its finite outputs to
 the quantified theorems are proved in the article.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;&quot;&quot;Exact finite certificate for the 17/41 paper.</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">Run: python verify_fixed_fields.py</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">Reference environment: Python 3.11+ and SymPy 1.14.0.</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">No bounded parameter search or number-field class-group routine is used.</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> __future__ <span class="im">import</span> annotations</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy <span class="im">as</span> sp</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> sp.Symbol(<span class="st">&quot;T&quot;</span>)</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>C17 <span class="op">=</span> [<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">1</span>]</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>C41 <span class="op">=</span> [</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">15</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">7</span>, <span class="op">-</span><span class="dv">8</span>, <span class="op">-</span><span class="dv">10</span>, <span class="op">-</span><span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">3</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">9</span>,</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="op">-</span><span class="dv">9</span>, <span class="op">-</span><span class="dv">6</span>, <span class="dv">1</span>, <span class="dv">8</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="op">-</span><span class="dv">4</span>, <span class="op">-</span><span class="dv">6</span>, <span class="dv">3</span>, <span class="dv">7</span>, <span class="dv">0</span>, <span class="dv">2</span>,</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">7</span>, <span class="op">-</span><span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">6</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">2</span>, <span class="op">-</span><span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="op">-</span><span class="dv">5</span>,</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>DATA <span class="op">=</span> {</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="dv">17</span>: (</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        C17, <span class="dv">67</span>, T<span class="op">**</span><span class="dv">4</span> <span class="op">+</span> T <span class="op">+</span> <span class="dv">1</span>,</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        T<span class="op">**</span><span class="dv">4</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> T <span class="op">+</span> <span class="dv">1</span>,</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        [<span class="dv">13</span>, <span class="dv">1751444197</span>], [<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>], <span class="dv">532303029</span>, <span class="dv">12</span>,</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="dv">41</span>: (</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>        C41, <span class="dv">163</span>, T<span class="op">**</span><span class="dv">10</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">8</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">7</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">4</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> T <span class="op">+</span> <span class="dv">1</span>,</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        T<span class="op">**</span><span class="dv">10</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">9</span> <span class="op">+</span> T<span class="op">**</span><span class="dv">4</span> <span class="op">+</span> T <span class="op">+</span> <span class="dv">1</span>,</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        [<span class="dv">79</span>, <span class="dv">1373</span>, <span class="dv">115471</span>, <span class="dv">1506563</span>, <span class="dv">1344905911</span>],</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>        [<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>], <span class="op">-</span><span class="dv">43956715453803235217163523</span>, <span class="dv">26</span>,</span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> require(condition: <span class="bu">object</span>, label: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="va">None</span>:</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> <span class="bu">bool</span>(condition):</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ArithmeticError</span>(label)</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> modpoly(expr: <span class="bu">object</span>, prime: <span class="bu">int</span>) <span class="op">-&gt;</span> sp.Poly:</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> sp.Poly(expr, T, modulus<span class="op">=</span>prime)</span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> verify(p: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="va">None</span>:</span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    c, aux, phi, psi, factors, signs, u4, residue <span class="op">=</span> DATA[p]</span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> [sp.Poly(<span class="dv">2</span>, T), sp.Poly(T, T)]</span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, p <span class="op">+</span> <span class="dv">1</span>):</span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>        d.append(sp.Poly(T, T) <span class="op">*</span> d[<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span> d[<span class="op">-</span><span class="dv">2</span>])</span>
-<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> d[p] <span class="op">-</span> <span class="dv">2</span></span>
-<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> sp.Poly(c[<span class="dv">0</span>], T)  <span class="co"># c[0] multiplies 1, not D_0.</span></span>
-<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(c)):</span>
-<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>        u <span class="op">+=</span> c[k] <span class="op">*</span> d[k]</span>
-<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>    require(modpoly(g, aux).is_irreducible, <span class="st">&quot;irreducibility&quot;</span>)</span>
-<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>    require(g.degree() <span class="op">==</span> p <span class="kw">and</span> g.LC() <span class="op">==</span> <span class="dv">1</span>, <span class="st">&quot;monic degree&quot;</span>)</span>
-<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>    require(g.<span class="bu">eval</span>(<span class="dv">0</span>) <span class="op">==</span> <span class="op">-</span><span class="dv">2</span>, <span class="st">&quot;constant term and theta norm&quot;</span>)</span>
-<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>    disc <span class="op">=</span> <span class="dv">2</span> <span class="op">**</span> (<span class="dv">3</span> <span class="op">*</span> (p <span class="op">-</span> <span class="dv">1</span>) <span class="op">//</span> <span class="dv">2</span>) <span class="op">*</span> p<span class="op">**</span>p</span>
-<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>    require(g.discriminant() <span class="op">==</span> disc, <span class="st">&quot;polynomial discriminant&quot;</span>)</span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>    require(sp.resultant(g, u) <span class="op">==</span> <span class="op">-</span><span class="dv">1</span>, <span class="st">&quot;unit resultant&quot;</span>)</span>
-<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Dedekind&#39;s index criterion at 2.</span></span>
-<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>    f2, h2 <span class="op">=</span> modpoly(phi, <span class="dv">2</span>), modpoly(psi, <span class="dv">2</span>)</span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>    require(f2.is_irreducible <span class="kw">and</span> h2.is_irreducible, <span class="st">&quot;dyadic factors&quot;</span>)</span>
-<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>    require(f2 <span class="op">!=</span> h2, <span class="st">&quot;distinct dyadic factors&quot;</span>)</span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>    require(f2.degree() <span class="op">==</span> (p <span class="op">-</span> <span class="dv">1</span>) <span class="op">//</span> <span class="dv">4</span>, <span class="st">&quot;first residue degree&quot;</span>)</span>
-<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>    require(h2.degree() <span class="op">==</span> (p <span class="op">-</span> <span class="dv">1</span>) <span class="op">//</span> <span class="dv">4</span>, <span class="st">&quot;second residue degree&quot;</span>)</span>
-<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>    lifted <span class="op">=</span> sp.Poly(T <span class="op">*</span> phi<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> psi<span class="op">**</span><span class="dv">2</span>, T)</span>
-<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>    difference <span class="op">=</span> g <span class="op">-</span> lifted</span>
-<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>    require(<span class="bu">all</span>(a <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="cf">for</span> a <span class="kw">in</span> difference.all_coeffs()), <span class="st">&quot;mod 2&quot;</span>)</span>
-<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>    correction <span class="op">=</span> sp.Poly(difference.as_expr() <span class="op">/</span> <span class="dv">2</span>, T, domain<span class="op">=</span>sp.ZZ)</span>
-<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>    remainder <span class="op">=</span> modpoly(correction, <span class="dv">2</span>).rem(f2 <span class="op">*</span> h2)</span>
-<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a>    require(remainder <span class="op">==</span> modpoly(<span class="dv">1</span>, <span class="dv">2</span>), <span class="st">&quot;2-maximality&quot;</span>)</span>
-<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The only other possible index prime is p.</span></span>
-<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a>    difference <span class="op">=</span> g <span class="op">-</span> sp.Poly((T <span class="op">-</span> <span class="dv">2</span>)<span class="op">**</span>p, T)</span>
-<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>    require(<span class="bu">all</span>(a <span class="op">%</span> p <span class="op">==</span> <span class="dv">0</span> <span class="cf">for</span> a <span class="kw">in</span> difference.all_coeffs()), <span class="st">&quot;mod p&quot;</span>)</span>
-<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>    value <span class="op">=</span> <span class="bu">int</span>(g.<span class="bu">eval</span>(<span class="dv">2</span>))</span>
-<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a>    require(value <span class="op">%</span> p <span class="op">==</span> <span class="dv">0</span>, <span class="st">&quot;integral odd correction&quot;</span>)</span>
-<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a>    require((value <span class="op">//</span> p) <span class="op">%</span> p <span class="op">==</span> residue <span class="op">!=</span> <span class="dv">0</span>, <span class="st">&quot;p-maximality&quot;</span>)</span>
-<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Rational-prime reference data recover the dyadic product.</span></span>
-<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>    H <span class="op">=</span> <span class="bu">int</span>(g.<span class="bu">eval</span>(<span class="dv">4</span>)) <span class="op">//</span> <span class="dv">2</span></span>
-<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a>    require(<span class="bu">int</span>(g.<span class="bu">eval</span>(<span class="dv">4</span>)) <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> H <span class="op">%</span> <span class="dv">8</span> <span class="op">==</span> <span class="dv">1</span>, <span class="st">&quot;reference phase&quot;</span>)</span>
-<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>    require(<span class="bu">len</span>(<span class="bu">set</span>(factors)) <span class="op">==</span> <span class="bu">len</span>(factors), <span class="st">&quot;distinct factors&quot;</span>)</span>
-<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a>    require(<span class="bu">all</span>(sp.isprime(q) <span class="cf">for</span> q <span class="kw">in</span> factors), <span class="st">&quot;proven reference primes&quot;</span>)</span>
-<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a>    require(sp.prod(factors) <span class="op">==</span> H, <span class="st">&quot;reference factorisation&quot;</span>)</span>
-<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a>    require(u.<span class="bu">eval</span>(<span class="dv">4</span>) <span class="op">==</span> u4, <span class="st">&quot;unit reference value&quot;</span>)</span>
-<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>    actual <span class="op">=</span> [<span class="bu">int</span>(sp.legendre_symbol(<span class="dv">4</span> <span class="op">*</span> u4, q)) <span class="cf">for</span> q <span class="kw">in</span> factors]</span>
-<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>    require(actual <span class="op">==</span> signs <span class="kw">and</span> sp.prod(signs) <span class="op">==</span> <span class="op">-</span><span class="dv">1</span>, <span class="st">&quot;reference signs&quot;</span>)</span>
-<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>    require(sp.jacobi_symbol(u4, H) <span class="op">==</span> <span class="op">-</span><span class="dv">1</span>, <span class="st">&quot;reference Jacobi symbol&quot;</span>)</span>
-<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;p=</span><span class="sc">{</span>p<span class="sc">}</span><span class="ss">: polynomial, index and reference checks passed&quot;</span>)</span>
-<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
-<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;SymPy </span><span class="sc">{</span>sp<span class="sc">.</span>__version__<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> prime <span class="kw">in</span> (<span class="dv">17</span>, <span class="dv">41</span>):</span>
-<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>        verify(prime)</span>
-<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;FIXED_FIELDS_OK&quot;</span>)</span></code></pre></div>
+<pre class="python"><code>&quot;&quot;&quot;Exact finite certificate for the 17/41 paper.
+
+Run: python verify_fixed_fields.py
+Reference environment: Python 3.11+ and SymPy 1.14.0.
+No bounded parameter search or number-field class-group routine is used.
+&quot;&quot;&quot;
+from __future__ import annotations
+
+import sympy as sp
+
+T = sp.Symbol(&quot;T&quot;)
+C17 = [-1, 0, -1, 1, 1, -1, 0, 0, 0, 0, 0, 0, -2, 0, 1]
+C41 = [
+    -1, -15, 2, 4, 8, 7, -8, -10, -3, 6, 7, 3, -1, -9,
+    3, 7, 2, 3, -9, -6, 1, 8, 4, 1, -4, -6, 3, 7, 0, 2,
+    -7, -4, 1, 6, -1, 0, -2, -5, 4, 5, -5,
+]
+DATA = {
+    17: (
+        C17, 67, T**4 + T + 1,
+        T**4 + T**3 + T**2 + T + 1,
+        [13, 1751444197], [-1, 1], 532303029, 12,
+    ),
+    41: (
+        C41, 163, T**10 + T**8 + T**7 + T**4 + T**3 + T + 1,
+        T**10 + T**9 + T**4 + T + 1,
+        [79, 1373, 115471, 1506563, 1344905911],
+        [1, -1, -1, -1, 1], -43956715453803235217163523, 26,
+    ),
+}
+
+
+def require(condition: object, label: str) -&gt; None:
+    if not bool(condition):
+        raise ArithmeticError(label)
+
+
+def modpoly(expr: object, prime: int) -&gt; sp.Poly:
+    return sp.Poly(expr, T, modulus=prime)
+
+
+def verify(p: int) -&gt; None:
+    c, aux, phi, psi, factors, signs, u4, residue = DATA[p]
+    d = [sp.Poly(2, T), sp.Poly(T, T)]
+    for _ in range(2, p + 1):
+        d.append(sp.Poly(T, T) * d[-1] + d[-2])
+    g = d[p] - 2
+    u = sp.Poly(c[0], T)  # c[0] multiplies 1, not D_0.
+    for k in range(1, len(c)):
+        u += c[k] * d[k]
+
+    require(modpoly(g, aux).is_irreducible, &quot;irreducibility&quot;)
+    require(g.degree() == p and g.LC() == 1, &quot;monic degree&quot;)
+    require(g.eval(0) == -2, &quot;constant term and theta norm&quot;)
+    disc = 2 ** (3 * (p - 1) // 2) * p**p
+    require(g.discriminant() == disc, &quot;polynomial discriminant&quot;)
+    require(sp.resultant(g, u) == -1, &quot;unit resultant&quot;)
+
+    # Dedekind&#39;s index criterion at 2.
+    f2, h2 = modpoly(phi, 2), modpoly(psi, 2)
+    require(f2.is_irreducible and h2.is_irreducible, &quot;dyadic factors&quot;)
+    require(f2 != h2, &quot;distinct dyadic factors&quot;)
+    require(f2.degree() == (p - 1) // 4, &quot;first residue degree&quot;)
+    require(h2.degree() == (p - 1) // 4, &quot;second residue degree&quot;)
+    lifted = sp.Poly(T * phi**2 * psi**2, T)
+    difference = g - lifted
+    require(all(a % 2 == 0 for a in difference.all_coeffs()), &quot;mod 2&quot;)
+    correction = sp.Poly(difference.as_expr() / 2, T, domain=sp.ZZ)
+    remainder = modpoly(correction, 2).rem(f2 * h2)
+    require(remainder == modpoly(1, 2), &quot;2-maximality&quot;)
+
+    # The only other possible index prime is p.
+    difference = g - sp.Poly((T - 2)**p, T)
+    require(all(a % p == 0 for a in difference.all_coeffs()), &quot;mod p&quot;)
+    value = int(g.eval(2))
+    require(value % p == 0, &quot;integral odd correction&quot;)
+    require((value // p) % p == residue != 0, &quot;p-maximality&quot;)
+
+    # Rational-prime reference data recover the dyadic product.
+    H = int(g.eval(4)) // 2
+    require(int(g.eval(4)) % 2 == 0 and H % 8 == 1, &quot;reference phase&quot;)
+    require(len(set(factors)) == len(factors), &quot;distinct factors&quot;)
+    require(all(sp.isprime(q) for q in factors), &quot;proven reference primes&quot;)
+    require(sp.prod(factors) == H, &quot;reference factorisation&quot;)
+    require(u.eval(4) == u4, &quot;unit reference value&quot;)
+    actual = [int(sp.legendre_symbol(4 * u4, q)) for q in factors]
+    require(actual == signs and sp.prod(signs) == -1, &quot;reference signs&quot;)
+    require(sp.jacobi_symbol(u4, H) == -1, &quot;reference Jacobi symbol&quot;)
+    print(f&quot;p={p}: polynomial, index and reference checks passed&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    print(f&quot;SymPy {sp.__version__}&quot;)
+    for prime in (17, 41):
+        verify(prime)
+    print(&quot;FIXED_FIELDS_OK&quot;)</code></pre>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <p>AI assistants (Anthropic Claude and OpenAI ChatGPT/Codex) were used
 for drafting and editing prose, challenging arguments, writing and
