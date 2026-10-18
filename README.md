@@ -22,7 +22,7 @@ index. The result restricts one square-middle family related to Erdős Problem
 
 - **Read the article:** [PDF](papers/shifted-square-17-41/manuscript/revision/paper1.pdf) | [HTML](papers/shifted-square-17-41/manuscript/revision/paper1.html) | [Markdown](papers/shifted-square-17-41/manuscript/revision/paper_1.md).
 - **Understand the mathematics:** [illustrated explanation](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html) ([Markdown prose](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained.md)).
-- **See the proof architecture:** [Hilbert–Jacobi crosswalk](papers/shifted-square-17-41/hilbert-jacobi-crosswalk.md), connecting the human and formal arithmetic routes.
+- **See the proof architecture:** [conceptual proof map](papers/shifted-square-17-41/conceptual-proof-map.md), from the two fixed-index routes to composition and the Pell application.
 - **Audit the claims:** [proof record](papers/shifted-square-17-41/PROOF_RECORD.md) and [theorem–formal crosswalk](papers/shifted-square-17-41/theorem-formal-crosswalk.md).
 - **Reproduce the evidence:** [verification routes and commands](#reproduction).
 
@@ -35,7 +35,7 @@ version's numbering. Download either HTML file and open it locally to read it.
 | I want to… | Reading path |
 | --- | --- |
 | Read the mathematical result | Start with [article §§1.2–1.3](papers/shifted-square-17-41/manuscript/revision/paper_1.md), then follow the proofs. |
-| Understand why the proof works | Read the [illustrated explanation](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html), then the [Hilbert–Jacobi crosswalk](papers/shifted-square-17-41/hilbert-jacobi-crosswalk.md). |
+| Understand why the proof works | Read the [illustrated explanation](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html), then the [conceptual proof map](papers/shifted-square-17-41/conceptual-proof-map.md) and its detailed crosswalk links. |
 | Inspect the formal verification | Follow the [theorem–formal crosswalk](papers/shifted-square-17-41/theorem-formal-crosswalk.md), [Lean axiom audit](papers/shifted-square-17-41/verification/PaperTheoremAxiomAudit.lean) and [recorded audit output](papers/shifted-square-17-41/verification/records/2026-09-10-core/axioms.json). |
 | Reproduce the finite evidence | Use the [reproduction section](#reproduction), choosing the current article or preserved evidence payload. |
 | Trace publication and provenance | Read the [release and correction history](#citation-licence-and-provenance), [v1.0.0 execution record](RELEASE-v1.0.0.md) and [v1.0.1 correction note](papers/shifted-square-17-41/manuscript/revision/README.md). |
@@ -90,7 +90,8 @@ replay. The required finite verifier and GP/Lean route do not depend on them.
 | [Explanatory guide](papers/shifted-square-17-41/manuscript/explanation/) | Illustrated HTML and Markdown prose, explaining v1.0.0. |
 | [Proof record](papers/shifted-square-17-41/PROOF_RECORD.md) | Claim-to-proof correspondence for the frozen manuscript. |
 | [Structured human proof](papers/shifted-square-17-41/hilbert-obstruction-lamport.md) | Detailed Hilbert-reciprocity argument. |
-| [Proof architecture](papers/shifted-square-17-41/hilbert-jacobi-crosswalk.md) | Relationship between the Hilbert and integer-Jacobi proofs. |
+| [Conceptual proof map](papers/shifted-square-17-41/conceptual-proof-map.md) | Proof dependencies, arithmetic routes, composition and the Pell application. |
+| [Hilbert–Jacobi crosswalk](papers/shifted-square-17-41/hilbert-jacobi-crosswalk.md) | Exact relationship between the human and formal arithmetic routes. |
 | [Theorem–formal crosswalk](papers/shifted-square-17-41/theorem-formal-crosswalk.md) | Article-facing statements, Lean declarations and scope limits. |
 | [Verification](papers/shifted-square-17-41/verification/) | Replay tools, dependency pins, axiom audit and historical check records. |
 | [Erdos364/](Erdos364/) | Lean 4 source. |
