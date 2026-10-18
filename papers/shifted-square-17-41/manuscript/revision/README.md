@@ -1,8 +1,12 @@
 # Paper I — article version 1.0.1, 30 September 2026
 
-Read the [PDF](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/download/v1.0.1/paper1.pdf), [standalone MathML HTML](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/download/v1.0.1/paper1.html), and
-[editable manuscript](paper_1.md). Its numbered References section is the
-bibliography. Download the [complete article sources](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/download/v1.0.1/paper1-source.zip) and
+Read the [PDF](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/download/v1.0.1/paper1.pdf),
+[GitHub reading view](paper_1_github.md),
+[standalone MathML HTML](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/download/v1.0.1/paper1.html), and
+[Pandoc source](paper_1.md). The PDF is the primary fixed reading
+version; the GitHub view is for on-site reading. Download the standalone HTML
+and open it locally. The Pandoc file is publication source, not a GitHub reading
+edition. The numbered References section is the bibliography. Download the [complete article sources](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/download/v1.0.1/paper1-source.zip) and
 [checksums](SHA256SUMS). This is an editorial correction of the article;
 the selected mathematical results are unchanged.
 
@@ -106,3 +110,62 @@ Expected final marker: `FIXED_FIELDS_OK`. This checks the retained finite 17/41
 inputs; it is not a bounded substitute for the unbounded human argument. The
 repository's original `make paper1-*` operations reproduce the preserved v1.0.0
 payload rather than this correction bundle.
+
+## GitHub reading views
+
+One publication source produces independent reading artifacts:
+
+| File | Role | Edited directly? |
+| --- | --- | --- |
+| [paper_1.md](paper_1.md) | Authoritative Pandoc publication source. | Yes, for authorised manuscript edits. |
+| [paper_1_github.md](paper_1_github.md) | Generated on-site GitHub reading copy. | No. |
+| [paper1.html](paper1.html) | Standalone MathML reading view; download and open locally. | No. |
+| [main.tex](main.tex) | Generated publication intermediate. | No. |
+| [paper1.pdf](paper1.pdf) | Fixed publication reading view. | No. |
+| [paper1-source.zip](paper1-source.zip) | Preserved release source archive. | No. |
+
+The PDF/HTML/TeX derive from the Pandoc manuscript, not from the GitHub copy.
+The GitHub repair does not rebuild or replace released artifacts. Future
+manuscript changes require regeneration of the affected reading artifacts;
+never correct a generated copy independently.
+
+The [direct generator](../../github_reading.py) also produces the nine
+[technical reading copies](../../reading/) linked from the README and proof map.
+Their original records are pinned by the frozen evidence inventory, so each
+copy links back to its original source and records that source's SHA-256.
+Only presentation syntax and reader links change. The proof-record projection
+continues to cite the **v1.0.0** portable article; it is not silently rebound
+to the current v1.0.1 manuscript.
+
+The generator has a fixed list of ten source/output pairs. It converts Pandoc
+heading/division IDs to anchors, equation tags to visible textual numbers, and
+backslash math delimiters to GitHub syntax. Inline maths use backtick-dollar
+delimiters to protect escaped braces and underscores. Display maths use fenced `math`
+blocks at top level. Inside lists, separate paragraphs use protected display-style
+expressions, because GitHub leaves indented math fences as literal code. Both
+forms preserve the same mathematical content and equation labels.
+Unsupported presentation syntax fails. Fenced verifier code is retained exactly.
+
+From the repository root:
+
+```sh
+python3 papers/shifted-square-17-41/github_reading.py generate
+python3 papers/shifted-square-17-41/github_reading.py check
+python3 -B -m unittest discover -s papers/shifted-square-17-41 -p test_github_reading.py
+```
+
+`check` requires byte-for-byte agreement with fresh generation, rejects
+Pandoc-only presentation constructs in the explicit reader surface, compares
+ordered mathematical content, prose, headings and embedded code to each source,
+and checks local reading links and section anchors. Equation-label syntax and
+reader-link labels/targets are the intended presentation adaptations. The ten
+generated views and six ordinary reader documents form its explicit allowlist;
+it is not a recursive converter or a publication/release gate.
+
+The repository's Markdown files were inspected for reader roles. The explanation
+Markdown remains Pandoc source, with illustrated HTML as its intended reading
+artifact. Existing v1.0.0 manuscript views, the old portable copy, release and
+execution records, metadata history, checksum files, source archives and notices
+remain preserved. Historical/source links are labelled accordingly; the current
+reading routes use the generated views. Licences and notices already use
+compatible ordinary Markdown and are checked without rewriting them.
