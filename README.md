@@ -23,7 +23,7 @@ index. The result restricts one square-middle family related to Erdős Problem
 - **Read the article:** [PDF](papers/shifted-square-17-41/manuscript/revision/paper1.pdf) | [GitHub reading view](papers/shifted-square-17-41/manuscript/revision/paper_1_github.md) | [standalone HTML](papers/shifted-square-17-41/manuscript/revision/paper1.html) | [Pandoc source](papers/shifted-square-17-41/manuscript/revision/paper_1.md).
 - **Understand the mathematics:** [illustrated explanation (download HTML)](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html).
 - **See the proof architecture:** [conceptual proof map](papers/shifted-square-17-41/conceptual-proof-map.md), from the two fixed-index routes to composition and the Pell application.
-- **Audit the claims:** [proof record](papers/shifted-square-17-41/reading/PROOF_RECORD.md) and [theorem–formal crosswalk](papers/shifted-square-17-41/reading/theorem-formal-crosswalk.md).
+- **Audit the claims:** [additional Lean assurance (25 October 2026)](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md), [proof record](papers/shifted-square-17-41/reading/PROOF_RECORD.md) and [theorem–formal crosswalk](papers/shifted-square-17-41/reading/theorem-formal-crosswalk.md).
 - **Reproduce the evidence:** [verification routes and commands](#reproduction).
 
 The PDF is the primary fixed reading version. The GitHub reading view is for
@@ -31,8 +31,10 @@ on-site reading; the standalone HTML is for downloading and opening locally.
 The Pandoc source is editable publication input and is not intended for GitHub
 rendering. Read the explanation in its illustrated HTML edition.
 
-The current article is **v1.0.1**; its formal and arithmetic support remains
-**v1.0.0**. The illustrated guide explains the v1.0.0 article and uses that
+The current article is **v1.0.1**; its preserved formal and arithmetic source
+release remains **v1.0.0**. The [additional assurance record](#additional-lean-assurance-25-october-2026)
+reports a later check of a separately frozen Lean 4.35 selection.
+The illustrated guide explains the v1.0.0 article and uses that
 version's numbering. Download either HTML file and open it locally to read it.
 
 ## Choose your reading path
@@ -41,7 +43,7 @@ version's numbering. Download either HTML file and open it locally to read it.
 | --- | --- |
 | Read the mathematical result | Start with [article §§1.2–1.3](papers/shifted-square-17-41/manuscript/revision/paper_1_github.md#main-results), then follow the proofs. |
 | Understand why the proof works | Read the [illustrated explanation (download HTML)](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html), then the [conceptual proof map](papers/shifted-square-17-41/conceptual-proof-map.md) and its detailed crosswalk links. |
-| Inspect the formal verification | Follow the [theorem–formal crosswalk](papers/shifted-square-17-41/reading/theorem-formal-crosswalk.md), [Lean axiom audit](papers/shifted-square-17-41/verification/PaperTheoremAxiomAudit.lean) and [recorded audit output](papers/shifted-square-17-41/verification/records/2026-09-10-core/axioms.json). |
+| Inspect the formal verification | Read the [six-checker assurance result and receipts](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md), then the [theorem–formal crosswalk](papers/shifted-square-17-41/reading/theorem-formal-crosswalk.md), [Lean axiom audit](papers/shifted-square-17-41/verification/PaperTheoremAxiomAudit.lean) and [historical audit output](papers/shifted-square-17-41/verification/records/2026-09-10-core/axioms.json). |
 | Reproduce the finite evidence | Use the [reproduction section](#reproduction), choosing the current article or preserved evidence payload. |
 | Trace publication and provenance | Read the [release and correction history](#citation-licence-and-provenance), [v1.0.0 execution record](RELEASE-v1.0.0.md) and [v1.0.1 correction note](papers/shifted-square-17-41/manuscript/revision/README.md). |
 
@@ -87,6 +89,23 @@ explains their relationship. Three historical Magma input scripts (17-B,
 41-A, 41-B) remain missing; archived responses do not supply complete Magma
 replay. The required finite verifier and GP/Lean route do not depend on them.
 
+## Additional Lean assurance (25 October 2026)
+
+**All six Lean 4.35 checkers passed** for the frozen Paper I selection:
+61 source modules (60 project modules plus their audit) and their required
+logical dependency closure. The three selected theorem statements matched
+the frozen reference and passed the standard-axiom check, permitting
+`propext`, `Classical.choice` and `Quot.sound` while rejecting `sorryAx`
+and additional unapproved axioms.
+
+The [dated assurance note and individual receipts](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md)
+identify the snapshot, the Lean 4.35 compatibility change, two later Lab
+dependency revisions and the independent automated evidence review.
+**Selected formal verification: PASS; broader assurance: INCOMPLETE.**
+The passes strengthen proof-term validation under the recorded foundations;
+they do not replace paper-to-Lean semantic review or human mathematical review.
+The public Lean 4.31 source release and the article editions remain unchanged.
+
 ## Repository map
 
 | Location | Purpose |
@@ -98,7 +117,7 @@ replay. The required finite verifier and GP/Lean route do not depend on them.
 | [Conceptual proof map](papers/shifted-square-17-41/conceptual-proof-map.md) | Proof dependencies, arithmetic routes, composition and the Pell application. |
 | [Hilbert–Jacobi crosswalk](papers/shifted-square-17-41/reading/hilbert-jacobi-crosswalk.md) | Exact relationship between the human and formal arithmetic routes. |
 | [Theorem–formal crosswalk](papers/shifted-square-17-41/reading/theorem-formal-crosswalk.md) | Article-facing statements, Lean declarations and scope limits. |
-| [Verification](papers/shifted-square-17-41/verification/) | Replay tools, dependency pins, axiom audit and historical check records. |
+| [Verification](papers/shifted-square-17-41/verification/) | Replay tools, dependency pins, axiom audit, historical check records and the [additional Lean assurance result](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md). |
 | [Erdos364/](Erdos364/) | Lean 4 source. |
 | [experiments/](experiments/) | Finite arithmetic certificates, checkers and replays. |
 
@@ -237,9 +256,10 @@ were reviewed by the author, who takes sole responsibility for them.
 ### Publication status and preserved artifacts
 
 Version 1.0.1 is a self-published editorial correction. No DOI, arXiv identifier,
-journal submission or peer review is asserted. Its formal and arithmetic evidence
-remains the v1.0.0 source release; historical audit/build receipts are not fresh
-runs for the correction or for subsequent documentation changes.
+journal submission or peer review is asserted. Its preserved formal and arithmetic
+source release remains v1.0.0. The [25 October assurance record](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md)
+adds a selected Lean 4.35 result with its own source identity and limits;
+historical audit/build receipts are not relabelled as fresh runs.
 
 GitHub reading copies are generated and checked with the [bounded reading-view commands](papers/shifted-square-17-41/manuscript/revision/README.md#github-reading-views). The publication sources and frozen technical records are retained separately.
 
