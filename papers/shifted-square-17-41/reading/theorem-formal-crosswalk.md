@@ -7,7 +7,7 @@
 GENERATED FILE. DO NOT EDIT.
 Source: papers/shifted-square-17-41/theorem-formal-crosswalk.md
 Generator: python3 papers/shifted-square-17-41/github_reading.py generate
-Source SHA-256: 055978bfca63aeb8b6ce7acc21ee04fa86b0ba3025355264431bcb483f2c4932
+Source SHA-256: a83262f7a7a73fc59991bc51b83827d30d5de2595d71ba90143a36c60d51e3dc
 -->
 
 <!-- reading-body -->
@@ -29,22 +29,23 @@ The article and public Lean files were read at public commit
 `5cf294a29a6858e031b769381ba54bd316031acc`. The review binds their identities
 to the separately frozen six-checker selection and records the integer-square
 bridge, nonzero valuations, odd-inner composition, Pell coefficient convention
-and fixed-41 endpoint. The frozen historical `PROOF_RECORD.md` remains attached
+and fixed-41 endpoint. Links in the table lead to the full declaration names
+and domains below. The frozen historical `PROOF_RECORD.md` remains attached
 to its earlier manuscript.
 
-| Published result | Exact proof correspondence | Semantic disposition |
+| Published result | Formal or human proof route | Semantic disposition |
 | --- | --- | --- |
-| Theorem 1.1 | `Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor` | Matching Lean conclusion with the positive-index and 17/41-divisor guards. |
-| Theorem 1.2 | `Erdos364.no_sm2LucasReal_seventeen_square_of_mod_four_two`; `Erdos364.no_sm2LucasReal_fortyOne_square_of_mod_four_two` | Matching Lean conclusions for the full modulo-4 phase. |
-| Theorem 1.3 | `Erdos364.sm2LucasReal_sub_one_padicVal_two_of_positive_even`; `Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_even_index` | Matching valuation and nonsquare consequence; positivity resolves natural subtraction and valuation at zero. |
-| Corollary 1.4 | `Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_even_index`; `Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor` | Together cover the three divisibility alternatives, through `Erdos364.sm2UpperNegativeUnit_pow_re`. |
+| Theorem 1.1 | [all-positive 17/41 theorem](theorem-formal-crosswalk.md#all-positive-index-factor-theorem) | Matching Lean conclusion with the positive-index and 17/41-divisor guards. |
+| Theorem 1.2 | [phase-strengthened SS17](theorem-formal-crosswalk.md#phase-strengthened-ss17); [phase-strengthened SS41](theorem-formal-crosswalk.md#phase-strengthened-ss41) | Matching Lean conclusions for the full modulo-4 phase. |
+| Theorem 1.3 | [exact even-index valuation](theorem-formal-crosswalk.md#exact-positive-even-index-valuation); [free even-index exclusion](theorem-formal-crosswalk.md#free-positive-even-index-shifted-square-theorem) | Matching valuation and nonsquare consequence; positivity resolves natural subtraction and valuation at zero. |
+| Corollary 1.4 | [even-index Pell theorem](theorem-formal-crosswalk.md#norm-minus-one-pell-unit-corollaries); [17/41 Pell theorem](theorem-formal-crosswalk.md#norm-minus-one-pell-unit-corollaries) | Together cover the three divisibility alternatives, through [power-coordinate identity](theorem-formal-crosswalk.md#norm-minus-one-pell-unit-corollaries). |
 | Corollary 1.5 | Human proof in article §§6.2–6.3, using Theorem 1.1 | Complete written argument under the published weaker hypotheses; richer Lean allocation adapters are not an exact formalisation of this corollary. |
 | Proposition 2.1 | Human four-phase residue argument plus the odd 2-adic unit square criterion | Supported by the human proof; no exact Lean theorem about 2-adic squares is claimed. |
 | Proposition 3.1 | Human Hilbert-reciprocity argument in §3.1 | Supported by the human proof; not Lean-formalised. |
 | Theorem 3.2 | Human monogenic fixed-field criterion in §§3.2–3.5 | Supporting-prime uniqueness, norm parity, local neutrality and strict Hensel stability reviewed; not Lean-formalised. |
 | Proposition 4.1 | Human untwisted reference-product proof in §4.2 | Supported by the human proof; not a formal detector theorem. |
-| Theorem 4.2 | Human Theorem 3.2 plus finite certificates; separate Lean conclusions `Erdos364.no_sm2LucasReal_seventeen_square_of_mod_eight_two` and `Erdos364.ss41_shiftedSquare_impossible` | Conclusions agree; the Lean integer-Jacobi route does not formalise the Hilbert proof. |
-| Lemma 5.1 | `Erdos364.sm2LucasReal_mul_of_odd_right` | Matching composition statement; oddness of the inner index is essential. |
+| Theorem 4.2 | Human Theorem 3.2 plus finite certificates; separate Lean conclusions [fixed-17 theorem](theorem-formal-crosswalk.md#ss17-pure-fixed-index-theorem) and [fixed-41 theorem](theorem-formal-crosswalk.md#ss41-pure-fixed-index-theorem) | Conclusions agree; the Lean integer-Jacobi route does not formalise the Hilbert proof. |
+| Lemma 5.1 | [odd-inner composition](theorem-formal-crosswalk.md#odd-index-composition) | Matching composition statement; oddness of the inner index is essential. |
 | Proposition 7.1 | Human uniform Hilbert–Jacobi bridge in §7.1 | Includes coprimality and A = 2. Private Lean Jacobi chains and the separate fixed-41 endpoint are not one public declaration of the entire uniform identity. |
 
 Corollary 1.5 uses only $`X\ge2`$, $`X-1`$ square and $`X^2+1`$
