@@ -23,7 +23,7 @@ index. The result restricts one square-middle family related to Erdős Problem
 - **Read the article:** [PDF](papers/shifted-square-17-41/manuscript/revision/paper1.pdf) | [GitHub reading view](papers/shifted-square-17-41/manuscript/revision/paper_1_github.md) | [standalone HTML](papers/shifted-square-17-41/manuscript/revision/paper1.html) | [Pandoc source](papers/shifted-square-17-41/manuscript/revision/paper_1.md).
 - **Understand the mathematics:** [illustrated explanation (download HTML)](papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html).
 - **See the proof architecture:** [conceptual proof map](papers/shifted-square-17-41/conceptual-proof-map.md), from the two fixed-index routes to composition and the Pell application.
-- **Audit the claims:** [additional Lean assurance (25 October 2026)](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md), [proof record](papers/shifted-square-17-41/reading/PROOF_RECORD.md) and [theorem–formal crosswalk](papers/shifted-square-17-41/reading/theorem-formal-crosswalk.md).
+- **Audit the claims:** [completed v1.0.1 semantic review (26 October 2026)](papers/shifted-square-17-41/verification/SEMANTIC-REVIEW-2026-10-26.md), [six-checker assurance](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md) and [updated theorem–formal crosswalk](papers/shifted-square-17-41/reading/theorem-formal-crosswalk.md).
 - **Reproduce the evidence:** [verification routes and commands](#reproduction).
 
 The PDF is the primary fixed reading version. The GitHub reading view is for
@@ -101,9 +101,18 @@ and additional unapproved axioms.
 The [dated assurance note and individual receipts](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md)
 identify the snapshot, the Lean 4.35 compatibility change, two later Lab
 dependency revisions and the independent automated evidence review.
-**Selected formal verification: PASS; broader assurance: INCOMPLETE.**
-The passes strengthen proof-term validation under the recorded foundations;
-they do not replace paper-to-Lean semantic review or human mathematical review.
+**Selected formal verification: PASS. The v1.0.1 semantic review is complete:**
+[all twelve numbered results were reviewed](papers/shifted-square-17-41/verification/SEMANTIC-REVIEW-2026-10-26.md),
+with no blocking mathematical gap or statement mismatch identified. The
+crosswalk distinguishes matching Lean conclusions from the article's human
+proofs; the unchanged finite verifier passed for both 17 and 41. This is an
+automated review, not external human peer review.
+
+The immutable service receipt still says `assurance_status: INCOMPLETE`:
+that field is fixed by the service, not a diagnosis of a missing proof.
+A new independent clean Lean 4.35 reproduction and a full public replay
+bundle are not claimed. External human review would strengthen assurance;
+it is not a new publication prerequisite.
 The public Lean 4.31 source release and the article editions remain unchanged.
 
 ## Repository map
