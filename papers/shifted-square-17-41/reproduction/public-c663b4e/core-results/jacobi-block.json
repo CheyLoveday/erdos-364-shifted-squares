@@ -1,0 +1,14 @@
+{
+  "command": "jacobi-block",
+  "argv": [
+    "/workspace/nucleus/work/projects/default/repo/.scratch/reproduction/independent-run-v2/work/venv/bin/python",
+    "-B",
+    "experiments/sm2_four_translate/interpolation/outer41_jacobi_block.py",
+    "--self-test"
+  ],
+  "source_sha256": "1cb46bdba470841ed34409f9187b76d5347332e2b0ed764843fd4005b798482c",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "OUTER41_JACOBI_BLOCK_OK rows=7 checks=32459 g=7-iff-j-mod7-zero claim=block-certificate-not-lean\n",
+  "stderr": ""
+}

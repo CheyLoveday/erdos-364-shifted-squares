@@ -1,0 +1,71 @@
+Erdos364.no_sm2LucasReal_seventeen_square_of_mod_eight_two {A y : ℕ} (hA : A % 8 = 2)
+  (hreal : Erdos364.sm2LucasReal A 17 = y ^ 2 + 1) : False
+Erdos364.noSm2OuterSeventeenBlocks : Erdos364.NoSm2OuterSeventeenBlocks
+Erdos364.ss41_shiftedSquare_impossible {A y : ℕ} (hA : A % 8 = 2) (hreal : Erdos364.sm2LucasReal A 41 = y ^ 2 + 1) :
+  False
+Erdos364.no_outerLarge_selected_fortyOne {data : Erdos364.PairPellCounterexampleData}
+  {allocation : Erdos364.Sm2LowerSquareAllocation data}
+  (generator : Erdos364.Sm2LowerSquareUpperSourceGenerator allocation) (packet : generator.OuterLargePacket)
+  (h41 : 41 ∣ 2 * generator.outerIndex + 1) : False
+Erdos364.no_rankDefect_selected_fortyOne {data : Erdos364.PairPellCounterexampleData}
+  {allocation : Erdos364.Sm2LowerSquareAllocation data}
+  (generator : Erdos364.Sm2LowerSquareUpperSourceGenerator allocation) (packet : generator.RankDefectPacket)
+  (h41 : 41 ∣ Erdos364.pellRank data.upperKernel ⋯) : False
+Erdos364.sm2LucasReal_mod_four_two_of_odd {A n : ℕ} (hA : A % 4 = 2) (hn : Odd n) : Erdos364.sm2LucasReal A n % 4 = 2
+Erdos364.sm2LucasReal_mod_eight_six_of_index_mod_four_one {A n : ℕ} (hA : A % 8 = 6) (hn : n % 4 = 1) :
+  Erdos364.sm2LucasReal A n % 8 = 6
+Erdos364.no_sm2LucasReal_seventeen_square_of_mod_four_two {A y : ℕ} (hA : A % 4 = 2)
+  (hreal : Erdos364.sm2LucasReal A 17 = y ^ 2 + 1) : False
+Erdos364.no_sm2LucasReal_fortyOne_square_of_mod_four_two {A y : ℕ} (hA : A % 4 = 2)
+  (hreal : Erdos364.sm2LucasReal A 41 = y ^ 2 + 1) : False
+Erdos364.sm2LucasReal_mul_of_odd_right (A m n : ℕ) (hn : Odd n) :
+  Erdos364.sm2LucasReal A (m * n) = Erdos364.sm2LucasReal (Erdos364.sm2LucasReal A n) m
+Erdos364.no_sm2LucasReal_shiftedSquare_of_odd_index_factor {A n y : ℕ} (hA : A % 4 = 2) (hn : Odd n)
+  (hfactor : 17 ∣ n ∨ 41 ∣ n) (hreal : Erdos364.sm2LucasReal A n = y ^ 2 + 1) : False
+Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_index_factor {K u v n : ℕ} (hnegative : u ^ 2 + 1 = K * v ^ 2)
+  (hu : u % 4 = 2) (hn : Odd n) (hfactor : 17 ∣ n ∨ 41 ∣ n) (y : ℕ) : ({ re := ↑u, im := ↑v } ^ n).re ≠ ↑(y ^ 2 + 1)
+Erdos364.sm2LucasReal_sub_one_padicVal_two_of_positive_even {A N : ℕ} (hA : A % 4 = 2) (hNpos : 0 < N)
+  (hNeven : Even N) : padicValNat 2 (Erdos364.sm2LucasReal A N - 1) = 2 * padicValNat 2 N + 1
+Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_even_index {A N y : ℕ} (hA : A % 4 = 2) (hNpos : 0 < N)
+  (hNeven : Even N) (hreal : Erdos364.sm2LucasReal A N = y ^ 2 + 1) : False
+Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor {A N y : ℕ} (hA : A % 4 = 2) (hNpos : 0 < N)
+  (hfactor : 17 ∣ N ∨ 41 ∣ N) (hreal : Erdos364.sm2LucasReal A N = y ^ 2 + 1) : False
+Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_even_index {K u v N : ℕ}
+  (hnegative : u ^ 2 + 1 = K * v ^ 2) (hu : u % 4 = 2) (hNpos : 0 < N) (hNeven : Even N) (y : ℕ) :
+  ({ re := ↑u, im := ↑v } ^ N).re ≠ ↑(y ^ 2 + 1)
+Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor {K u v N : ℕ}
+  (hnegative : u ^ 2 + 1 = K * v ^ 2) (hu : u % 4 = 2) (hNpos : 0 < N) (hfactor : 17 ∣ N ∨ 41 ∣ N) (y : ℕ) :
+  ({ re := ↑u, im := ↑v } ^ N).re ≠ ↑(y ^ 2 + 1)
+'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_eight_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.noSm2OuterSeventeenBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.ss41_shiftedSquare_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_outerLarge_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_rankDefect_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_four_two_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_eight_six_of_index_mod_four_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_fortyOne_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mul_of_odd_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_odd_index_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.sm2LucasReal_sub_one_padicVal_two_of_positive_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.sm2UpperNegativeUnit_pow_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.Sm2LowerSquareUpperSourceGenerator.root_real_mod_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.sm2LowerSquareSource_iff_exists_generatorResidual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.pellRank_dvd_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,107 @@
+✔ [2969/3028] Built Erdos364.SquareMiddle.PellIndex (622ms)
+✔ [2970/3028] Built Erdos364.SquareMiddle.LeafCompiler (692ms)
+✔ [2971/3028] Built Erdos364.Foundations.PowerfulPos (1.2s)
+✔ [2972/3028] Built Erdos364.Foundations.PowerfulTriple (1.1s)
+✔ [2973/3028] Built Erdos364.Foundations.PowerfulValuation (1.2s)
+✔ [2974/3028] Built Erdos364.Foundations.PowerfulFactorTransport (1.1s)
+✔ [2975/3028] Built Erdos364.SquareMiddle.Source (1.4s)
+✔ [2976/3028] Built Erdos364.Foundations.PowerfulNormalForm (1.5s)
+✔ [2977/3028] Built Erdos364.CubeMiddle.PowerfulFactorTransport (1.5s)
+✔ [2978/3028] Built Erdos364.Foundations.ConsecutiveConstraints (1.7s)
+✔ [2979/3028] Built Erdos364.Foundations.SquarefreeKernel (1.2s)
+✔ [2980/3028] Built Erdos364.Foundations.ConsecutiveKernelConstraints (1.4s)
+✔ [2981/3028] Built Erdos364.SquareMiddle.NormalForm (1.1s)
+✔ [2982/3028] Built Erdos364.Foundations.TripleNormalForm (1.2s)
+✔ [2983/3028] Built Erdos364.Foundations.TraceDepth (1.5s)
+✔ [2984/3028] Built Erdos364.SquareMiddle.RightFlankNegativePell (1.3s)
+✔ [2985/3028] Built Erdos364.SquareMiddle.SourceArithmetic (1.5s)
+✔ [2986/3028] Built Erdos364.SquareMiddle.PellConversion (1.7s)
+✔ [2987/3028] Built Erdos364.Foundations.PowerfulTripleCandidate (1.3s)
+✔ [2988/3028] Built Erdos364.SquareMiddle.PellCoordinates (1.9s)
+✔ [2989/3028] Built Erdos364.Foundations.TraceDepthGCD (1.4s)
+✔ [2990/3028] Built Erdos364.SquareMiddle.RightFlankResidues (1.5s)
+✔ [2991/3028] Built Erdos364.SquareMiddle.FlankKernelAllocation (1.7s)
+✔ [2992/3028] Built Erdos364.SquareMiddle.RightFlankSupport (1.8s)
+✔ [2993/3028] Built Erdos364.Global.RootSplit (1.5s)
+✔ [2994/3028] Built Erdos364.SquareMiddle.PellDivisibilityPrime (1.6s)
+✔ [2995/3028] Built Erdos364.SquareMiddle.RightFlankQuadratic (1.4s)
+✔ [2996/3028] Built Erdos364.SquareMiddle.PellDivisibilityRank (1.1s)
+✔ [2997/3028] Built Erdos364.SquareMiddle.PellParity (1.1s)
+✔ [2998/3028] Built Erdos364.SquareMiddle.PellCanonical (1.1s)
+✔ [2999/3028] Built Erdos364.SquareMiddle.PairPellComplete (1.1s)
+✔ [3000/3028] Built Erdos364.SquareMiddle.Normalization (1.0s)
+✔ [3001/3028] Built Erdos364.SquareMiddle.FixedPellFlankAllocation (1.2s)
+✔ [3002/3028] Built Erdos364.SquareMiddle.SourceLeafCompiler (1.3s)
+✔ [3003/3028] Built Erdos364.SquareMiddle.TopBranchCompiler (1.1s)
+✔ [3004/3028] Built Erdos364.SquareMiddle.SourceNormalizer (1.0s)
+✔ [3005/3028] Built Erdos364.SquareMiddle.RightFlankCounterexample (1.2s)
+✔ [3006/3028] Built Erdos364.SquareMiddle.Sm2LowerSquarePolynomial (1.5s)
+✔ [3007/3028] Built Erdos364.SquareMiddle.RightFlankConsequences (1.2s)
+✔ [3008/3028] Built Erdos364.SquareMiddle.QuarticPellCounterexample (1.6s)
+✔ [3009/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareAllocation (1.9s)
+✔ [3010/3028] Built Erdos364.SquareMiddle.RightFlankNormOneModNine (2.0s)
+✔ [3011/3028] Built Erdos364.SquareMiddle.QuarticPellCohn (1.3s)
+✔ [3012/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareLowerFundamental (1.7s)
+✔ [3013/3028] Built Erdos364.SquareMiddle.RightFlankNormOneControl (2.1s)
+✔ [3014/3028] Built Erdos364.SquareMiddle.RightFlankNegativePellSign (2.4s)
+✔ [3015/3028] Built Erdos364.SquareMiddle.RightFlankUpperKernelSquarePlusOne (2.5s)
+✔ [3016/3028] Built Erdos364.SquareMiddle.RightFlankNormOneModSeventyFive (2.6s)
+✔ [3017/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareUpperKernelOneHundredOne (3.0s)
+✔ [3018/3028] Built Erdos364.SquareMiddle.RightFlankNormOneModOneFortySeven (2.5s)
+✔ [3019/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareNormOnePrimeObstruction (1.6s)
+✔ [3020/3028] Built Erdos364.SquareMiddle.RightFlankNormOneMod1089 (2.3s)
+✔ [3021/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareResidual (1.1s)
+✔ [3022/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareLowerNormTwoOrbit (2.9s)
+✔ [3023/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareUpperNormOneOrbit (2.2s)
+✔ [3024/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareUpperSourceGenerator (3.0s)
+⚠ [3025/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareGeneratorRank (10s)
+warning: Erdos364/SquareMiddle/Sm2LowerSquareGeneratorRank.lean:122:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Erdos364/SquareMiddle/Sm2LowerSquareGeneratorRank.lean:285:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3026/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareOuterSeventeen (15s)
+ℹ [3027/3028] Built Erdos364.SquareMiddle.Sm2LowerSquareOuterFortyOne (122s)
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13281:6: Try this:
+  [apply] ring_nf
+
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13969:0: 'Erdos364.Ss41LocalLinkCertificate' depends on axioms: [propext]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13970:0: 'Erdos364.Ss41LocalCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13971:0: 'Erdos364.ss41_localCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13972:0: 'Erdos364.ss41_factor13Multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13973:0: 'Erdos364.ss41_factor13Multiplier_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13974:0: 'Erdos364.ss41_factor13_block_25_21' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13975:0: 'Erdos364.ss41_direct_endpoint_3_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13976:0: 'Erdos364.ss41_directedTelescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13977:0: 'Erdos364.ss41_coefficientJacobi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13978:0: 'Erdos364.ss41_shiftedSquare_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13979:0: 'Erdos364.no_outerLarge_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean:13980:0: 'Erdos364.no_rankDefect_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3028/3028] Built Erdos364.DicksonLucas.ShiftedSquarePropagation (1.9s)
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:746:0: 'Erdos364.sm2LucasReal_mod_four_two_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:747:0: 'Erdos364.sm2LucasReal_mod_eight_six_of_index_mod_four_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:748:0: 'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:749:0: 'Erdos364.no_sm2LucasReal_fortyOne_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:750:0: 'Erdos364.sm2LucasReal_mul_of_odd_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:751:0: 'Erdos364.no_sm2LucasReal_shiftedSquare_of_odd_index_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:752:0: 'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:753:0: 'Erdos364.sm2LucasReal_sub_one_padicVal_two_of_positive_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:754:0: 'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:755:0: 'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:756:0: 'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Erdos364/DicksonLucas/ShiftedSquarePropagation.lean:757:0: 'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3028 jobs).
