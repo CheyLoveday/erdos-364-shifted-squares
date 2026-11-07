@@ -1,0 +1,255 @@
+{
+  "base_lean_recipe_digest": "fafac335ac2d8f344cb96b6f09b10eb76e1b6e35b7ec8ad729d93af36b94a23d",
+  "build_options": {
+    "extra_lean_args": [],
+    "implicit_hydration": false,
+    "implicit_update": false,
+    "inherit_frozen_lake_options": true,
+    "network": "NONE",
+    "proofwidgets_assets": "FROZEN_TRACKED_INPUTS_ONLY_NO_NPM"
+  },
+  "packages": [
+    {
+      "commit": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "config_file": "lakefile.toml",
+      "config_sha256": "188aaec6ddb57f411c11b95c3ece85ff26ab9ae8085371fee47e1dc855c4e186",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "Cli",
+          "root": "Cli"
+        },
+        {
+          "disposition": "TEST",
+          "name": "CliTest",
+          "root": "CliTest"
+        }
+      ],
+      "manifest_sha256": "f608bac5ccb22b59292584eb7fb4497c327e780a17e7afb8d584ce5d79ad0b70",
+      "name": "Cli",
+      "repository": "leanprover/lean4-cli",
+      "source_tree_digest": "b23478955f4bd388388b452e56b3e7c52274c18f93008243b078ad6de8d38eeb",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "915a71e36b9b7067b2bdf21c7362ec883bcbb214"
+    },
+    {
+      "commit": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "config_file": "lakefile.toml",
+      "config_sha256": "cb5d6c80c4ffd4b3be99294a911ebf2f6a2fee4eb9f840d96f0f813bd484c05d",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "LeanSearchClient",
+          "root": "LeanSearchClient"
+        },
+        {
+          "disposition": "TEST",
+          "name": "LeanSearchClientTest",
+          "root": "LeanSearchClientTest"
+        }
+      ],
+      "manifest_sha256": "a9b5fc5e76254f415e49b04b7049f58c6cb42e76a0e31b0aed2ddf4af6882033",
+      "name": "LeanSearchClient",
+      "repository": "leanprover-community/LeanSearchClient",
+      "source_tree_digest": "8e29ff134291924eed25b37c32a22854b585d83baa17eafb1c4d28fd70ed62fb",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "bf548235194a21930a91aa9ab852dea26ca0f039"
+    },
+    {
+      "commit": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "config_file": "lakefile.toml",
+      "config_sha256": "42826e4e06221f41fcd863e19d937a0a68be7d54df90abd7800a3c09f4557a15",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "Qq",
+          "root": "Qq"
+        },
+        {
+          "disposition": "TEST",
+          "name": "QqTest",
+          "root": "QqTest"
+        }
+      ],
+      "manifest_sha256": "460e7ce76c58edfd8ba59428f23e908c5860e8bbca8883ff6c1262980e364d30",
+      "name": "Qq",
+      "repository": "leanprover-community/quote4",
+      "source_tree_digest": "387193be4f8ac6a57e6b0027db221b5ce55b0a703d6c9da566ca992fb4720d21",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "356cde3a20d62d1008736a4bb98c632a799c4aa6"
+    },
+    {
+      "commit": "4a174c490d8707121c4a9290800489f105d85e07",
+      "config_file": "lakefile.toml",
+      "config_sha256": "17a39597618a5b30440ce9d1fb62267a23b7134327a6df0ce46f243f25a03f00",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "Aesop",
+          "root": "Aesop"
+        },
+        {
+          "disposition": "TEST",
+          "name": "AesopTest",
+          "root": "AesopTest"
+        }
+      ],
+      "manifest_sha256": "c138ac5b8a9610a9ded30fbb5417a57b393b922e863c2fbb3c7b69be4e60f0b9",
+      "name": "aesop",
+      "repository": "leanprover-community/aesop",
+      "source_tree_digest": "41d97e048ac20f22b045ac85603136d05074300421cddfa1125172e372f44bde",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "883b9af90cca8b2d83811a507a62be85b2f3c312"
+    },
+    {
+      "commit": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "config_file": "lakefile.toml",
+      "config_sha256": "acadcd8beb13a53a4ac9399e6706c829309d2380f338d13b037886666f978015",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "Batteries",
+          "root": "Batteries"
+        },
+        {
+          "disposition": "TEST",
+          "name": "BatteriesTest",
+          "root": "BatteriesTest"
+        }
+      ],
+      "manifest_sha256": "67a8bbfcd0c742e05e198714b2d0f3602a3103d838e7427d773a5587555f88a2",
+      "name": "batteries",
+      "repository": "leanprover-community/batteries",
+      "source_tree_digest": "009af26b979fdec75a773aeeae3c3bb5b0f9ef8151c1aa4b9607ba4442f08d77",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "8b834e0208f1bc8eb66f1816519aef3982e7fb8b"
+    },
+    {
+      "commit": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "config_file": "lakefile.toml",
+      "config_sha256": "022463f7dbaaba8273aa66a4e86a8004ed678b162cb14bf08f74011cb7c812ff",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "ImportGraph",
+          "root": "ImportGraph"
+        },
+        {
+          "disposition": "TEST",
+          "name": "ImportGraphTest",
+          "root": "ImportGraphTest"
+        }
+      ],
+      "manifest_sha256": "f571382e971fb4c63889189e7e560a9a7942b16041df16c70ee6c58ca65197bc",
+      "name": "importGraph",
+      "repository": "leanprover-community/import-graph",
+      "source_tree_digest": "9835cffa204f74b4b721839a04d1c4f360a873a44f9ebb5e1393ab97c204b1a6",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "c50cb794df9a6a8618884d0ea5151f0a26c59257"
+    },
+    {
+      "commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "config_file": "lakefile.lean",
+      "config_sha256": "6083173bc380adea0cfd26f9a7813637ae0fd2c38c6a0d4536626e82a9538ef6",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "Archive",
+          "root": "Archive"
+        },
+        {
+          "disposition": "TOOL",
+          "name": "Cache",
+          "root": "Cache"
+        },
+        {
+          "disposition": "LIBRARY",
+          "name": "Counterexamples",
+          "root": "Counterexamples"
+        },
+        {
+          "disposition": "LIBRARY",
+          "name": "Mathlib",
+          "root": "Mathlib"
+        },
+        {
+          "disposition": "TEST",
+          "name": "MathlibTest",
+          "root": "MathlibTest"
+        },
+        {
+          "disposition": "PLACEHOLDER_STATEMENTS",
+          "name": "Wanted",
+          "root": "Wanted"
+        },
+        {
+          "disposition": "DOCUMENTATION",
+          "name": "docs",
+          "root": "docs"
+        }
+      ],
+      "manifest_sha256": "6fcb8417bf0d6056cebf3c9f9bacd4569f21f3b9c571c60649150b9118b55147",
+      "name": "mathlib",
+      "repository": "leanprover-community/mathlib4",
+      "source_tree_digest": "bb060f092fd6d4a8aa5a462ecb65e5fe075e22cf940a7b42ad8a60bfbe7138f1",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "0db52fa68e6b0c5b917c22bc6383325391a00610"
+    },
+    {
+      "commit": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "config_file": "lakefile.toml",
+      "config_sha256": "4147957012320a3afe8f041662202b7a3453c8a0df4311c1698da029a3b4834f",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "Plausible",
+          "root": "Plausible"
+        },
+        {
+          "disposition": "TEST",
+          "name": "PlausibleTest",
+          "root": "PlausibleTest"
+        }
+      ],
+      "manifest_sha256": "99a17603b60cd9af445e5689b572b8441aaeaed149f3760dc52595a0c4b128db",
+      "name": "plausible",
+      "repository": "leanprover-community/plausible",
+      "source_tree_digest": "7b7015325d6fce154d02ea34b3b2522fe92a14ceb419a34e2e8f7f896213d0fe",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "4cb8bf2ba49da888f56e270a08c7803000c1da89"
+    },
+    {
+      "commit": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "config_file": "lakefile.lean",
+      "config_sha256": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca",
+      "libraries": [
+        {
+          "disposition": "LIBRARY",
+          "name": "ProofWidgets",
+          "root": "ProofWidgets"
+        },
+        {
+          "disposition": "EXAMPLE",
+          "name": "ProofWidgets.Demos",
+          "root": "ProofWidgets/Demos"
+        },
+        {
+          "disposition": "TEST",
+          "name": "test",
+          "root": "test"
+        }
+      ],
+      "manifest_sha256": "cfa8a1535cd79fbd868bcc67eb22efdab57568248a437fa5dda567234f1f03e2",
+      "name": "proofwidgets",
+      "repository": "leanprover-community/ProofWidgets4",
+      "source_tree_digest": "4a0318d2464c6d28ffe0979fdd4b2c97d2445ffcdb7c6ee5df1b42fa98ebad62",
+      "toolchain_sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "tree": "6f39a3ce916f1cd8c298b85695b620444719e14b"
+    }
+  ],
+  "platform": "linux/amd64",
+  "recipe_id": "lean-mathlib-v4.35.0-linux-amd64-v1",
+  "schema_version": "LeanMathlibRecipeV1",
+  "status": "SOURCE_LOCK_ONLY_UNPREPARED",
+  "toolchain": "leanprover/lean4:v4.35.0"
+}

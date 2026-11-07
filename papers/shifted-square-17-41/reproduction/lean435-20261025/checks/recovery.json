@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "mode": "Automated byte and metadata comparison, no Lean execution",
+  "source_archive_bytes": 1443840,
+  "source_archive_sha256": "6b6e03af11d97237a5c3616ccd2ae5985f95a8940a3c373bca208bdb64bd3001",
+  "original_candidate_equals_reference": true,
+  "source_members": 61,
+  "member_sizes_and_sha256_match_original_config": true,
+  "main_base": "fd35ce953306db0361a376e2b1993f5f2e0eb32f",
+  "different_source_files_vs_public": [
+    "Erdos364/SquareMiddle/LeafCompiler.lean",
+    "Erdos364/SquareMiddle/PellDivisibilityRank.lean",
+    "Erdos364/SquareMiddle/QuarticPellCohn.lean"
+  ],
+  "original_manifest_matches": [
+    "frozen/project-config.json",
+    "frozen/comparison.json",
+    "frozen/nanoda.json",
+    "frozen/tools.json",
+    "frozen/environment.json",
+    "helpers/Build.py",
+    "helpers/Inventory.lean",
+    "helpers/Inspect.lean"
+  ],
+  "generated_lakefiles": {
+    "reference": {
+      "bytes": 3652,
+      "sha256": "191112a8c8a1d165d579b87c471674d44a2949b28ec3fa4ad00897d0a48ab368",
+      "matches_october_manifest": true
+    },
+    "positive": {
+      "bytes": 3651,
+      "sha256": "13ec250b8b39c9e453894ecf365a515bdc40b6f48908ef9ad1ec8374a37bc69a",
+      "matches_october_manifest": true
+    }
+  },
+  "build": "NOT_RUN",
+  "six_checkers": "NOT_RUN",
+  "observed_date": "2026-11-07"
+}
