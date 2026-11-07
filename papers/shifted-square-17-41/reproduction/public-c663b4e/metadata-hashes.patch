@@ -1,0 +1,49 @@
+--- a/SHA256SUMS
++++ b/SHA256SUMS
+@@ -64,7 +64,7 @@
+ cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  LICENSES/Apache-2.0.txt
+ 9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411  LICENSES/CC-BY-4.0.txt
+ 1350e3943864f97800e1619bf3f709d94a803c41b2ef98a39a0074773cc2ab3e  Makefile
+-6173c19dcd71ab10ab6896df1fc82ae8eedc754dda79bc2be0cfdc7937073fb8  README.md
++8f44033207f1ccdd7415250b26f5cde8258bd0e0062f4bee99284dee8fb1579e  README.md
+ 4decffa933cd174492243eb1b1f3c9dfbae98fa56338e303533b8b23fde960c5  experiments/paper1_validation_20260909/magma-17-41-comparison.md
+ 9548559c09c121a06730ecd7b2f330e5b7edba39d249a374e90dd8174fdee62c  experiments/paper1_validation_20260909/magma-17-41-inputs.m
+ f55f3741cea656f0e515072979cf1c3315bee92da368bc80645b08edb5f66910  experiments/paper1_validation_20260909/magma-17-41-output.txt
+@@ -100,7 +100,7 @@
+ 4f843bebd889d05ad415bd9c6280651b998fd1c5ae75b07d9c2f4b11834104d0  papers/shifted-square-17-41/manuscript/explanation/paper_1_explained.md
+ c6360311f6576865ffaeef8351c595f36d149a3469e930b579cd49b7ba3afd51  papers/shifted-square-17-41/manuscript/explanation/paper_1_explained_illustrated.html
+ 043ec6a71b38bc64126ad404005c4caa8e7ef08c833627a2eaa05e2b9c84b8a4  papers/shifted-square-17-41/manuscript/paper_1_final_frozen_portable.md
+-04d6da655db0c260aacf5f362299318860726756c90525229e9c388b7cba51c0  papers/shifted-square-17-41/manuscript/revision/README.md
++c54de17a98fee5d78ffa0d164539be62f096cf2a72c774a91cb7b50f598a4050  papers/shifted-square-17-41/manuscript/revision/README.md
+ 145bf94e905a5aa4682759daffc03d1f5215f0acd6340e6e68cf54fe552f22ff  papers/shifted-square-17-41/manuscript/revision/SHA256SUMS
+ 47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94  papers/shifted-square-17-41/manuscript/revision/anc/requirements.txt
+ 82e223275f0df061a8a34e6aa8b16be5bbbf8f352245510933d06b01556c80a1  papers/shifted-square-17-41/manuscript/revision/anc/verify_fixed_fields.py
+@@ -113,7 +113,7 @@
+ 703a4627513d5c1dfc3147d9f2295d89bbe869f90da974530324a95b4a5722c7  papers/shifted-square-17-41/manuscript/revision/reading.css
+ 123d53cd02cc76debbf0aca8e47b6aa60e1d044dc636caa79fcfad46d2905d42  papers/shifted-square-17-41/manuscript/revision/reading.lua
+ 7cc91c0bf5e0937d261a658eb39ccd2ab467d61bd78a6d4fac5a1639b170d025  papers/shifted-square-17-41/source-theorem.md
+-706d2fb65aa6e1d775603f32d8ed993cc5ce26ca2f08af19d3ef1a253c302e1a  papers/shifted-square-17-41/theorem-formal-crosswalk.md
++a83262f7a7a73fc59991bc51b83827d30d5de2595d71ba90143a36c60d51e3dc  papers/shifted-square-17-41/theorem-formal-crosswalk.md
+ f1a8109fea25ac734758c70bef0d5f7c3d1c726f8c20f4c70a6923fa90126b67  papers/shifted-square-17-41/verification/CITATION.cff
+ aaabbac4e0262a8a9903424e56d7e9670588693d0508e518d957ee07839be995  papers/shifted-square-17-41/verification/LICENSE.md
+ cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  papers/shifted-square-17-41/verification/LICENSES/Apache-2.0.txt
+@@ -124,7 +124,7 @@
+ 6d74975d3fdfc885cdbea800d01fd0883d318ad18df5788bd7c7f1d79bdc75a4  papers/shifted-square-17-41/verification/export-README.md
+ 7d01323c2bc505b6426c0f734fef0689a8e93588a399fc554295217a250e18b5  papers/shifted-square-17-41/verification/export-files.txt
+ e94f1049d51af43f2d9529c8f79db68df19f94c3aafb69c854acf58fb30544be  papers/shifted-square-17-41/verification/export-root.lean
+-c854a52d5b4cb7f408fed1c7721a77db2e8074a4233577b769c19221a74c605f  papers/shifted-square-17-41/verification/imports.json
++5d64d2eb238f36a47fdabd982a5553cf9ebccb636144bff6897185c8e5bea0f6  papers/shifted-square-17-41/verification/imports.json
+ f25eb72d823ad8d6b3a4aa4d9a7609ca387267c4610319a3d9e12c208ba085dd  papers/shifted-square-17-41/verification/magma-imports.json
+ 15f377b7fb13df32305df8bc2fcb8411a6dc3bdb4d175401df5b1bed5434edfa  papers/shifted-square-17-41/verification/manuscript-inputs.json
+ cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  papers/shifted-square-17-41/verification/notices/MathJax-3.2.2-LICENSE.txt
+--- a/papers/shifted-square-17-41/verification/imports.json
++++ b/papers/shifted-square-17-41/verification/imports.json
+@@ -551,7 +551,7 @@
+       "path": "papers/shifted-square-17-41/theorem-formal-crosswalk.md",
+       "source_revision": "758b39bac2abe0fb1a88aae818e6c27bfc9a638f",
+       "source_path": "papers/shifted-square-17-41/theorem-formal-crosswalk.md",
+-      "sha256": "706d2fb65aa6e1d775603f32d8ed993cc5ce26ca2f08af19d3ef1a253c302e1a",
++      "sha256": "a83262f7a7a73fc59991bc51b83827d30d5de2595d71ba90143a36c60d51e3dc",
+       "role": "current mathematics and propagation replay"
+     },
+     {

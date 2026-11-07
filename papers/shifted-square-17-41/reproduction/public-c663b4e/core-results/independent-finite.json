@@ -1,0 +1,13 @@
+{
+  "command": "independent-finite",
+  "argv": [
+    "/workspace/nucleus/work/projects/default/repo/.scratch/reproduction/independent-run-v2/work/venv/bin/python",
+    "-B",
+    "papers/shifted-square-17-41/verification/replay/independent_finite.py"
+  ],
+  "source_sha256": "1cb46bdba470841ed34409f9187b76d5347332e2b0ed764843fd4005b798482c",
+  "status": "PASS",
+  "exit_code": 0,
+  "stdout": "PAPER1_INDEPENDENT_FINITE_OK composition_cases=1224 mod4_cases=336 mod8_cases=16 fixed17_exceptions=7 source_rows=41 coefficient_rows=39 telescope_links=18 modular_gcd_checks=41 telescope_controls=10000 a2_mod23_residues=23\n",
+  "stderr": ""
+}

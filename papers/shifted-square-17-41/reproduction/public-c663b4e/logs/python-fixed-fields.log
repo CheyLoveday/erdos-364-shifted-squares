@@ -1,0 +1,4 @@
+SymPy 1.14.0
+p=17: polynomial, index and reference checks passed
+p=41: polynomial, index and reference checks passed
+FIXED_FIELDS_OK

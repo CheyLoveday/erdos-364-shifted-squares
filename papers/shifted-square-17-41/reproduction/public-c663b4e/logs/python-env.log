@@ -1,0 +1,17 @@
+Collecting beautifulsoup4==4.14.3 (from -r .scratch/reproduction/source/papers/shifted-square-17-41/verification/requirements.lock (line 1))
+  Downloading beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
+Collecting mpmath==1.3.0 (from -r .scratch/reproduction/source/papers/shifted-square-17-41/verification/requirements.lock (line 5))
+  Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 73.2 MB/s eta 0:00:00
+Collecting soupsieve==2.8.4 (from -r .scratch/reproduction/source/papers/shifted-square-17-41/verification/requirements.lock (line 11))
+  Downloading soupsieve-2.8.4-py3-none-any.whl (37 kB)
+Collecting sympy==1.14.0 (from -r .scratch/reproduction/source/papers/shifted-square-17-41/verification/requirements.lock (line 17))
+  Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 87.2 MB/s eta 0:00:00
+Collecting typing-extensions==4.16.0 (from -r .scratch/reproduction/source/papers/shifted-square-17-41/verification/requirements.lock (line 21))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Installing collected packages: mpmath, typing-extensions, sympy, soupsieve, beautifulsoup4
+Successfully installed beautifulsoup4-4.14.3 mpmath-1.3.0 soupsieve-2.8.4 sympy-1.14.0 typing-extensions-4.16.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python3 -m pip install --upgrade pip
