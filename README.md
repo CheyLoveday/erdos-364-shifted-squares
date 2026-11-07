@@ -134,6 +134,7 @@ The public Lean 4.31 source release and the article editions remain unchanged.
 
 Choose the payload you want to reproduce:
 
+- **Pinned verification runs:** use the [reproduction target index](papers/shifted-square-17-41/reproduction/README.md) for the completed public Lean 4.31 recipe and the separately frozen Lean 4.35 inputs, whose fresh Linux replay remains pending.
 - **Current article (v1.0.1):** use the [article reproduction instructions](papers/shifted-square-17-41/manuscript/revision/README.md#reproduction) to build the reading files and run the unchanged finite verifier.
 - **Preserved formal and arithmetic evidence (v1.0.0):** use the setup and five operations below. These reproduce the preserved article/evidence payload, not the v1.0.1 reading files. The [verification guide](papers/shifted-square-17-41/reading/verification-guide.md) is a reading projection of the preserved v1.0.0 release instructions.
 
