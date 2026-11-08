@@ -1,0 +1,7 @@
+CF Pell cross-check: 283 non-square D <= 300, of which 284 had the least property verified exhaustively below the claimed solution
+== E. direct search: odd y <= 10000000 with y^4+2y^2+2 powerful ==
+  stage 1: primes <= 1000000 with q = 1 mod 4: 39175; root classes marked: 78310
+  stage 1: survivors (no prime <= 1000000 to the first power): 748369
+  stage 2: candidates (rad^2 | N and cofactor a square or cube): 0
+  stage 3: full factorisation of the candidates: []
+  conclusion: no odd y <= 10000000 with y^4+2y^2+2 powerful

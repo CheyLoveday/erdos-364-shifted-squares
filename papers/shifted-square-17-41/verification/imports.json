@@ -481,8 +481,8 @@
       "path": "experiments/sm2_four_translate/interpolation/outer41_verify.gp",
       "source_revision": "efede28be421c934ecd9684544c425c3c3069a23",
       "source_path": "experiments/sm2_four_translate/interpolation/outer41_verify.gp",
-      "sha256": "59ac1ef75d1d5e953aec81943a28bdb6b0656721de7947506704ac498c7bb560",
-      "role": "existing fixed-17/41 proof or replay dependency"
+      "sha256": "9b3d4a3e6a8d58ca3166627312302714f4c43bd84574253d6683d26b2d80b2c2",
+      "role": "existing fixed-17/41 proof or replay dependency with comment-only c_0 correction"
     },
     {
       "path": "experiments/sm2_outer_seventeen/outer17_verify.gp",

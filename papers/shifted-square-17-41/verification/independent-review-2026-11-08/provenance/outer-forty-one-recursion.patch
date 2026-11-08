@@ -1,0 +1,15 @@
+--- Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean	2026-11-07 20:52:34.336967044 +0000
++++ .ultramath/smw70l62n/m5/src/Erdos364/SquareMiddle/Sm2LowerSquareOuterFortyOne.lean	2026-11-07 23:29:30.665429773 +0000
+@@ -1,5 +1,12 @@
+ import Erdos364.SquareMiddle.Sm2LowerSquareGeneratorRank
+
++/- LOCAL-AUDIT PATCH (m5): the pinned upstream toolchain is Lean 4.31 with
++Mathlib fabf563; under Lean 4.35 / Mathlib a3a10db the kernel needs a deeper
++recursion limit to check the `norm_num` primality terms for the 10-digit
++factor 2731930457 (reported at line 4803 as `deep recursion detected`).
++This sets an elaboration option only; no statement or proof step changes. -/
++set_option maxRecDepth 20000
++
+ namespace Erdos364
+
+ open scoped jacobiSym

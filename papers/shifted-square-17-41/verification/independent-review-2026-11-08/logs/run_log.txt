@@ -1,0 +1,102 @@
+# environment
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+repo lean-toolchain: leanprover/lean4:v4.31.0
+installed mathlib snapshot: a3a10db
+repo required mathlib rev: rev = "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+
+## out-of-tree build of the maintained dev (60/60 modules ok)
+
+## compile the paper-strength statement bridge
+'Erdos364.StatementAudit.theorem_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.theorem_1_2_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.theorem_1_2_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.theorem_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.even_index_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.corollary_1_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_fortyOne_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2UpperNegativeUnit_pow_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.theorem_4_2_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.theorem_4_2_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.StatementAudit.endpoint_fortyOne_residue' does not depend on any axioms
+'Erdos364.StatementAudit.endpoint_twenty_is_nonresidue' depends on axioms: [propext, Classical.choice, Quot.sound]
+bridge exit=0
+
+## printed types of the bridge theorems
+Erdos364.StatementAudit.theorem_1_1 : ∀ (A N : ℕ),
+  A % 4 = 2 → 0 < N → 17 ∣ N ∨ 41 ∣ N → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A N) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_1_2_seventeen : ∀ (A : ℕ),
+  A % 4 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 17) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_1_2_fortyOne : ∀ (A : ℕ),
+  A % 4 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 41) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_1_3 : ∀ (A N : ℕ),
+  A % 4 = 2 → 0 < N → Even N → padicValNat 2 (Erdos364.sm2LucasReal A N - 1) = 2 * padicValNat 2 N + 1
+Erdos364.StatementAudit.even_index_exclusion : ∀ (A N : ℕ),
+  A % 4 = 2 → 0 < N → Even N → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A N) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.corollary_1_4 : ∀ (K u v N : ℕ),
+  u ^ 2 + 1 = K * v ^ 2 →
+    u % 4 = 2 → 0 < N → 2 ∣ N ∨ 17 ∣ N ∨ 41 ∣ N → ∀ (y : ℤ), ({ re := ↑u, im := ↑v } ^ N).re - 1 ≠ y ^ 2
+Erdos364.StatementAudit.theorem_4_2_seventeen : ∀ (A : ℕ),
+  A % 8 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 17) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_4_2_fortyOne : ∀ (A : ℕ),
+  A % 8 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 41) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.endpoint_fortyOne_included : ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal 2 41) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.endpoint_fortyOne_mod23_obstruction : ∀ (y : ℕ), y ^ 2 % 23 ≠ 20
+@Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor : ∀ {A N y : ℕ},
+  A % 4 = 2 → 0 < N → 17 ∣ N ∨ 41 ∣ N → Erdos364.sm2LucasReal A N = y ^ 2 + 1 → False
+@Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor : ∀ {K u v N : ℕ},
+  u ^ 2 + 1 = K * v ^ 2 →
+    u % 4 = 2 → 0 < N → 17 ∣ N ∨ 41 ∣ N → ∀ (y : ℕ), ({ re := ↑u, im := ↑v } ^ N).re ≠ ↑(y ^ 2 + 1)
+@Erdos364.ss41_shiftedSquare_impossible : ∀ {A y : ℕ}, A % 8 = 2 → Erdos364.sm2LucasReal A 41 = y ^ 2 + 1 → False
+
+## axiom footprints of crosswalk-attributed declarations
+'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_eight_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.ss41_shiftedSquare_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_fortyOne_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_four_two_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_eight_six_of_index_mod_four_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mul_of_odd_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_odd_index_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_sub_one_padicVal_two_of_positive_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.sm2UpperNegativeUnit_pow_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.noSm2OuterSeventeenBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_outerLarge_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_rankDefect_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.pellRank_dvd_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+## independent exact-arithmetic statement audit
+statement audit of paper_1 (p = 17, 41)
+[numbers printed in the paper]
+[recurrence identities (2.2)-(2.8)]
+[Theorem 1.3 exact 2-adic valuation (1.5)]
+[Lemma 5.1 composition (5.1)]
+[Theorem 1.1 index-divisibility exclusion (1.3)]
+[Proposition 2.1 odd 2-adic criterion (2.9)]
+[Corollary 1.4 Pell coordinate (6.1)]
+  Corollary 1.4 identity verified for 35 (K,u,v) triples, 6 of them with K not squarefree
+[fixed-field certificates (Tables 3, 4, A1; App. A.2)]
+[Proposition 7.1 uniform Jacobi identity (7.1)]
+  Proposition 7.1 verified for p=17 at 62500 values of A
+  Proposition 7.1 verified for p=41 at 62500 values of A
+[degree-41 endpoint A = 2]
+
+2078952 assertions; 0 failures
+STATEMENT_AUDIT_OK
+audit exit=0

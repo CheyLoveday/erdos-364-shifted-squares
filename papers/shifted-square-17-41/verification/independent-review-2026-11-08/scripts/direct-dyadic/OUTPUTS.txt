@@ -1,0 +1,172 @@
+=== certificate_check.py ===
+== sanity checks of the Dedekind routine ==
+  Z[sqrt5]  at 2 (expect False, index 2): False
+  Z[sqrt-3] at 2 (expect False, index 2): False
+  Z[sqrt2]  at 2 (expect True):           True
+
+===== p = 17 =====
+  g_p degree 17  g_p(0) = -2  (=> N(theta) = 2, odd degree)
+  irreducible over Q: True
+  disc(g_p) = {2: 24, 17: 17}
+  Dedekind at 2: True  at p: True  (disc has no other prime divisors => index 1)
+  Res(g_p,U_p) = -1  (=> U_p(theta) a unit)
+  g_p mod 2 factor degrees/multiplicities: [(1, 1), (4, 2), (4, 2)]  => dyadic types (e,f) = (1,1),(2,4),(2,4)
+  g_p(4) = 45537549122  H_p = g_p(4)/2 = 22768774561 = {13: 1, 1751444197: 1}
+  U_p(4) = 532303029
+  Table A1 (ell, v, Legendre(4U_p(4)/ell)): [(13, 1, -1), (1751444197, 1, 1)]
+  J(U_p(4),H_p) = -1
+  (A.3) g_p = T*phi^2*psi^2 mod 2: True ; phi,psi irreducible distinct mod 2: True
+  (A.2) remainder of H_{p,2} mod phi*psi: Poly(1, T, modulus=2)
+  (A.5) g_p(2)/p mod p = 12
+
+===== p = 41 =====
+  g_p degree 41  g_p(0) = -2  (=> N(theta) = 2, odd degree)
+  irreducible over Q: True
+  disc(g_p) = {2: 60, 41: 41}
+  Dedekind at 2: True  at p: True  (disc has no other prime divisors => index 1)
+  Res(g_p,U_p) = -1  (=> U_p(theta) a unit)
+  g_p mod 2 factor degrees/multiplicities: [(1, 1), (10, 2), (10, 2)]  => dyadic types (e,f) = (1,1),(2,10),(2,10)
+  g_p(4) = 50755107359004694554823202  H_p = g_p(4)/2 = 25377553679502347277411601 = {79: 1, 1373: 1, 115471: 1, 1506563: 1, 1344905911: 1}
+  U_p(4) = -43956715453803235217163523
+  Table A1 (ell, v, Legendre(4U_p(4)/ell)): [(79, 1, 1), (1373, 1, -1), (115471, 1, -1), (1506563, 1, -1), (1344905911, 1, 1)]
+  J(U_p(4),H_p) = -1
+  (A.3) g_p = T*phi^2*psi^2 mod 2: True ; phi,psi irreducible distinct mod 2: True
+  (A.2) remainder of H_{p,2} mod phi*psi: Poly(1, T, modulus=2)
+  (A.5) g_p(2)/p mod p = 26
+
+
+=== dyadic17.gp ===
+deg g = 17  g(0) = -2
+disc(g) = [2, 24; 17, 17]
+Res(g,U) = -1
+nf.disc = [2, 24; 17, 17]
+number of dyadic primes: 3
+P1: e=1 f=1 (t,d,s)=(1,1,1)  4e-d=3  2e=2  (delta4,b)=1
+P2: e=2 f=4 (t,d,s)=(0,0,0)  4e-d=8  2e=4  (delta4,b)=1
+P3: e=2 f=4 (t,d,s)=(0,0,0)  4e-d=8  2e=4  (delta4,b)=-1
+product of dyadic signs = -1
+total degree check sum ef = 17
+bare-theta reference product (b replaced by theta) = 1
+
+=== dyadic41.gp ===
+deg g = 41 Res = -1
+disc(g) = [2, 60; 41, 41]
+nf.disc = [2, 60; 41, 41]
+number of dyadic primes = 3
+P1: e=1 f=1 (t,d,s)=(1,1,1)  4e-d=3  2e=2  (delta4,b)=1
+P2: e=2 f=10 (t,d,s)=(0,0,0)  4e-d=8  2e=4  (delta4,b)=-1
+P3: e=2 f=10 (t,d,s)=(0,0,0)  4e-d=8  2e=4  (delta4,b)=1
+product = -1
+
+=== nfhilbert_validation.gp ===
+validate nfhilbert against Q_2 hilbert() at the e=f=1 dyadic prime:
+  a=5 b=2: nfhilbert=-1  hilbert(a,b,2)=-1
+  a=3 b=-1: nfhilbert=-1  hilbert(a,b,2)=-1
+  a=-1 b=-1: nfhilbert=-1  hilbert(a,b,2)=-1
+  a=2 b=2: nfhilbert=1  hilbert(a,b,2)=1
+  a=5 b=10: nfhilbert=-1  hilbert(a,b,2)=-1
+  a=3 b=5: nfhilbert=1  hilbert(a,b,2)=1
+  a=-2 b=3: nfhilbert=1  hilbert(a,b,2)=1
+dyadic (e,f) rows: [[1, 1], [2, 4], [2, 4]]
+
+=== dyadic_general.gp ===
+A=2 (2 mod 8):
+  P1 e=1 f=1  (delta_x,b)=1  (delta_4,b)=1  vP(x-4)=1 vP(4-x)=1
+  P2 e=2 f=4  (delta_x,b)=1  (delta_4,b)=1  vP(x-4)=0 vP(4-x)=0
+  P3 e=2 f=4  (delta_x,b)=-1  (delta_4,b)=-1  vP(x-4)=0 vP(4-x)=0
+  A=2 dyadic product = -1
+A=10 (2 mod 8):
+  P1 e=1 f=1  (delta_x,b)=1  (delta_4,b)=1  vP(x-4)=1 vP(4-x)=1
+  P2 e=2 f=4  (delta_x,b)=1  (delta_4,b)=1  vP(x-4)=0 vP(4-x)=0
+  P3 e=2 f=4  (delta_x,b)=-1  (delta_4,b)=-1  vP(x-4)=0 vP(4-x)=0
+  A=10 dyadic product = -1
+A=14 (6 mod 8):
+  P1 e=1 f=1  (delta_x,b)=-1  (delta_4,b)=1  vP(x-4)=1 vP(4-x)=1
+  P2 e=2 f=4  (delta_x,b)=1  (delta_4,b)=1  vP(x-4)=0 vP(4-x)=0
+  P3 e=2 f=4  (delta_x,b)=-1  (delta_4,b)=-1  vP(x-4)=0 vP(4-x)=0
+  A=14 dyadic product = 1
+A=22 (6 mod 8):
+  P1 e=1 f=1  (delta_x,b)=-1  (delta_4,b)=1  vP(x-4)=1 vP(4-x)=1
+  P2 e=2 f=4  (delta_x,b)=1  (delta_4,b)=1  vP(x-4)=0 vP(4-x)=0
+  P3 e=2 f=4  (delta_x,b)=-1  (delta_4,b)=-1  vP(x-4)=0 vP(4-x)=0
+  A=22 dyadic product = 1
+A=6 (6 mod 8):
+  P1 e=1 f=1  (delta_x,b)=-1  (delta_4,b)=1  vP(x-4)=1 vP(4-x)=1
+  P2 e=2 f=4  (delta_x,b)=1  (delta_4,b)=1  vP(x-4)=0 vP(4-x)=0
+  P3 e=2 f=4  (delta_x,b)=-1  (delta_4,b)=-1  vP(x-4)=0 vP(4-x)=0
+  A=6 dyadic product = 1
+
+=== bridge17.gp ===
+A = 2  Q = 22768774561  factor = [13, 1751444197; 1, 1]
+   ell=13 e=1 f=1 e(pr)=1 local symbol=-1^1   (xU(x)/ell)=-1
+   ell=1751444197 e=1 f=1 e(pr)=1 local symbol=1^1   (xU(x)/ell)=1
+  product of odd local symbols = -1     Jacobi J(xU(x),Q) = -1    J(U(2A),Q) = -1
+A = 10  Q = 6837047740879223216169  factor = [3, 23, 47, 877, 5507, 436522861997; 1, 1, 1, 1, 1, 1]
+   ell=3 e=1 f=1 e(pr)=1 local symbol=1^1   (xU(x)/ell)=1
+   ell=23 e=1 f=1 e(pr)=1 local symbol=-1^1   (xU(x)/ell)=-1
+   ell=47 e=1 f=1 e(pr)=1 local symbol=1^1   (xU(x)/ell)=1
+   ell=877 e=1 f=1 e(pr)=1 local symbol=-1^1   (xU(x)/ell)=-1
+   ell=5507 e=1 f=1 e(pr)=1 local symbol=1^1   (xU(x)/ell)=1
+   ell=436522861997 e=1 f=1 e(pr)=1 local symbol=-1^1   (xU(x)/ell)=-1
+  product of odd local symbols = -1     Jacobi J(xU(x),Q) = -1    J(U(2A),Q) = -1
+A = 14  Q = 2041999683221210354513773  factor = [11, 165479, 1121812041638466817; 1, 1, 1]
+   ell=11 e=1 f=1 e(pr)=1 local symbol=1^1   (xU(x)/ell)=1
+   ell=165479 e=1 f=1 e(pr)=1 local symbol=-1^1   (xU(x)/ell)=-1
+   ell=1121812041638466817 e=1 f=1 e(pr)=1 local symbol=-1^1   (xU(x)/ell)=-1
+  product of odd local symbols = 1     Jacobi J(xU(x),Q) = 1    J(U(2A),Q) = -1
+
+=== bridge_ramified.gp ===
+  A=18 ell=17 e(pr)=17 f(pr)=1 nprimes=1 v_pr(x-theta)=1 local symbol=1 local^v=1  Legendre(xU/ell)^v=1
+  A=18 ell=499 e(pr)=1 f(pr)=1 nprimes=2 v_pr(x-theta)=1 local symbol=1 local^v=1  Legendre(xU/ell)^v=1
+  A=2 ell=13 e(pr)=1 f(pr)=1 nprimes=5 v_pr(x-theta)=1 local symbol=-1 local^v=-1  Legendre(xU/ell)^v=-1
+  A=2 ell=1751444197 e(pr)=1 f(pr)=1 nprimes=5 v_pr(x-theta)=1 local symbol=1 local^v=1  Legendre(xU/ell)^v=1
+
+=== bridge_higher.gp ===
+A = 22  Q = 4380019959279832601704919541  factor = [3, 29, 43, 130090586571618776967089; 3, 1, 1, 1]
+   ell=3^3  f=1 e=1  local=1^3= 1   Legendre=1^3=1
+   ell=29^1  f=1 e=1  local=1^1= 1   Legendre=1^1=1
+   ell=43^1  f=1 e=1  local=1^1= 1   Legendre=1^1=1
+   ell=130090586571618776967089^1  f=1 e=1  local=1^1= 1   Legendre=1^1=1
+  odd product = 1   J(xU(x),Q) = 1   J(U(2A),Q) = -1
+A = 58  Q = 62417222292118373722769772032927577  factor = [3, 11, 4057, 57980043918763, 2680314126982753; 2, 1, 1, 1, 1]
+   ell=3^2  f=1 e=1  local=1^2= 1   Legendre=1^2=1
+   ell=11^1  f=1 e=1  local=1^1= 1   Legendre=1^1=1
+   ell=4057^1  f=1 e=1  local=-1^1= -1   Legendre=-1^1=-1
+   ell=57980043918763^1  f=1 e=1  local=1^1= 1   Legendre=1^1=1
+   ell=2680314126982753^1  f=1 e=1  local=1^1= 1   Legendre=1^1=1
+  odd product = -1   J(xU(x),Q) = -1   J(U(2A),Q) = -1
+
+=== stress_final.py ===
+p= 17 A=8k+2,k< 5000 : ({-1: 5000, 1: 0, 0: 0}, 0)
+p= 41 A=8k+2,k< 500 : ({-1: 500, 1: 0, 0: 0}, 0)
+p= 17 A=8k+6,k< 5000 : ({-1: 5000, 1: 0, 0: 0}, 0)
+p= 41 A=8k+6,k< 500 : ({-1: 500, 1: 0, 0: 0}, 0)
+
+=== chain17.py ===
+all 14 polynomial identities of outer17_pseudo_remainders hold: True
+R0 = F_17(A)-1 : True
+R1 = U_17(2A)  : True
+
+consecutive resultants:
+  Res(R0,R1) = {2: 224, -1: 1}
+  Res(R1,R2) = {2: 168, -1: 1}
+  Res(R2,R3) = {2: 142, 3: 11}
+  Res(R3,R4) = {2: 120, 3: 9}
+  Res(R4,R5) = {2: 100, 3: 9}
+  Res(R5,R6) = {2: 90, 3: 9, 11: 18}
+  Res(R6,R7) = {2: 63}
+  Res(R7,R8) = {2: 49, 5: 14, 13: 14}
+  Res(R8,R9) = {2: 40, 7: 12}
+  Res(R9,R10) = {2: 32}
+  Res(R10,R11) = {2: 30, -1: 1}
+  Res(R11,R12) = {2: 12, 5: 6, -1: 1}
+  Res(R12,R13) = {2: 6, 31: 4}
+  Res(R13,R14) = {2: 4, 37: 2}
+
+specialised common factors inside the hard phase A = 2 mod 8:
+  A=  2 (A mod 8 = 2): R2 mod 3 = 1, R3 mod 3 = 1, gcd(R2,R3) = 1
+  A= 10 (A mod 8 = 2): R2 mod 3 = 0, R3 mod 3 = 0, gcd(R2,R3) = 3
+  A= 18 (A mod 8 = 2): R2 mod 3 = 2, R3 mod 3 = 0, gcd(R2,R3) = 1
+  A= 26 (A mod 8 = 2): R2 mod 3 = 1, R3 mod 3 = 1, gcd(R2,R3) = 1
+  A= 34 (A mod 8 = 2): R2 mod 3 = 0, R3 mod 3 = 0, gcd(R2,R3) = 3
+  A= 42 (A mod 8 = 2): R2 mod 3 = 2, R3 mod 3 = 0, gcd(R2,R3) = 1

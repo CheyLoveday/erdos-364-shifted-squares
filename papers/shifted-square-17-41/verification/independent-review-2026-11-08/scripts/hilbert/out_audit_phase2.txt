@@ -1,0 +1,26 @@
+=== p = 17 ===
+  x=12 (A=6) dyadic symbols = [-1, 1, -1]  product = 1
+  Q12 = g_p(12)/2 = F_p(6)-1 = 1246797969712147685   odd? 1   mod 8 = 5
+  J(12*U_p(12), Q12) = 1   J(U_p(12), Q12) = -1   J(12,Q12) = -1
+  total product at x=12 (odd*dyadic*real) = 1   (reciprocity demands +1)
+  total product at x=4  (odd*dyadic*real) = 1
+    x=12: [-1, 1, -1]  agree with x=12? 1
+    x=28: [-1, 1, -1]  agree with x=12? 1
+    x=44: [-1, 1, -1]  agree with x=12? 1
+    x=60: [-1, 1, -1]  agree with x=12? 1
+    x=76: [-1, 1, -1]  agree with x=12? 1
+    x=16000004: [1, 1, -1]  agree with x=4? 1
+  Q12 factored: [5, 1; 7, 1; 2027, 1; 327409, 1; 53676437, 1]
+=== p = 41 ===
+  x=12 (A=6) dyadic symbols = [-1, -1, 1]  product = 1
+  Q12 = g_p(12)/2 = F_p(6)-1 = 116892285281669032244199605520960328157475125   odd? 1   mod 8 = 5
+  J(12*U_p(12), Q12) = 1   J(U_p(12), Q12) = -1   J(12,Q12) = -1
+  total product at x=12 (odd*dyadic*real) = 1   (reciprocity demands +1)
+  total product at x=4  (odd*dyadic*real) = 1
+    x=12: [-1, -1, 1]  agree with x=12? 1
+    x=28: [-1, -1, 1]  agree with x=12? 1
+    x=44: [-1, -1, 1]  agree with x=12? 1
+    x=60: [-1, -1, 1]  agree with x=12? 1
+    x=76: [-1, -1, 1]  agree with x=12? 1
+    x=16000004: [1, -1, 1]  agree with x=4? 1
+  Q12 factored: [5, 3; 7, 1; 127, 1; 340589686313053, 1; 3088464279517699581144853, 1]

@@ -1,0 +1,1 @@
+  A=2..4002 with A=2 mod 4: 1001 parameters, shifted squares found: 0

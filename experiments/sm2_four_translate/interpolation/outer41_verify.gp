@@ -39,8 +39,9 @@ outer41_main() =
     -7, -4, 1, 6, -1, 0, -2, -5, 4, 5, -5
   ];
 
-  \\ Build D_0=2, D_1=x, D_(n+2)=x*D_(n+1)+D_n,
-  \\ while reconstructing u_41=sum_(n=0)^40 a_n D_n.
+  \\ Build D_0=2, D_1=x, D_(n+2)=x*D_(n+1)+D_n.
+  \\ Reconstruct u_41 = a_0*1 + sum_(n=1)^40 a_n D_n:
+  \\ the constant coefficient a_0 multiplies 1, not D_0 = 2.
   d0 = 2;
   d1 = x;
   u = a41[1] + a41[2]*d1;

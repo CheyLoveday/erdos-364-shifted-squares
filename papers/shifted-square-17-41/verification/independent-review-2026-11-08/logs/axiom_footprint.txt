@@ -1,0 +1,27 @@
+'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_eight_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.ss41_shiftedSquare_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_seventeen_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_fortyOne_square_of_mod_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_four_two_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_eight_six_of_index_mod_four_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_mul_of_odd_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_odd_index_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.sm2LucasReal_sub_one_padicVal_two_of_positive_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.sm2UpperNegativeUnit_pow_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_even_index' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos364.noSm2OuterSeventeenBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_outerLarge_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.no_rankDefect_selected_fortyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos364.pellRank_dvd_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]

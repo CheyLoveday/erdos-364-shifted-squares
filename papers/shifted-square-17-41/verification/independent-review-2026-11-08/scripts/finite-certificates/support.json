@@ -1,0 +1,72 @@
+{
+ "17": {
+  "rows": [
+   {
+    "ell": 13,
+    "simple_root_at_4": true,
+    "v_ell(N)": 1,
+    "legendre(b4,ell)": -1,
+    "certificate_hilbert": -1,
+    "match": true
+   },
+   {
+    "ell": 1751444197,
+    "simple_root_at_4": true,
+    "v_ell(N)": 1,
+    "legendre(b4,ell)": 1,
+    "certificate_hilbert": 1,
+    "match": true
+   }
+  ],
+  "prod_eq_N": true,
+  "prod_legendre": -1,
+  "J_b4_N": -1
+ },
+ "41": {
+  "rows": [
+   {
+    "ell": 79,
+    "simple_root_at_4": true,
+    "v_ell(N)": 1,
+    "legendre(b4,ell)": 1,
+    "certificate_hilbert": 1,
+    "match": true
+   },
+   {
+    "ell": 1373,
+    "simple_root_at_4": true,
+    "v_ell(N)": 1,
+    "legendre(b4,ell)": -1,
+    "certificate_hilbert": -1,
+    "match": true
+   },
+   {
+    "ell": 115471,
+    "simple_root_at_4": true,
+    "v_ell(N)": 1,
+    "legendre(b4,ell)": -1,
+    "certificate_hilbert": -1,
+    "match": true
+   },
+   {
+    "ell": 1506563,
+    "simple_root_at_4": true,
+    "v_ell(N)": 1,
+    "legendre(b4,ell)": -1,
+    "certificate_hilbert": -1,
+    "match": true
+   },
+   {
+    "ell": 1344905911,
+    "simple_root_at_4": true,
+    "v_ell(N)": 1,
+    "legendre(b4,ell)": 1,
+    "certificate_hilbert": 1,
+    "match": true
+   }
+  ],
+  "prod_eq_N": true,
+  "prod_legendre": -1,
+  "J_b4_N": -1
+ }
+}

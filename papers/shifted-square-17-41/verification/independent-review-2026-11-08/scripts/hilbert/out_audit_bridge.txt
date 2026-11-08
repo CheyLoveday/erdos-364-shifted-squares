@@ -1,0 +1,13 @@
+=== odd local formula (3.7) at non-reference points ===
+  p=17 x=20  Q=6837047740879223216169  #prime factors=6  factor ms=27
+    product of odd symbols = -1   J(x*U_p(x),Q) = -1   all local checks ok = 1
+  p=17 x=28  Q=2041999683221210354513773  #prime factors=3  factor ms=18
+    product of odd symbols = 1   J(x*U_p(x),Q) = 1   all local checks ok = 1
+  p=17 x=36  Q=145145207045407947135357617  #prime factors=5  factor ms=15
+    product of odd symbols = -1   J(x*U_p(x),Q) = -1   all local checks ok = 1
+  p=41 x=20  Q=121772437791801274596617268962070420678645127024280409  #prime factors=4  factor ms=113
+    product of odd symbols = -1   J(x*U_p(x),Q) = -1   all local checks ok = 1
+  p=41 x=12  Q=116892285281669032244199605520960328157475125  #prime factors=5  factor ms=83
+    product of odd symbols = 1   J(x*U_p(x),Q) = 1   all local checks ok = 1
+  p=41 x=28  Q=113531868928839039708886442954357071873225417607439774326653  #prime factors=5  factor ms=67
+    product of odd symbols = 1   J(x*U_p(x),Q) = 1   all local checks ok = 1
