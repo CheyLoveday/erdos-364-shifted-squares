@@ -1,0 +1,48 @@
+=== p = 17 ===
+  signature (r1,r2) = [1, 8]
+  factormod(g,67): [degree, mult] = [[17, 1]]  irreducible over Q? 1
+  #P|p = 1  (e,f) = [[17, 1]]  P = (p, theta-2)? 1
+  g_p(2)/p mod p = 12
+  dyadic product with b = theta*u : [1, 1, -1] -> -1
+  dyadic product with b = theta   : [1, 1, 1] -> 1   (Prop 4.1 predicts +1)
+  v_2(tau) = 1  g(tau) mod 2^32 == 0 ? 1
+  direct Q_2 symbol ((4-theta)/theta, b) at the degree-1 dyadic prime = 1   [nfhilbert at P1 = 1; a mod 8 = 1, (c/2) mod 8 = 1]
+    x=4: dyadic symbols [1, 1, -1]  agree with reference? 1
+    x=20: dyadic symbols [1, 1, -1]  agree with reference? 1
+    x=36: dyadic symbols [1, 1, -1]  agree with reference? 1
+    x=52: dyadic symbols [1, 1, -1]  agree with reference? 1
+    x=68: dyadic symbols [1, 1, -1]  agree with reference? 1
+    x=84: dyadic symbols [1, 1, -1]  agree with reference? 1
+    x=100: dyadic symbols [1, 1, -1]  agree with reference? 1
+    x=28 (12 mod 16): dyadic symbols [-1, 1, -1]  agree with reference? 0
+    x=44 (12 mod 16): dyadic symbols [-1, 1, -1]  agree with reference? 0
+    x=60 (12 mod 16): dyadic symbols [-1, 1, -1]  agree with reference? 0
+  Prop 7.1 stress: A=2..4002 step 8: failures = 0 (of 501)
+  phase-restriction contrast: A=6..4002 step 8: J = -1 holds for 1001/2 of 1001/2
+  shifted squares F_p(A)-1 for A=2..4002, A=2 mod 8: 0
+  F_41(2)-1 mod 23 = 20   kronecker(20,23) = -1
+  F_17(2)-1 mod 13 = 0
+=== p = 41 ===
+  signature (r1,r2) = [1, 20]
+  factormod(g,163): [degree, mult] = [[41, 1]]  irreducible over Q? 1
+  #P|p = 1  (e,f) = [[41, 1]]  P = (p, theta-2)? 1
+  g_p(2)/p mod p = 26
+  dyadic product with b = theta*u : [1, -1, 1] -> -1
+  dyadic product with b = theta   : [1, 1, 1] -> 1   (Prop 4.1 predicts +1)
+  v_2(tau) = 1  g(tau) mod 2^32 == 0 ? 1
+  direct Q_2 symbol ((4-theta)/theta, b) at the degree-1 dyadic prime = 1   [nfhilbert at P1 = 1; a mod 8 = 1, (c/2) mod 8 = 1]
+    x=4: dyadic symbols [1, -1, 1]  agree with reference? 1
+    x=20: dyadic symbols [1, -1, 1]  agree with reference? 1
+    x=36: dyadic symbols [1, -1, 1]  agree with reference? 1
+    x=52: dyadic symbols [1, -1, 1]  agree with reference? 1
+    x=68: dyadic symbols [1, -1, 1]  agree with reference? 1
+    x=84: dyadic symbols [1, -1, 1]  agree with reference? 1
+    x=100: dyadic symbols [1, -1, 1]  agree with reference? 1
+    x=28 (12 mod 16): dyadic symbols [-1, -1, 1]  agree with reference? 0
+    x=44 (12 mod 16): dyadic symbols [-1, -1, 1]  agree with reference? 0
+    x=60 (12 mod 16): dyadic symbols [-1, -1, 1]  agree with reference? 0
+  Prop 7.1 stress: A=2..4002 step 8: failures = 0 (of 501)
+  phase-restriction contrast: A=6..4002 step 8: J = -1 holds for 1001/2 of 1001/2
+  shifted squares F_p(A)-1 for A=2..4002, A=2 mod 8: 0
+  F_41(2)-1 mod 23 = 20   kronecker(20,23) = -1
+  F_17(2)-1 mod 13 = 0

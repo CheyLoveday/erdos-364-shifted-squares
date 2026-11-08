@@ -1,0 +1,33 @@
+=== mod-2 factorisation (Dedekind-Kummer input) ===
+  p=17  [deg, mult] = [[1, 1], [4, 2], [4, 2]]
+  p=41  [deg, mult] = [[1, 1], [10, 2], [10, 2]]
+=== Proposition 2.1 mod-8 scan (A = 2 mod 4, n odd) ===
+  90 cases scanned, mismatches = 0
+  ***   syntax error, unexpected end of file, expecting )-> or ',' or ')':
+  ***   ...0))=",issquare(5+O(2^20)),
+  ***                               ^-
+... skipping file 'audit_final.gp'
+  ***   syntax error, unexpected ',', expecting end of file: "
+  ***   issquare(17+O(2^20))=",issquare(17+O(2^20)),
+  ***                         ^----------------------
+  ***   syntax error, unexpected end of file, expecting )-> or ',' or ')':
+  ***   ...ssquare(F(2,3)-1+O(2^20)),
+  ***                               ^-
+  ***   syntax error, unexpected ',', expecting end of file: " F_5(2)-1="
+  ***   ,F(2,5)-1," 2-adic square? ",iss
+  ***   ^--------------------------------
+=== phase-2 reference characters at x = 12 (A = 6) ===
+  p=17  Q12 = 1246797969712147685
+    ell=5  isprime=1  exp=1  (12*U_p(12)/ell)=-1
+    ell=7  isprime=1  exp=1  (12*U_p(12)/ell)=1
+    ell=2027  isprime=1  exp=1  (12*U_p(12)/ell)=-1
+    ell=327409  isprime=1  exp=1  (12*U_p(12)/ell)=-1
+    ell=53676437  isprime=1  exp=1  (12*U_p(12)/ell)=-1
+    J(12*U_p(12),Q12) = 1   J(U_p(12),Q12) = -1
+  p=41  Q12 = 116892285281669032244199605520960328157475125
+    ell=5  isprime=1  exp=3  (12*U_p(12)/ell)=-1
+    ell=7  isprime=1  exp=1  (12*U_p(12)/ell)=-1
+    ell=127  isprime=1  exp=1  (12*U_p(12)/ell)=1
+    ell=340589686313053  isprime=1  exp=1  (12*U_p(12)/ell)=1
+    ell=3088464279517699581144853  isprime=1  exp=1  (12*U_p(12)/ell)=1
+    J(12*U_p(12),Q12) = 1   J(U_p(12),Q12) = -1

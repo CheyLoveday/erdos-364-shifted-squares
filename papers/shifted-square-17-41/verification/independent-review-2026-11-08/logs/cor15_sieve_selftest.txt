@@ -1,0 +1,4 @@
+CF Pell cross-check: 283 non-square D <= 300, of which 284 had the least property verified exhaustively below the claimed solution
+== E. direct search: odd y <= 4000 with y^4+2y^2+2 powerful ==
+selftest_E: ymax=4000, B=200: survivors 756, pipeline hits [], brute force [], agree=True
+selftest_powerful: 2000 random N < 10^28 with B = 1000000: mismatches 0 []

@@ -1,0 +1,10 @@
+{
+ "thm13": {
+  "tested": 2900,
+  "failures": []
+ },
+ "thm11_direct": {
+  "tested": 750,
+  "squares": []
+ }
+}

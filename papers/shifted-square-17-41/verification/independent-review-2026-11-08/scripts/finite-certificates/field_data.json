@@ -1,0 +1,66 @@
+{
+ "17": {
+  "irred_mod": 67,
+  "irred_mod_ok": true,
+  "ded_p2": {
+   "index_coprime": true,
+   "ef": [
+    [
+     1,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     2
+    ]
+   ],
+   "rebuild": true
+  },
+  "ded_p17": {
+   "index_coprime": true,
+   "ef": [
+    [
+     1,
+     17
+    ]
+   ],
+   "rebuild": true
+  }
+ },
+ "41": {
+  "irred_mod": 163,
+  "irred_mod_ok": true,
+  "ded_p2": {
+   "index_coprime": true,
+   "ef": [
+    [
+     1,
+     1
+    ],
+    [
+     10,
+     2
+    ],
+    [
+     10,
+     2
+    ]
+   ],
+   "rebuild": true
+  },
+  "ded_p41": {
+   "index_coprime": true,
+   "ef": [
+    [
+     1,
+     41
+    ]
+   ],
+   "rebuild": true
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "u17_match": true,
+ "17": {
+  "phi_irred": true,
+  "even": true,
+  "corr_rem_one": true
+ },
+ "41": {
+  "phi_irred": true,
+  "even": false,
+  "corr_rem_one": false
+ }
+}

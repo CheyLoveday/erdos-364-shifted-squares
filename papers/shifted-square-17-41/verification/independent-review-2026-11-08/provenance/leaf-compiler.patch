@@ -1,0 +1,24 @@
+--- Erdos364/SquareMiddle/LeafCompiler.lean	2026-11-07 20:52:34.334801806 +0000
++++ .ultramath/smw70l62n/m5/src/Erdos364/SquareMiddle/LeafCompiler.lean	2026-11-07 23:13:03.295631929 +0000
+@@ -50,7 +50,20 @@
+   | sm2TwoKernel
+   | sm4TwoKernel
+   | sm6TwoKernel
+-  deriving DecidableEq, Repr, Fintype
++  deriving DecidableEq, Repr
++
++/-- LOCAL-AUDIT PATCH (m5, statement audit): the upstream `deriving Fintype`
++instance fails to elaborate against Mathlib a3a10db / Lean 4.35 because of a
++`Finset` membership-instance change; this explicit instance has the same
++contents.  No statement or definition in the file is altered. -/
++@[reducible] instance : Fintype SquareMiddleLeaf where
++  elems :=
++    {SquareMiddleLeaf.sm0UpperSquare, SquareMiddleLeaf.sm0TwoKernel,
++      SquareMiddleLeaf.sm2LowerSquare, SquareMiddleLeaf.sm2TwoKernel,
++      SquareMiddleLeaf.sm4TwoKernel, SquareMiddleLeaf.sm6TwoKernel}
++  complete := by
++    intro x
++    cases x <;> simp
+
+ /-- The top branch attached to each leaf name. -/
+ def SquareMiddleLeaf.topBranch : SquareMiddleLeaf → SquareMiddleTopBranch

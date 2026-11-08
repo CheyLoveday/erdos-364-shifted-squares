@@ -1,0 +1,16 @@
+{
+ "17": {
+  "tested": 25000,
+  "A_max": 200000,
+  "ramified_only": 1471,
+  "nonramified_failures": [],
+  "vp_not_one": []
+ },
+ "41": {
+  "tested": 7500,
+  "A_max": 60000,
+  "ramified_only": 183,
+  "nonramified_failures": [],
+  "vp_not_one": []
+ }
+}

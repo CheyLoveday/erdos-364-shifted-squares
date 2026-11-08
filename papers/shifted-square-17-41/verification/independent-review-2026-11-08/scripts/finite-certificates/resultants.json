@@ -1,0 +1,12 @@
+{
+ "17": {
+  "resultant_g_u": -1,
+  "digits_bound": 81,
+  "nprimes": 47
+ },
+ "41": {
+  "resultant_g_u": -1,
+  "digits_bound": 678,
+  "nprimes": 253
+ }
+}

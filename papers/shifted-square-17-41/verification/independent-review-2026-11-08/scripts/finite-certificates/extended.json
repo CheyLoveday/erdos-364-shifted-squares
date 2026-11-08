@@ -1,0 +1,16 @@
+{
+ "17": {
+  "A_max": 1000000,
+  "tested": 125000,
+  "failures": []
+ },
+ "41": {
+  "A_max": 300000,
+  "tested": 37500,
+  "failures": []
+ },
+ "nonsquare": {
+  "tested": 1400,
+  "squares": []
+ }
+}

@@ -1,0 +1,25 @@
+Erdos364.StatementAudit.theorem_1_1 : ∀ (A N : ℕ),
+  A % 4 = 2 → 0 < N → 17 ∣ N ∨ 41 ∣ N → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A N) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_1_2_seventeen : ∀ (A : ℕ),
+  A % 4 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 17) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_1_2_fortyOne : ∀ (A : ℕ),
+  A % 4 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 41) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_1_3 : ∀ (A N : ℕ),
+  A % 4 = 2 → 0 < N → Even N → padicValNat 2 (Erdos364.sm2LucasReal A N - 1) = 2 * padicValNat 2 N + 1
+Erdos364.StatementAudit.even_index_exclusion : ∀ (A N : ℕ),
+  A % 4 = 2 → 0 < N → Even N → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A N) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.corollary_1_4 : ∀ (K u v N : ℕ),
+  u ^ 2 + 1 = K * v ^ 2 →
+    u % 4 = 2 → 0 < N → 2 ∣ N ∨ 17 ∣ N ∨ 41 ∣ N → ∀ (y : ℤ), ({ re := ↑u, im := ↑v } ^ N).re - 1 ≠ y ^ 2
+Erdos364.StatementAudit.theorem_4_2_seventeen : ∀ (A : ℕ),
+  A % 8 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 17) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.theorem_4_2_fortyOne : ∀ (A : ℕ),
+  A % 8 = 2 → ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal A 41) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.endpoint_fortyOne_included : ∀ (y : ℤ), ↑(Erdos364.sm2LucasReal 2 41) ≠ y ^ 2 + 1
+Erdos364.StatementAudit.endpoint_fortyOne_mod23_obstruction : ∀ (y : ℕ), y ^ 2 % 23 ≠ 20
+@Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor : ∀ {A N y : ℕ},
+  A % 4 = 2 → 0 < N → 17 ∣ N ∨ 41 ∣ N → Erdos364.sm2LucasReal A N = y ^ 2 + 1 → False
+@Erdos364.normNegativeOneUnit_real_ne_square_add_one_of_positive_index_factor : ∀ {K u v N : ℕ},
+  u ^ 2 + 1 = K * v ^ 2 →
+    u % 4 = 2 → 0 < N → 17 ∣ N ∨ 41 ∣ N → ∀ (y : ℕ), ({ re := ↑u, im := ↑v } ^ N).re ≠ ↑(y ^ 2 + 1)
+@Erdos364.ss41_shiftedSquare_impossible : ∀ {A y : ℕ}, A % 8 = 2 → Erdos364.sm2LucasReal A 41 = y ^ 2 + 1 → False
