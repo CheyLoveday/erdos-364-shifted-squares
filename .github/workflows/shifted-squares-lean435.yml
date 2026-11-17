@@ -1,4 +1,4 @@
-name: Shifted squares Lean 4.35 Linux preflight
+name: Shifted squares Lean 4.35 Linux replay
 
 on:
   push:
@@ -8,10 +8,17 @@ permissions:
   contents: read
 
 jobs:
-  qualify-linux:
+  replay-linux:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 150
+    env:
+      REPRODUCTION: papers/shifted-square-17-41/reproduction/lean435-20261025
+      SOURCE_COMMIT: 4da472744c0425ec520e6e96e364170e1c3a977e
     steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - name: Qualify x86_64 and isolated namespaces
         shell: bash
         run: |
@@ -43,3 +50,49 @@ jobs:
             probe
           fi
           echo 'Linux namespace and host-home isolation preflight passed.'
+      - name: Bind exact inputs and acquire the frozen Linux toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          scratch="$RUNNER_TEMP/shifted-squares-lean435"
+          mkdir "$scratch" "$scratch/toolchain"
+          git diff --exit-code "$SOURCE_COMMIT" HEAD -- "$REPRODUCTION"
+          git rev-parse HEAD "$SOURCE_COMMIT" "$SOURCE_COMMIT:$REPRODUCTION" > "$scratch/git-inputs.txt"
+          image="$scratch/lean-4.35.0-linux.tar.zst"
+          curl --fail --silent --show-error --location --retry 2 --max-time 600 \
+            --output "$image" 'https://github.com/leanprover/lean4/releases/download/v4.35.0/lean-4.35.0-linux.tar.zst'
+          test "$(stat -c '%s' "$image")" = 594481375
+          printf '%s  %s\n' 7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d "$image" |
+            sha256sum -c | tee "$scratch/toolchain-download.txt"
+          tar --zstd -xf "$image" -C "$scratch/toolchain" --strip-components=1
+          rm -- "$image"
+          python3 -I -B .github/shifted-squares/fetch_frozen_dependencies.py \
+            "$REPRODUCTION/frozen/mathlib-recipe.json" "$scratch/dependencies" 2>&1 |
+            tee "$scratch/dependency-acquisition.txt"
+      - name: Build, compare and replay the full project
+        shell: bash
+        run: |
+          set -euo pipefail
+          scratch="$RUNNER_TEMP/shifted-squares-lean435"
+          python3 -I -B .github/shifted-squares/replay_shifted_squares.py \
+            "$REPRODUCTION" "$scratch/dependencies" "$scratch/toolchain" "$scratch/replay" \
+            --stage-seconds 5400 --free-gib 8 \
+            --challenge .github/shifted-squares/EndpointChallenge.lean \
+            --challenge-comparison .github/shifted-squares/endpoint-comparison.json 2>&1 |
+            tee "$scratch/replay-console.txt"
+      - name: Retain exports and evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: shifted-squares-lean435-linux
+          if-no-files-found: warn
+          retention-days: 7
+          compression-level: 1
+          path: |
+            ${{ runner.temp }}/shifted-squares-lean435/*.txt
+            ${{ runner.temp }}/shifted-squares-lean435/dependencies/receipts/
+            ${{ runner.temp }}/shifted-squares-lean435/replay/exports/
+            ${{ runner.temp }}/shifted-squares-lean435/replay/logs/
+            ${{ runner.temp }}/shifted-squares-lean435/replay/results/
+            ${{ runner.temp }}/shifted-squares-lean435/replay/work/reference/inventory.json
+            ${{ runner.temp }}/shifted-squares-lean435/replay/work/positive/inventory.json
