@@ -1,0 +1,45 @@
+name: Shifted squares Lean 4.35 Linux preflight
+
+on:
+  push:
+    branches: [codex/shifted-squares-linux-full-20261117]
+
+permissions:
+  contents: read
+
+jobs:
+  qualify-linux:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Qualify x86_64 and isolated namespaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          date -u '+%Y-%m-%dT%H:%M:%SZ'
+          uname -a
+          cat /etc/os-release
+          test "$(uname -m)" = x86_64
+          nproc
+          free -h
+          df -h "$RUNNER_TEMP"
+          sudo apt-get -o Acquire::Retries=2 update -qq
+          sudo apt-get -o Acquire::Retries=2 install -y --no-install-recommends bubblewrap
+          bwrap --version
+          probe() {
+            bwrap --unshare-all --die-with-parent --new-session --cap-drop ALL \
+              --ro-bind / / --tmpfs /home --tmpfs /root --tmpfs /run --tmpfs /tmp \
+              --dev /dev --proc /proc --clearenv --setenv PATH /usr/bin:/bin --chdir / \
+              -- /bin/sh -eu -s <<'PROBE'
+          test "$(ls -A /home)" = ""
+          test "$(ip -o link show | wc -l)" -eq 1
+          PROBE
+          }
+          if ! probe; then
+            sudo apt-get -o Acquire::Retries=2 install -y --no-install-recommends apparmor-profiles
+            profile=$(dpkg -L apparmor-profiles | awk '/\/bwrap-userns-restrict$/ { print; exit }')
+            test -n "$profile" && test -f "$profile"
+            sudo apparmor_parser -r "$profile"
+            probe
+          fi
+          echo 'Linux namespace and host-home isolation preflight passed.'
