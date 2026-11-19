@@ -1,0 +1,156 @@
+{
+  "apt": {
+    "packages": [
+      {
+        "filename": "pool/main/b/bubblewrap/bubblewrap_0.9.0-1ubuntu0.3_amd64.deb",
+        "name": "bubblewrap",
+        "sha256": "2461f1beee9cb04c8942739fe1a2b37e7b7c2a3d518f0779dc75f9245baa3094",
+        "size_bytes": 50436,
+        "version": "0.9.0-1ubuntu0.3"
+      },
+      {
+        "filename": "pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1_all.deb",
+        "name": "ca-certificates",
+        "sha256": "6bac2a01979e210d9eac1d4d56747ec709ea60654744d66705dc3c36e7629e50",
+        "size_bytes": 139430,
+        "version": "20260601~24.04.1"
+      },
+      {
+        "filename": "pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3_amd64.deb",
+        "name": "coreutils",
+        "sha256": "e1e9a17892be0cc83b7cea747edf331ffeb6d6c010b4db296e60d888e8e9274c",
+        "size_bytes": 1413428,
+        "version": "9.4-3ubuntu6.3"
+      },
+      {
+        "filename": "pool/main/c/curl/curl_8.5.0-2ubuntu10.16_amd64.deb",
+        "name": "curl",
+        "sha256": "3c5ca6af64370cfb0fac85876d8025563005cbd399fcaf7e34bbde9051058ae0",
+        "size_bytes": 226386,
+        "version": "8.5.0-2ubuntu10.16"
+      },
+      {
+        "filename": "pool/main/g/git/git_2.43.0-1ubuntu7.4_amd64.deb",
+        "name": "git",
+        "sha256": "c79b7948ef9860c97ec74293a90178676e63368a0711c95c28a55af4edf1adab",
+        "size_bytes": 3680654,
+        "version": "1:2.43.0-1ubuntu7.4"
+      },
+      {
+        "filename": "pool/main/g/gzip/gzip_1.12-1ubuntu3.2_amd64.deb",
+        "name": "gzip",
+        "sha256": "4067522fbffe22672e4cf683bfc32e4a304bc872cf76f10049ab36d1a9eedb91",
+        "size_bytes": 99204,
+        "version": "1.12-1ubuntu3.2"
+      },
+      {
+        "filename": "pool/main/g/gcc-14/libatomic1_14.2.0-4ubuntu2~24.04.1_amd64.deb",
+        "name": "libatomic1",
+        "sha256": "fe49cbbc7be753528380c724a8eef5f1e31dffa9221f692c5069048d81c7449d",
+        "size_bytes": 10466,
+        "version": "14.2.0-4ubuntu2~24.04.1"
+      },
+      {
+        "filename": "pool/main/g/gmp/libgmp10_6.3.0+dfsg-2ubuntu6.1_amd64.deb",
+        "name": "libgmp10",
+        "sha256": "285f8a505dfa8e1b33f357a9d8d3477ad35bf18c0b34771a6df4c25923f3ae0d",
+        "size_bytes": 253460,
+        "version": "2:6.3.0+dfsg-2ubuntu6.1"
+      },
+      {
+        "filename": "pool/main/p/python3-defaults/python3_3.12.3-0ubuntu2.1_amd64.deb",
+        "name": "python3",
+        "sha256": "e691b9cc40841c41bbdc50bd794c876cb1b1801306ea27b06e9a1458180df1e9",
+        "size_bytes": 23004,
+        "version": "3.12.3-0ubuntu2.1"
+      },
+      {
+        "filename": "pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4_amd64.deb",
+        "name": "tar",
+        "sha256": "fdf41a87936824e50c8ac11b0b22d1395aeb0754feef2dae5575b5d5a93793ec",
+        "size_bytes": 256392,
+        "version": "1.35+dfsg-3ubuntu0.4"
+      },
+      {
+        "filename": "pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.6_amd64.deb",
+        "name": "util-linux",
+        "sha256": "08eb17ba3b83378ed1e73d8335d0ce03b429c0bbeb07e374f536234edab02465",
+        "size_bytes": 1128326,
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "filename": "pool/main/libz/libzstd/zstd_1.5.5+dfsg2-2build1.1_amd64.deb",
+        "name": "zstd",
+        "sha256": "d7667f83e3a2caeaaecaca464d542ee6ccf537259a479622796c84afc96d6032",
+        "size_bytes": 644020,
+        "version": "1.5.5+dfsg2-2build1.1"
+      }
+    ],
+    "snapshot": "20261020T000000Z",
+    "suites": [
+      {
+        "inrelease_sha256": "cdb2f31d809f589719a53c6ad15f255b27569c4059542ada282aaa21b8e164b0",
+        "name": "noble"
+      },
+      {
+        "inrelease_sha256": "52bb7e89f40f411a401f8b1954098b5775a7d0d497dec182f323f4bc009612d0",
+        "name": "noble-updates"
+      },
+      {
+        "inrelease_sha256": "7f81a77abbf23458062d0bc98e868e00b4392de0c78d339e58f548e8ff64245b",
+        "name": "noble-security"
+      }
+    ]
+  },
+  "base_image": {
+    "config_digest": "sha256:6277ab668b2ad3c3ab851d370faa1690d324b30db29d342527f61fed28f20f36",
+    "index_digest": "sha256:68ee22004a9109b44973313b02ff7b1de250f1de0f5ecb628d73f579aaff33ac",
+    "manifest_digest": "sha256:a2d43bffc46670d7108bb3c0468c67c5557c4c92e83e1e34cbff1322ad1b94dc",
+    "repository": "docker.io/library/ubuntu"
+  },
+  "checkers": [
+    {
+      "name": "con-leche",
+      "relative_path": "bin/con-leche"
+    },
+    {
+      "name": "con-ron",
+      "relative_path": "bin/con-ron"
+    },
+    {
+      "name": "lean4lean",
+      "relative_path": "bin/lean4lean"
+    },
+    {
+      "name": "leanchecker",
+      "relative_path": "bin/leanchecker"
+    },
+    {
+      "name": "leanchecker-paranoid",
+      "relative_path": "bin/leanchecker-paranoid"
+    },
+    {
+      "name": "nanoda",
+      "relative_path": "bin/nanoda_bin"
+    }
+  ],
+  "lean": {
+    "archive": "lean-4.35.0-linux.tar.zst",
+    "archive_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+    "archive_size_bytes": 594481375,
+    "source_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "version": "4.35.0"
+  },
+  "platform": "linux/amd64",
+  "preparation": {
+    "network": "PINNED_PUBLIC_DEPENDENCIES_ONLY",
+    "provider_enabled": false
+  },
+  "recipe_id": "lean-only-v4.35.0-linux-amd64-v1",
+  "schema_version": "LeanEnvironmentRecipeV1",
+  "status": "RECIPE_ONLY_UNBUILT",
+  "verification": {
+    "credentials": false,
+    "network": "NONE"
+  }
+}

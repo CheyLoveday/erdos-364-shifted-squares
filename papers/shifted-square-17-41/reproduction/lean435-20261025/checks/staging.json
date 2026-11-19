@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "offline input and staging controls only",
+  "source_modules_per_role": 61,
+  "dependency_pins": 9,
+  "controls": [
+    "two fresh stagings are byte-identical, including generated receipts",
+    "both staged 61-file selections match every frozen source byte",
+    "existing output is rejected without alteration",
+    "dangling output symlink is rejected",
+    "corrupted archive bytes fail the frozen input check",
+    "missing source member rejected before extraction",
+    "duplicate source member rejected before extraction",
+    "traversal source member rejected before extraction",
+    "symlink source member rejected before extraction"
+  ],
+  "build": "NOT_RUN",
+  "six_checkers": "NOT_RUN",
+  "scratch": "only this check's temporary directories removed",
+  "command": "python3 check_staging.py",
+  "observed_date": "2026-11-07"
+}

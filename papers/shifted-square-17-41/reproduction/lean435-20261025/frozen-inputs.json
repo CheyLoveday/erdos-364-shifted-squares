@@ -1,0 +1,93 @@
+{
+  "source_archive_sha256": "6b6e03af11d97237a5c3616ccd2ae5985f95a8940a3c373bca208bdb64bd3001",
+  "historical_attempt": "fc-project-f9a2ea7611fde9af3bdc5efce0d03356",
+  "historical_export_sha256": "9602ca17bcc0ac6bcbd19cf3977f5825c66877fdd1bf0d394e94939f4d32776e",
+  "historical_export_bytes": 336350990,
+  "helper_commit": "ccebe537a8605483f0b504021a489e7579a23b84",
+  "files": [
+    {
+      "path": "frozen/project-config.json",
+      "bytes": 13531,
+      "sha256": "0afabc828da289ddfaac724a7eb374102c98b10559e38c1def0550ec683c6c04",
+      "source": "public c663b4e verification/records/2026-10-25-lean435/artifacts/project-config.json",
+      "october_manifest_path": "artifacts/project-config.json"
+    },
+    {
+      "path": "frozen/comparison.json",
+      "bytes": 333,
+      "sha256": "3f74bbda629cc2b931b84a73078e50c1220156ce6b4d90c154aae3d1c1d2c607",
+      "source": "public c663b4e verification/records/2026-10-25-lean435/artifacts/comparison.json",
+      "october_manifest_path": "artifacts/comparison.json"
+    },
+    {
+      "path": "frozen/nanoda.json",
+      "bytes": 224,
+      "sha256": "4593821411380c0f785411cc6082b3c216ce88f8681f35aa55790e9516a08c3a",
+      "source": "public c663b4e verification/records/2026-10-25-lean435/artifacts/nanoda.json",
+      "october_manifest_path": "artifacts/nanoda.json"
+    },
+    {
+      "path": "frozen/tools.json",
+      "bytes": 947,
+      "sha256": "666bbc9372ae19fc4d64327fc7f6bf813417eb3ffcd93cd9412af99d75c79dbd",
+      "source": "public c663b4e verification/records/2026-10-25-lean435/artifacts/tools.json",
+      "october_manifest_path": "artifacts/tools.json"
+    },
+    {
+      "path": "frozen/environment.json",
+      "bytes": 1158,
+      "sha256": "2fb9cdffdc5e1f7d86dcfe24d94b4b217adc76ce44aec7bb23b9bc2855ab69cb",
+      "source": "public c663b4e verification/records/2026-10-25-lean435/artifacts/environment.json",
+      "october_manifest_path": "artifacts/environment.json"
+    },
+    {
+      "path": "frozen/source.tar",
+      "bytes": 1443840,
+      "sha256": "6b6e03af11d97237a5c3616ccd2ae5985f95a8940a3c373bca208bdb64bd3001",
+      "source": "recovered original candidate and reference archives; archive identity is authority",
+      "october_manifest_path": null
+    },
+    {
+      "path": "frozen/mathlib-recipe.json",
+      "bytes": 9277,
+      "sha256": "b69e6425f952a21738765a9d2a2527f6935a15020243bdf658a9df629b9a72b0",
+      "source": "formal-code archived environments/lean-mathlib/recipe.json",
+      "october_manifest_path": null
+    },
+    {
+      "path": "frozen/lean-recipe.json",
+      "bytes": 5389,
+      "sha256": "7668dd076d7eca6706b01fce231539cd6f5cd03adaea70285bc0a4cd910e01c5",
+      "source": "formal-code archived environments/lean-only/recipe.json",
+      "october_manifest_path": null
+    },
+    {
+      "path": "helpers/Build.py",
+      "bytes": 3527,
+      "sha256": "448fe1dda192b22739f600bebc9210a5dd23e86465918061a5baac44abc552c0",
+      "source": "formal-code ccebe537a8605483f0b504021a489e7579a23b84:environments/lean-mathlib/fixtures/ProjectBuild.py",
+      "october_manifest_path": "artifacts/Build.py"
+    },
+    {
+      "path": "helpers/Inventory.lean",
+      "bytes": 4374,
+      "sha256": "b08165c9164c92a8fdb0f9eeefb17d02ac216abe43433c4184b04570de45f4af",
+      "source": "formal-code ccebe537a8605483f0b504021a489e7579a23b84:environments/lean-mathlib/fixtures/ProjectInventory.lean",
+      "october_manifest_path": "artifacts/Inventory.lean"
+    },
+    {
+      "path": "helpers/Inspect.lean",
+      "bytes": 4423,
+      "sha256": "c932e3e00ae839550841c42c25439caf12a0bba00585ff9eb0345a704c560dd9",
+      "source": "formal-code ccebe537a8605483f0b504021a489e7579a23b84:tests/fixtures/checkers/Inspect.lean",
+      "october_manifest_path": "artifacts/Inspect.lean"
+    },
+    {
+      "path": "helpers/HashInputs.lean",
+      "bytes": 572,
+      "sha256": "81d374ed4668cf3139f067934b1c23bba193e6c51993ad76ecfa4935ede236a3",
+      "source": "formal-code ccebe537a8605483f0b504021a489e7579a23b84:environments/lean-mathlib/fixtures/HashInputs.lean",
+      "october_manifest_path": null
+    }
+  ]
+}

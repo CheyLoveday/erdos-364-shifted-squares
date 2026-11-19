@@ -1,0 +1,1 @@
+{"export_file_path":"/inputs/export.ndjson","nat_extension":true,"num_threads":4,"permitted_axioms":["propext","Classical.choice","Quot.sound"],"string_extension":true,"unpermitted_axiom_hard_error":false,"use_stdin":false}
