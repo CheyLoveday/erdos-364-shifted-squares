@@ -1,13 +1,15 @@
 # Frozen Lean 4.35 selection: recovered inputs
 
-**Input recovery and offline staging: checked. Fresh Linux build and six-checker
-reproduction: not run.** This package prepares the separately frozen October
-selection for a new replay. It does not close that reproduction target yet.
+**The input recovery and offline staging passed at the preparation checkpoint.**
+This package retains the separately frozen October selection and the original
+replay instructions.
 
 Start with [the input inventory](INPUTS.md), [the current receipt](RECEIPT.md),
 and [the Linux replay plan](REPLAY.md). The [October assurance note](../../verification/LEAN-ASSURANCE-2026-10-25.md)
 and its receipts retain their historical meaning. For the completed public
 Lean 4.31 reproduction, use [the separate public package](../public-c663b4e/).
+
+The November hosted run passed the selected source verification and has a separate [dated receipt](runs/20261119-odproof/RECEIPT.md).
 
 ## Check and stage the inputs
 

@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-19",
+  "scope": "Selected Lean verification on a hosted Linux worker with independent engineering receipt review",
+  "public_input_commit": "4da472744c0425ec520e6e96e364170e1c3a977e",
+  "runtime_revision": "1a2e20771f8d6e69129b5fc6a9f490f106e8946e",
+  "runtime_wheel_sha256": "92c31f8faa2d310d32fa58470d3956a365d263ff8cb7679e7c34f6c97fab1fc0",
+  "lean_release": "4.35.0",
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "source_archive_sha256": "6b6e03af11d97237a5c3616ccd2ae5985f95a8940a3c373bca208bdb64bd3001",
+  "normalized_candidate_source_sha256": "fd097574db89819ade3f6bdb97fabac7117e393e8a04faf3b6a5432dba5e546e",
+  "normalized_reference_source_sha256": "fd097574db89819ade3f6bdb97fabac7117e393e8a04faf3b6a5432dba5e546e",
+  "lean_options": {
+    "autoImplicit": false,
+    "maxRecDepth": 100000
+  },
+  "lean_source_modules": 61,
+  "toolchain_and_lake_metadata_sha256": {
+    "lake-manifest.json": "1152bacb28e43a2aab29f52a38241e040c1bde2252a3089d51b6f1c538d12033",
+    "lakefile.toml": "f336337c2b072039dbd85e9484cbfe8ac1d4217016d1ed960d6e592783572f82",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "prepared_mathlib_archive_sha256": "aae22b4782e2ffe13689e9b57e8772caae150a7022c4394ce23fec09960682d4",
+  "prepared_mathlib_environment_digest": "3cd594fb399a49728757505c0ad8616b56e6e86b4bcbe375d0eeb51fc2e2e620",
+  "selected_nanoda_binary_sha256": "c269a73511572622b7a82143eead18ab0d0fd6c5b181f1787aab6e4630cde52d",
+  "request_sha256": "de2b78b1d082ffbf0ea75bdb4f0c3793b906b56154c6eb41abe8cb1c7ab5515c",
+  "receipt_sha256": "11cbe64810ee5b97bfc7e8b460cc50e00f89abab3f336b6a8ed8be886120e060",
+  "native_result_sha256": "14fe19db52a76597f4bdf354c53f254edc18506e737973244d875fab40365f6c",
+  "candidate_build_exit": 0,
+  "reference_build_exit": 0,
+  "exports": {
+    "candidate": {
+      "bytes": 336278853,
+      "sha256": "86984e389ed72f834b0ec9d3494e0114e9223f6268f73fd3e1be7baa254294d9"
+    },
+    "reference": {
+      "bytes": 336278853,
+      "sha256": "86984e389ed72f834b0ec9d3494e0114e9223f6268f73fd3e1be7baa254294d9"
+    }
+  },
+  "historical_october_export": {
+    "bytes": 336350990,
+    "sha256": "9602ca17bcc0ac6bcbd19cf3977f5825c66877fdd1bf0d394e94939f4d32776e"
+  },
+  "coverage": {
+    "project_declarations": 3870,
+    "matches": true,
+    "missing": [],
+    "extra": [],
+    "conflicting": []
+  },
+  "checkers": [
+    {
+      "cleanup_confirmed": true,
+      "complete": true,
+      "name": "leanchecker",
+      "returncode": 0,
+      "stage": "PASS"
+    },
+    {
+      "cleanup_confirmed": true,
+      "complete": true,
+      "name": "leanchecker-paranoid",
+      "returncode": 0,
+      "stage": "PASS"
+    },
+    {
+      "cleanup_confirmed": true,
+      "complete": true,
+      "name": "lean4lean",
+      "returncode": 0,
+      "stage": "PASS"
+    },
+    {
+      "cleanup_confirmed": true,
+      "complete": true,
+      "name": "nanoda",
+      "returncode": 0,
+      "stage": "PASS"
+    },
+    {
+      "cleanup_confirmed": true,
+      "complete": true,
+      "name": "con-leche",
+      "returncode": 0,
+      "stage": "PASS"
+    },
+    {
+      "cleanup_confirmed": true,
+      "complete": true,
+      "name": "con-ron",
+      "returncode": 0,
+      "stage": "PASS"
+    }
+  ],
+  "strict_exported_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "protected_theorems": [
+    "Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_even_index",
+    "Erdos364.no_sm2LucasReal_shiftedSquare_of_positive_index_factor",
+    "Erdos364.ss41_shiftedSquare_impossible"
+  ],
+  "verification": "PASS",
+  "protected_comparison": "PASS",
+  "claim_assessment": "NOT_REQUESTED",
+  "consumer_acceptance": "NOT_ASSERTED",
+  "formal_assurance": "INCOMPLETE",
+  "remote_validation": "VERIFIED",
+  "offline_receipt_exit": 0,
+  "public_exit": 0,
+  "sandbox_cleanup": "CONFIRMED",
+  "elapsed_controller_seconds": 2941.249,
+  "independent_public_reproduction": "PENDING",
+  "october_export_byte_equality": false
+}
