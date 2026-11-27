@@ -253,7 +253,7 @@ also remains unchanged.
 The article, explanatory guide, its five figures, the proof record and the
 data/certificates are released under CC BY 4.0; the original code under
 Apache-2.0. See [LICENSE.md](LICENSE.md) and cite via
-[CITATION.cff](CITATION.cff). Use the [archival release](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/archive-v1.0.1) to cite the repository snapshot.
+[CITATION.cff](CITATION.cff). Use the [archival release](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/archive-v1.0.1-r2) to cite the repository snapshot.
 The preferred article citation identifies the 30 September 2026 edition.
 The embedded mathematical glyphs retain their
 [MathJax attribution and licence](papers/shifted-square-17-41/verification/notices/README.md).

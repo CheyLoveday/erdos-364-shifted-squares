@@ -1,0 +1,28 @@
+{
+  "title": "Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences (repository archive)",
+  "creators": [
+    {
+      "name": "Loveday, Chey G. A.",
+      "affiliation": "Overdog.ai Ltd, Colchester, England"
+    }
+  ],
+  "description": "<p>Repository archive containing the corrected v1.0.1 article and supporting v1.0.0 evidence, including exact-arithmetic certificates, PARI/GP and Python replay checks and Lean 4 sources for the theorem that F_N(A)-1 is not an integer square when A is congruent to 2 modulo 4 and N &gt; 0 is divisible by 17 or 41, in the family F_0(A)=1, F_1(A)=A, F_{n+2}(A)=2A F_{n+1}(A)+F_n(A), with an application to the exact Pell exponent in a square-middle powerful-number family. The article text, explanatory guide and data are CC BY 4.0; the code is Apache-2.0. The human Hilbert-reciprocity proof is not itself Lean formalised; the Lean development covers the integer-Jacobi and recurrence exclusions and their propagation.</p><p>CC BY 4.0 covers the article, explanatory guide, proof record and data or certificates. Apache 2.0 covers the original code. Embedded materials retain their notices. See the repository’s <a href=\"https://github.com/CheyLoveday/erdos-364-shifted-squares/blob/archive-v1.0.1-r2/LICENSE.md\">licence and file coverage</a>.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "archive-v1.0.1-r2",
+  "license": "other-open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.1",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "keywords": [
+    "Lucas sequences",
+    "shifted squares",
+    "Hilbert reciprocity",
+    "Jacobi symbol",
+    "powerful numbers",
+    "Lean 4"
+  ]
+}
