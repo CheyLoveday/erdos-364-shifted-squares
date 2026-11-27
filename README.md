@@ -253,7 +253,9 @@ also remains unchanged.
 The article, explanatory guide, its five figures, the proof record and the
 data/certificates are released under CC BY 4.0; the original code under
 Apache-2.0. See [LICENSE.md](LICENSE.md) and cite via
-[CITATION.cff](CITATION.cff). The embedded mathematical glyphs retain their
+[CITATION.cff](CITATION.cff). Use the [archival release](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/archive-v1.0.1) to cite the repository snapshot.
+The preferred article citation identifies the 30 September 2026 edition.
+The embedded mathematical glyphs retain their
 [MathJax attribution and licence](papers/shifted-square-17-41/verification/notices/README.md).
 
 As stated in the article's Acknowledgements: AI assistants (Anthropic Claude
@@ -264,9 +266,8 @@ were reviewed by the author, who takes sole responsibility for them.
 
 ### Publication status and preserved artifacts
 
-Version 1.0.1 is a self-published editorial correction. No DOI, arXiv identifier,
-journal submission or peer review is asserted. Its preserved formal and arithmetic
-source release remains v1.0.0. The [25 October assurance record](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md)
+Version 1.0.1 is a self-published editorial correction. The [original release notes](https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.1) record its publication and review status.
+Its preserved formal and arithmetic source release is v1.0.0. The [25 October assurance record](papers/shifted-square-17-41/verification/LEAN-ASSURANCE-2026-10-25.md)
 adds a selected Lean 4.35 result with its own source identity and limits;
 historical audit/build receipts are not relabelled as fresh runs.
 

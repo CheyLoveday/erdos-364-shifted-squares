@@ -1,15 +1,15 @@
 cff-version: 1.2.0
-message: "The software and evidence release v1.0.0 is reference [8] of the article. Cite the corrected article v1.0.1 (preferred-citation) for the mathematics and the v1.0.0 release for the certificates, verifier and Lean sources."
+message: "Cite the repository archive for the complete bundle and the preferred citation for the corrected article. The v1.0.0 evidence release is reference [8] of the article."
 type: software
-title: "Fixed-field certificates and integer-Jacobi formal proofs for the 17/41 shifted-square obstruction"
+title: "Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences (repository archive)"
 authors:
   - family-names: Loveday
     given-names: Chey G. A.
     affiliation: "Overdog.ai Ltd, Colchester, England"
-version: 1.0.0
-date-released: 2026-09-11
+version: "archive-v1.0.1"
+date-released: "2026-11-27"
 repository-code: "https://github.com/CheyLoveday/erdos-364-shifted-squares"
-url: "https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.0"
+url: "https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/archive-v1.0.1"
 license:
   - CC-BY-4.0
   - Apache-2.0
@@ -21,7 +21,8 @@ keywords:
   - powerful numbers
   - Lean 4
 abstract: >-
-  Article, exact-arithmetic certificates, PARI/GP and Python replay checks and
+  Repository archive containing the corrected v1.0.1 article and supporting
+  v1.0.0 evidence, including exact-arithmetic certificates, PARI/GP and Python replay checks and
   Lean 4 sources for the theorem that F_N(A)-1 is not an integer square when
   A is congruent to 2 modulo 4 and N > 0 is divisible by 17 or 41, in the
   family F_0(A)=1, F_1(A)=A, F_{n+2}(A)=2A F_{n+1}(A)+F_n(A), with an
@@ -29,8 +30,7 @@ abstract: >-
   family. The article text, explanatory guide and data are CC BY 4.0; the
   code is Apache-2.0. The human Hilbert-reciprocity proof is not itself Lean
   formalised; the Lean development covers the integer-Jacobi and recurrence
-  exclusions and their propagation. No DOI or arXiv identifier is assigned at
-  this version.
+  exclusions and their propagation.
 preferred-citation:
   type: generic
   title: "Shifted-square obstructions at indices divisible by 17 or 41 in a family of Lucas sequences"
@@ -40,5 +40,6 @@ preferred-citation:
       affiliation: "Overdog.ai Ltd, Colchester, England"
   year: 2026
   month: 9
+  version: "1.0.1"
   url: "https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/v1.0.1"
   notes: "Article, version 1.0.1, 30 September 2026: attribution and presentation correction. The selected mathematical results are unchanged. The supporting certificates, verifier, replay checks and Lean sources remain the separately identified v1.0.0 evidence release."
