@@ -8,6 +8,7 @@ authors:
     affiliation: "Overdog.ai Ltd, Colchester, England"
 version: "archive-v1.0.1-r2"
 date-released: "2026-11-27"
+doi: "10.5281/zenodo.24575548"
 repository-code: "https://github.com/CheyLoveday/erdos-364-shifted-squares"
 url: "https://github.com/CheyLoveday/erdos-364-shifted-squares/releases/tag/archive-v1.0.1-r2"
 license:
